@@ -3,6 +3,8 @@ title: What is the most popular escape room theme?
 date: '2022-02-25'
 updated: '2022-10-22'
 description: We've done our fair share of escape rooms and have our opinion as to what are the most overdone escape rooms. But what does the data say about what rooms are…
+image: /images/2026/10/most-popular-escape-room-theme.jpg
+imageAlt: Miniature dioramas of popular escape room themes
 ---
 
 We've done our fair share of escape rooms and have our opinion as to what are the most _overdone_ escape rooms. But what does the data say about what rooms are actually out there?

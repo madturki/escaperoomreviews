@@ -6,6 +6,8 @@ description: Are you preparing for your first escape room and need tips for solv
 tags:
   - Blog
   - Article
+image: /images/2026/10/escape-room-tips.jpg
+imageAlt: Escape room padlocks, UV flashlight, clue cards and a countdown timer
 ---
 
 Are you preparing for your first escape room and need tips for solving escape room puzzles? Do you want to show off how smart you are to your friends? Or maybe you've tried a few escape rooms and have come close to success, but ran out of time. I'm here to help! Here are my top tips for escaping an escape room.

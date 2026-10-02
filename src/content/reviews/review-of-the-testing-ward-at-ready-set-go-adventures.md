@@ -10,6 +10,8 @@ cities:
 format: room
 reviewed: false
 description: '"Your group decides to sneak into Centre 101- An abandoned psych ward that was shut down years ago because of malpractice. While venturing through the dark…'
+image: /images/2026/10/testing-ward-ready-set-go.jpg
+imageAlt: Abandoned psych ward with a restraint chair
 ---
 
 _"Your group decides to sneak into Centre 101- An abandoned psych ward that was shut down years ago because of malpractice. While venturing through the dark halls, your group gets locked into The Testing Ward. You quickly realize you’re not alone. It’s still occupied by one of the original patients who’s taken it upon himself to get revenge on anyone who dares to enter the abandoned facility. You’ll need to play his game, or else."_

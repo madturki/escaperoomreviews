@@ -10,6 +10,8 @@ cities:
 format: room
 reviewed: false
 description: '"You open your mailbox to find tickets for the circus that just arrived in town…funny, you don’t remember ordering any. Arriving at the circus, you are greeted…'
+image: /images/2026/10/sinister-circus-omescape.jpg
+imageAlt: Creepy abandoned circus tent with clown props and scattered cards
 ---
 
 _"You open your mailbox to find tickets for the circus that just arrived in town…funny, you don’t remember ordering any. Arriving at the circus, you are greeted by a familiar presence – that mocking voice, that maniacal laughter, it could only be the Joker! He’s back for Round 2 with his brand-new Sinister Circus! Entertain the Joker by solving his riddles, don’t let his mind grow idle or he’ll take his anger out on you! Can you survive a descent into the Joker’s world of madness and murder? "_

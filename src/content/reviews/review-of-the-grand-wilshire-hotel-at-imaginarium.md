@@ -10,6 +10,8 @@ cities:
 format: room
 reviewed: false
 description: '"Enter the abandoned Grand Wilshire Hotel and meet the ghost that haunts it – Dr. Herman Mudgett. Inside are three trapped souls awaiting their release! You…'
+image: /images/2026/10/grand-wilshire-hotel-imaginarium.jpg
+imageAlt: Abandoned haunted hotel lobby with cobwebs and a grand staircase
 ---
 
 _"Enter the abandoned Grand Wilshire Hotel and meet the ghost that haunts it – Dr. Herman Mudgett. Inside are three trapped souls awaiting their release! You have 1 hour to rescue them. If you don’t succeed then you will be trapped with them forever in the haunted cavern that is – The Grand Wilshire Hotel!"_

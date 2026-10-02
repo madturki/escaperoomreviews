@@ -11,6 +11,8 @@ cities:
 format: room
 reviewed: false
 description: '"The story was unbelievable! You had heard the rumours since John Dillinger and his gang were killed, the money from their last bank robbery had never been…'
+image: /images/2026/10/blind-tiger-captive.jpg
+imageAlt: 1930s Chicago speakeasy with a bar, safe and poker table
 ---
 
 _"The story was unbelievable! You had heard the rumours since John Dillinger and his gang were killed, the money from their last bank robbery had never been recovered and was hidden somewhere in Chicago._

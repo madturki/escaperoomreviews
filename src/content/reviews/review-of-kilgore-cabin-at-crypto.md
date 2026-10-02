@@ -10,6 +10,8 @@ cities:
 format: room
 reviewed: false
 description: '"Welcome to the Kilgore Cabin. Relax, unwind, enjoy your stay. The wonderful and loving Mother Kilgore will be your host - and you may never want to leave." We…'
+image: /images/2026/10/kilgore-cabin-crypto.jpg
+imageAlt: Cozy but sinister log cabin with a fireplace and family portraits
 ---
 
 "Welcome to the Kilgore Cabin. Relax, unwind, enjoy your stay. The wonderful and loving Mother Kilgore will be your host - and you may never want to leave."

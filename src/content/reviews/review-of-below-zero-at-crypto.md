@@ -10,6 +10,8 @@ cities:
 format: room
 reviewed: false
 description: '"You are among the last survivors of humanity, frozen away by Ellipsis until the world outside is once again habitable. However, your group has been woken up…'
+image: /images/2026/10/below-zero-crypto.jpg
+imageAlt: Frozen cryogenic pods in an icy sci-fi facility
 ---
 
 _"You are among the last survivors of humanity, frozen away by Ellipsis until the world outside is once again habitable. However, your group has been woken up years ahead of schedule by the system’s AI to repair some mysterious damage to the facility._

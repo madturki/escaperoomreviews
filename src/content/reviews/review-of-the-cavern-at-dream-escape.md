@@ -10,6 +10,8 @@ cities:
 format: room
 reviewed: false
 description: '"You and your friends find yourself stuck in an elevator shaft on your way to an underground cavern. You must break out of the elevator and liberate yourself…'
+image: /images/2026/10/the-cavern-dream-escape.jpg
+imageAlt: Lantern-lit mineshaft with a mine cart and cage elevator
 ---
 
 _"You and your friends find yourself stuck in an elevator shaft on your way to an underground cavern. You must break out of the elevator and liberate yourself through a decrepit mineshaft facing peril at every turn._

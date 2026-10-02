@@ -10,6 +10,8 @@ cities:
 format: room
 reviewed: false
 description: '"Take a futuristic journey aboard a spaceship, unfortunately, it’s not all smooth sailing. Forced to make an emergency landing, you and your crew find…'
+image: /images/2026/10/robotcalypse-omescape.jpg
+imageAlt: Crash-landed spaceship cockpit overlooking a robot city
 ---
 
 _"Take a futuristic journey aboard a spaceship, unfortunately, it’s not all smooth sailing. Forced to make an emergency landing, you and your crew find yourselves on a distant planet populated entirely by robots! All you want is to repair your spaceship and be on your way, but that won’t be easy so long as the evil robot Zybar rules. Can you restore peace and prosperity for the robots? Or will you be stranded in space?"_

@@ -10,6 +10,8 @@ cities:
 format: room
 reviewed: false
 description: '"You’re late—again. On the 20th floor waits an impatient Mr. Barclay and, of course, the elevator has an “Out of Order” sign. A passerby assures you that the…'
+image: /images/2026/10/elevator-pitch-escape-manor.jpg
+imageAlt: Inside a vintage wood-panelled elevator with an out-of-order sign
 ---
 
 _"You’re late—again. On the 20th floor waits an impatient Mr. Barclay and, of course, the elevator has an “Out of Order” sign. A passerby assures you that the elevator is fine, so you hurry in. As the elevator begins to move, you wonder if this was a good idea…"_

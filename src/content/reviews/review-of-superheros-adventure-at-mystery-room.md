@@ -10,6 +10,8 @@ cities:
 format: room
 reviewed: false
 description: The arch-criminal Matador has stolen the blueprint to the Grand Central Bank. He is threatening to contaminate all the gold bullion and crash the stock market…
+image: /images/2026/10/superheros-adventure-mystery-room.jpg
+imageAlt: Comic-style city street with a bank vault full of gold
 ---
 
 _The arch-criminal Matador has stolen the blueprint to the Grand Central Bank. He is threatening to contaminate all the gold bullion and crash the stock market if the city does not pay a ransom of $25,000,000 within the next hour. He has hidden the blueprints in one of the city’s streets, so his plan proceeds even if he is captured._

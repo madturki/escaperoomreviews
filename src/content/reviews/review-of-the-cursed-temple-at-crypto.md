@@ -10,6 +10,8 @@ cities:
 format: room
 reviewed: false
 description: '"After an incident at his newest expedition, a famed explorer has sent you and your crew to Amon Kha''s plagued temple. Your goal is simple - break into the…'
+image: /images/2026/10/cursed-temple-crypto.jpg
+imageAlt: Cursed jungle temple with a golden idol and explorer gear
 ---
 
 _"After an incident at his newest expedition, a famed explorer has sent you and your crew to Amon Kha's plagued temple. Your goal is simple - break into the expedition and find the root of the curse for unimaginable fortune!"_

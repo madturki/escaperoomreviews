@@ -7,6 +7,8 @@ tags:
   - News
   - Blog
   - COVID
+image: /images/2026/10/covid-status-ontario-escape-rooms.jpg
+imageAlt: Escape room door with hand sanitizer and masks beside it
 ---
 
 ## **Are Escape Rooms open in Ontario?**

@@ -29,6 +29,8 @@ criteria:
 summary: "Her family’s legendary candy store has thrived for generations, until Candy Land opened right across the street, stealing all her customers!\r\n\r\nShe’s convinced something suspicious is going on as people keep saying how addictive it is. She needs you to secretly break into Candy Land, uncover what they’re hiding, and get out before she can no longer distract the owners, giving you only one hour to expose the truth."
 bookingUrl: https://nextlevelescaperooms.ca/bookings/
 description: Her family’s legendary candy store has thrived for generations, until Candy Land opened right across the street, stealing all her customers! She’s convinced…
+image: /images/2026/10/candy-land-next-level.jpg
+imageAlt: Colourful candy bakery with cupcakes, lollipops and locked cabinets
 ---
 
 Next Level is one of our favourite local locations and features one of our favourite rooms - [Read our review of The Graveyard at Next Level](/review-of-the-graveyard-at-next-level/). Despite this room having a lot of colour in it, they builders have tried to make it accessible by labeling the colours or giving you alternative ways to solve them.

@@ -10,6 +10,8 @@ cities:
 format: room
 reviewed: false
 description: “A rich deep and blo”—the winemaker paused—“a deep red wine. Full of bod”—a second pause—“full bodied with wonderful flavors. Now, shall we begin tasting?”…
+image: /images/2026/10/wine-cellar-escape-manor.jpg
+imageAlt: Candlelit stone wine cellar with barrels and tasting glasses
 ---
 
 _“A rich deep and blo”—the winemaker paused—“a deep red wine. Full of bod”—a second pause—“full bodied with wonderful flavors. Now, shall we begin tasting?” With a wry smile, the winemaker opens the cellar door._

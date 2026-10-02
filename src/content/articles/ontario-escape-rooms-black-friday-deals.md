@@ -5,6 +5,8 @@ updated: '2024-09-06'
 description: 15% Off Improbable Escapes 15% Off Adventure Rooms (coupon code BLACKFRIDAY22) 40% Off Confundrum 50% off Crimson Codes
 tags:
   - Ontario
+image: /images/2026/10/black-friday-escape-room-deals.jpg
+imageAlt: Locked treasure chest tied with a black ribbon and golden keys
 ---
 
 [**15% Off Improbable Escapes**](https://improbableescapes.com/?utm_medium=email&_hsmi=235431961&_hsenc=p2ANqtz-9F5Y3rN0RAToioQVN7Nx__7ppHhVil_Wx9lz0jBVMqWcauhYqbcriDC3Gz4sPFicLHt2oDxmBBxtw1mFv1l4pFBbKGlO-NVXY-GOl649vZfhhrYPQ&utm_content=235431961&utm_source=hs_email)

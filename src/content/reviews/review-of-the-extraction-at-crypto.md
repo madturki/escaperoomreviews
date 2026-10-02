@@ -10,6 +10,8 @@ cities:
 format: room
 reviewed: false
 description: '"A secret intelligence agency has taken over your elevator and tasked your group of regular, plainclothes civilians with a mission. You''re being sent deep…'
+image: /images/2026/10/the-extraction-crypto.jpg
+imageAlt: Secret underground lab with containment chambers and lasers
 ---
 
 _"A secret intelligence agency has taken over your elevator and tasked your group of regular, plainclothes civilians with a mission. You're being sent deep underground to investigate the labs of an evil weapons corporation who have been making dangerous and unexplainable advancements that threaten the safety of humanity._

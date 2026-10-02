@@ -10,6 +10,8 @@ tags:
   - top10
   - Ontario
 region: ontario
+image: /images/2026/10/best-scary-escape-rooms-ontario.jpg
+imageAlt: Scary escape room hallway with a creepy doll and chained door
 ---
 
 Why do we love being scared or creeped out? There's something about horror movies that causes us to suspend our disbelief and be thrown into a bizarre world that would be truly terrifying if it were real. Scary escape rooms allow us to immerse ourselves in those bizarre and terrifying environments.

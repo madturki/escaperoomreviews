@@ -10,6 +10,8 @@ cities:
 format: room
 reviewed: false
 description: '"Once upon a time, the Forest Fairy summoned everyone for a grand celebration. Beast or beauty, wicked or charming, all your favourite fairy tale characters…'
+image: /images/2026/10/once-upon-a-time-omescape.jpg
+imageAlt: Enchanted fairy tale forest with a banquet table and glass slipper
 ---
 
 _"Once upon a time, the Forest Fairy summoned everyone for a grand celebration. Beast or beauty, wicked or charming, all your favourite fairy tale characters have been invited. Gather all the guests to ensure the party is a success. Traveling through the enchanted woods, you’ll encounter everyone from the Princess to Pinocchio!  But that’s not all – there are witches and thieves and other villains lurking in the magical forest! Throughout your noble quest, you’ll have to prevent them from sabotaging the party! Are you ready to embark on this adventure?"_

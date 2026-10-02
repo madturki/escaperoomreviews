@@ -10,6 +10,8 @@ cities:
 format: room
 reviewed: false
 description: '"The World is in Turmoil! The Egyptian God Amun Ra is angry and has placed a curse on modern day civilization. A catastrophic storm will soon wreak havoc on…'
+image: /images/2026/10/wrath-of-amun-ra-imaginarium.jpg
+imageAlt: Egyptian temple with a golden statue and sarcophagus
 ---
 
 _"The World is in Turmoil! The Egyptian God Amun Ra is angry and has placed a curse on modern day civilization. A catastrophic storm will soon wreak havoc on the earth! You and your team have one hour to enter the Ancient Temple of Ramesses and lift the curse. Armageddon is near as the doomsday clock starts ticking!"_
