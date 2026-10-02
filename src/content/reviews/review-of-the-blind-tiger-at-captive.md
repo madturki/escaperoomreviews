@@ -22,3 +22,13 @@ _This was a story that you couldn’t ignore, It sounded crazy but the old man m
 _When the day of your release finally arrived it seemed like a dream, the three years had been hard but now you have a purpose. You have a head start but you have to hurry, you are not the only one headed to the Blind Tiger. Tick Tock !!"_
 
 We have not yet completed a review of The Blind Tiger at Captive in Mississauga or Toronto. We hope to experience this room soon.
+
+## What others are saying
+
+Captive ran The Blind Tiger at both its Toronto and Mississauga locations. The Toronto branch closed in early 2026, but the room is still listed at Captive Mississauga. Opinions are sharply divided, and most of the detailed feedback we found is about the Toronto version.
+
+Fans love that it's packed with puzzles and completely non-linear, which some enthusiasts found refreshing in an era of more guided rooms; the audio puzzles got special praise. It suits larger groups. A multi-generational family on TripAdvisor found it challenging but very fun, said the puzzles made good use of the whole room, and praised the friendly, helpful staff.
+
+Critics on Morty say it's essentially one room full of lockboxes, with little story and no real payoff at the end. Players describe it getting messy as items pile up, feeling repetitive, and having some logic leaps, plus it's not always clear which clue goes with which lock. Several mentioned an anticlimactic ending where they weren't sure they'd finished, and even fans admit it's an older room that could use a refresh.
+
+_Sources: [Morty](https://morty.app/attraction/17033/blind-tiger-speakeasy), [TripAdvisor](https://www.tripadvisor.co.nz/Attraction_Review-g154996-d8681273-Reviews-Captive_Escape_Rooms_Mississauga-Mississauga_Ontario.html), [Captive Escape Rooms Mississauga](https://www.captiverooms.com/mississauga), [The Escapers](https://www.the-escapers.com/escape-game/toronto/captive-escape-rooms)_

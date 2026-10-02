@@ -19,3 +19,13 @@ _"A secret intelligence agency has taken over your elevator and tasked your gr
 _Your mission: get in, grab the intel and get out without detection. Be careful and keep your wits about you - not everything is as it seems..."_
 
 We have not yet completed a review of The Extraction at Crypto in Toronto. We hope to experience this room soon.
+
+## What others are saying
+
+The Extraction, Crypto's retro spy mission, is well received by enthusiast bloggers. The Room Escape Artist blog counts it among the best rooms in the Toronto area and praised how well Crypto blends story, gameplay and set.
+
+The moving-elevator opening is a highlight for many players, and the Room Escape Artist blog loved a surprising twist that's delivered with restraint. Reviewers point to strong storytelling through the environment, top-notch set design and atmosphere (even the hallways are themed), and puzzles that are logical, satisfying and worked smoothly.
+
+The main criticism is repetition: later in the game, one core puzzle mechanic is reused several times, which can wear thin if you don't enjoy that type of puzzle. Another blog found the frequent story interruptions slowed the momentum of this linear room, and felt its look was a little too similar to Crypto's Below Zero.
+
+_Sources: [Room Escape Artist](https://roomescapeartist.com/2022/09/08/crypto-escape-rooms-extraction-review/), [We Try to Escape](https://wetrytoescape.com/the-extraction-crypto-escape-rooms/)_
