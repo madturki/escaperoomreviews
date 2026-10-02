@@ -1,0 +1,66 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../../components/Breadcrumbs.astro';
+import { getReviews, getTaxonomies, url } from '../../../lib/data';
+
+const [reviews, tax] = await Promise.all([getReviews(), getTaxonomies()]);
+const countries = [...tax.countries.values()].map((country) => ({
+  country,
+  regions: [...tax.regions.values()]
+    .filter((r) => r.data.country === country.id)
+    .map((region) => ({
+      region,
+      count: reviews.filter((r) => r.data.region === region.id).length,
+      cities: [...tax.cities.values()]
+        .filter((c) => c.data.region === region.id)
+        .map((city) => ({ city, count: reviews.filter((r) => r.data.cities.includes(city.id)).length }))
+        .filter(({ count }) => count > 0),
+    })),
+}));
+---
+
+<BaseLayout title="Escape rooms by location" description="Browse escape room reviews by country, province or state, and city.">
+  <div class="container">
+    <header class="page-head">
+      <Breadcrumbs items={[{ label: 'Locations' }]} />
+      <h1>Browse escape rooms by location</h1>
+      <p>Find reviewed escape rooms by country, province or state, and city. Or use the <a href="/map/">map</a> to find rooms near you.</p>
+    </header>
+    {
+      countries.map(({ country, regions }) => (
+        <section class="section">
+          <h2>
+            <a href={url.country(country.id)}>{country.data.name}</a>
+          </h2>
+          {regions.map(({ region, count, cities }) => (
+            <div class="region-block">
+              <h3>
+                <a href={url.region(region.id)}>{region.data.name}</a> <span class="chip__count">({count})</span>
+              </h3>
+              <ul class="term-grid">
+                {cities.map(({ city, count }) => (
+                  <li>
+                    <a href={url.city(region.id, city.id)}>
+                      <span>{city.data.name}</span>
+                      <span class="count">{count}</span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </section>
+      ))
+    }
+  </div>
+</BaseLayout>
+
+<style>
+  .region-block {
+    margin-bottom: 1.5rem;
+  }
+
+  .region-block h3 a {
+    color: var(--ink);
+  }
+</style>

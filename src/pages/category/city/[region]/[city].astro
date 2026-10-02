@@ -1,0 +1,36 @@
+---
+import TermPage from '../../../../layouts/TermPage.astro';
+import { getReviews, getTaxonomies, buildPins, url } from '../../../../lib/data';
+
+export async function getStaticPaths() {
+  const [reviews, tax] = await Promise.all([getReviews(), getTaxonomies()]);
+  return [...tax.cities.values()].map((city) => ({
+    params: { region: city.data.region, city: city.id },
+    props: {
+      city,
+      reviews: reviews.filter((r) => r.data.cities.includes(city.id)),
+      pins: buildPins(tax, reviews, { city: city.id }),
+      tax,
+    },
+  }));
+}
+
+const { city, reviews, pins, tax } = Astro.props;
+const region = tax.regions.get(city.data.region);
+const country = region ? tax.countries.get(region.data.country) : undefined;
+const name = city.data.name;
+---
+
+<TermPage
+  title={`Best Escape Rooms in ${name}`}
+  eyebrow={[region?.data.name, country?.data.name].filter(Boolean).join(', ')}
+  description={`Our room-by-room reviews of escape rooms in ${name}${region ? `, ${region.data.name}` : ''}, sorted by score.`}
+  crumbs={[
+    { label: 'Locations', href: '/category/city/' },
+    ...(region ? [{ label: region.data.name, href: url.region(region.id) }] : []),
+    { label: name },
+  ]}
+  reviews={reviews}
+  pins={pins}
+  tax={tax}
+/>

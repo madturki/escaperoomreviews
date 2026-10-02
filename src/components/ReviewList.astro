@@ -1,0 +1,47 @@
+---
+import ReviewCard from './ReviewCard.astro';
+import ScoreBadge from './ScoreBadge.astro';
+import { url, type Review, type Article, type Taxonomies } from '../lib/data';
+
+interface Props {
+  entries: (Review | Article)[];
+  tax: Taxonomies;
+  ranked?: boolean;
+  empty?: string;
+}
+
+const { entries, tax, ranked = false, empty = 'No reviews here yet.' } = Astro.props;
+---
+
+{entries.length === 0 && <p class="empty">{empty}</p>}
+{
+  entries.length > 0 && ranked && (
+    <ol class="ranked">
+      {(entries as Review[]).map((r) => {
+        const venue = r.data.venue ? tax.venues.get(r.data.venue)?.data.name : undefined;
+        const city = r.data.cities[0] ? tax.cities.get(r.data.cities[0])?.data.name : undefined;
+        return (
+          <li>
+            {r.data.image ? <img src={r.data.image} alt="" loading="lazy" decoding="async" /> : <span />}
+            <div>
+              <h3>
+                <a href={url.post(r.id)}>{r.data.room ?? r.data.title}</a>
+              </h3>
+              <p>{[venue, city].filter(Boolean).join(' · ')}</p>
+            </div>
+            <ScoreBadge score={r.data.score} reviewed={r.data.reviewed} />
+          </li>
+        );
+      })}
+    </ol>
+  )
+}
+{
+  entries.length > 0 && !ranked && (
+    <div class="card-grid">
+      {entries.map((entry) => (
+        <ReviewCard entry={entry} tax={tax} />
+      ))}
+    </div>
+  )
+}

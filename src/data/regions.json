@@ -1,0 +1,27 @@
+[
+  {
+    "id": "new-york",
+    "name": "New York",
+    "country": "united-states"
+  },
+  {
+    "id": "ontario",
+    "name": "Ontario",
+    "country": "canada"
+  },
+  {
+    "id": "quebec",
+    "name": "Quebec",
+    "country": "canada"
+  },
+  {
+    "id": "saskatchewan",
+    "name": "Saskatchewan",
+    "country": "canada"
+  },
+  {
+    "id": "spain",
+    "name": "Spain",
+    "country": "spain"
+  }
+]

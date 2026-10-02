@@ -1,0 +1,39 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import ReviewList from '../components/ReviewList.astro';
+import { getReviews, getArticles, getTaxonomies } from '../lib/data';
+
+const [reviews, articles, tax] = await Promise.all([getReviews(), getArticles(), getTaxonomies()]);
+const reviewed = reviews.filter((r) => r.data.reviewed);
+const pending = reviews.filter((r) => !r.data.reviewed);
+---
+
+<BaseLayout title="Latest escape room reviews and articles" description="Every escape room review and article we've published, newest first.">
+  <div class="container">
+    <header class="page-head">
+      <Breadcrumbs items={[{ label: 'Blog' }]} />
+      <h1>Latest reviews and articles</h1>
+      <p>{reviewed.length} rooms reviewed and {articles.length} articles, newest first.</p>
+    </header>
+
+    <section class="section">
+      <h2>Articles</h2>
+      <ReviewList entries={articles} tax={tax} />
+    </section>
+
+    <section class="section">
+      <h2>Reviews</h2>
+      <ReviewList entries={reviewed} tax={tax} />
+    </section>
+
+    {
+      pending.length > 0 && (
+        <section class="section">
+          <h2>On our list (not yet reviewed)</h2>
+          <ReviewList entries={pending} tax={tax} />
+        </section>
+      )
+    }
+  </div>
+</BaseLayout>

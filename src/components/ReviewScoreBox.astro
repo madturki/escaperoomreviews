@@ -1,0 +1,174 @@
+---
+import type { Review } from '../lib/data';
+import { scoreClass } from '../lib/data';
+
+interface Props {
+  review: Review;
+}
+
+const { data } = Astro.props.review;
+const hasScore = data.reviewed && data.score != null;
+---
+
+<section class="scorebox" aria-label="Our rating">
+  <div class="scorebox__overall" data-pagefind-ignore>
+    {
+      hasScore ? (
+        <>
+          <span class:list={['scorebox__value', scoreClass(data.score)]}>{data.score!.toFixed(1)}</span>
+          <span class="scorebox__label">out of 10</span>
+        </>
+      ) : (
+        <span class="scorebox__pending">Not yet reviewed</span>
+      )
+    }
+  </div>
+  <div class="scorebox__detail">
+    {data.room && <h2 class="scorebox__title">{data.room}</h2>}
+    {
+      hasScore && data.criteria.length > 0 && (
+        <ul class="scorebox__criteria" data-pagefind-ignore>
+          {data.criteria.map((c) => (
+            <li>
+              <span class="scorebox__name">{c.name}</span>
+              <span class="scorebox__bar" aria-hidden="true">
+                <span class:list={['scorebox__fill', scoreClass(c.score)]} style={`width:${Math.min(100, c.score * 10)}%`} />
+              </span>
+              <span class="scorebox__num">{c.score}</span>
+            </li>
+          ))}
+        </ul>
+      )
+    }
+    {data.summary && <p class="scorebox__summary">{data.summary}</p>}
+    {
+      data.bookingUrl && (
+        <a class="button" href={data.bookingUrl} target="_blank" rel="noopener sponsored">
+          Book now
+        </a>
+      )
+    }
+  </div>
+</section>
+
+<style>
+  .scorebox {
+    display: grid;
+    grid-template-columns: 140px minmax(0, 1fr);
+    gap: 1.5rem;
+    background: #f7f8fa;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    margin: 0 0 2rem;
+  }
+
+  @media (max-width: 600px) {
+    .scorebox {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .scorebox__overall {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .scorebox__value {
+    display: grid;
+    place-items: center;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 2.4rem;
+    font-weight: 800;
+    background: var(--muted);
+  }
+
+  .scorebox__value.score--high {
+    background: var(--high);
+  }
+
+  .scorebox__value.score--mid {
+    background: var(--mid);
+  }
+
+  .scorebox__value.score--low {
+    background: var(--low);
+  }
+
+  .scorebox__label {
+    color: var(--muted);
+    font-size: 0.85rem;
+    margin-top: 0.4rem;
+  }
+
+  .scorebox__pending {
+    color: var(--muted);
+    font-weight: 700;
+  }
+
+  .scorebox__title {
+    font-size: 1.15rem;
+    margin: 0 0 0.75rem;
+  }
+
+  .scorebox__criteria {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .scorebox__criteria li {
+    display: grid;
+    grid-template-columns: minmax(150px, 1fr) 2fr 2.5rem;
+    gap: 0.75rem;
+    align-items: center;
+    font-size: 0.92rem;
+  }
+
+  .scorebox__bar {
+    height: 8px;
+    border-radius: 99px;
+    background: #e3e7ec;
+    overflow: hidden;
+  }
+
+  .scorebox__fill {
+    display: block;
+    height: 100%;
+    background: var(--muted);
+  }
+
+  .scorebox__fill.score--high {
+    background: var(--high);
+  }
+
+  .scorebox__fill.score--mid {
+    background: var(--mid);
+  }
+
+  .scorebox__fill.score--low {
+    background: var(--low);
+  }
+
+  .scorebox__num {
+    font-weight: 700;
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .scorebox__summary {
+    font-family: var(--font-serif);
+    font-style: italic;
+    color: var(--ink-soft);
+    margin: 0 0 1rem;
+  }
+</style>

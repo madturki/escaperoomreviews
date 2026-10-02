@@ -1,0 +1,16 @@
+---
+import { scoreClass } from '../lib/data';
+
+interface Props {
+  score?: number | null;
+  reviewed?: boolean;
+  class?: string;
+}
+
+const { score, reviewed = true, class: className } = Astro.props;
+const hasScore = reviewed && score != null;
+---
+
+<span class:list={['score', scoreClass(hasScore ? score : null), className]} title={hasScore ? `Our score: ${score} out of 10` : 'Not yet reviewed'}>
+  {hasScore ? score!.toFixed(1) : 'Not yet reviewed'}
+</span>

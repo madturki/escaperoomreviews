@@ -1,0 +1,36 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../../components/Breadcrumbs.astro';
+import { getReviews, getTaxonomies, url } from '../../../lib/data';
+
+const [reviews, tax] = await Promise.all([getReviews(), getTaxonomies()]);
+const venues = [...tax.venues.values()]
+  .map((v) => ({ venue: v, count: reviews.filter((r) => r.data.venue === v.id).length }))
+  .filter(({ count, venue }) => count > 0 || venue.data.locations.length > 0)
+  .sort((a, b) => a.venue.data.name.localeCompare(b.venue.data.name, 'en', { sensitivity: 'base' }));
+---
+
+<BaseLayout title="Escape room venues" description="Browse escape room reviews by venue and owner, from Trapped and Escape Manor to independent rooms across Canada and beyond.">
+  <div class="container">
+    <header class="page-head">
+      <Breadcrumbs items={[{ label: 'Venues' }]} />
+      <h1>Browse escape rooms by venue</h1>
+      <p>Every escape room company we've visited, with all of their rooms we've reviewed.</p>
+    </header>
+    <ul class="term-grid">
+      {
+        venues.map(({ venue, count }) => (
+          <li>
+            <a href={url.venue(venue.id)}>
+              <span>
+                {venue.data.name}
+                {venue.data.closed && <small> (closed)</small>}
+              </span>
+              <span class="count">{count}</span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</BaseLayout>

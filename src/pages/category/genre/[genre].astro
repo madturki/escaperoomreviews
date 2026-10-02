@@ -1,0 +1,30 @@
+---
+import TermPage from '../../../layouts/TermPage.astro';
+import { getReviews, getArticles, getTaxonomies } from '../../../lib/data';
+
+export async function getStaticPaths() {
+  const [reviews, articles, tax] = await Promise.all([getReviews(), getArticles(), getTaxonomies()]);
+  return [...tax.genres.values()].map((genre) => ({
+    params: { genre: genre.id },
+    props: {
+      genre,
+      reviews: reviews.filter((r) => r.data.genres.includes(genre.id)),
+      articles: articles.filter((a) => a.data.genres.includes(genre.id)),
+      tax,
+    },
+  }));
+}
+
+const { genre, reviews, articles, tax } = Astro.props;
+const name = genre.data.name;
+---
+
+<TermPage
+  title={`${name} Escape Rooms`}
+  eyebrow="Genre"
+  description={genre.data.description ?? `Our reviews and ratings of ${name.toLowerCase()} themed escape rooms, sorted by score.`}
+  crumbs={[{ label: 'Genres', href: '/category/genre/' }, { label: name }]}
+  reviews={reviews}
+  articles={articles}
+  tax={tax}
+/>

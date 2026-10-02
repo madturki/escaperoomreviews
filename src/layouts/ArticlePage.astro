@@ -1,0 +1,64 @@
+---
+import { render } from 'astro:content';
+import BaseLayout from './BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import ReviewList from '../components/ReviewList.astro';
+import { url, formatDate, type Article, type Review, type Taxonomies } from '../lib/data';
+
+interface Props {
+  article: Article;
+  reviews: Review[];
+  tax: Taxonomies;
+}
+
+const { article, reviews, tax } = Astro.props;
+const { data } = article;
+const { Content } = await render(article);
+const latest = reviews.filter((r) => r.data.reviewed).slice(0, 4);
+---
+
+<BaseLayout title={data.title} description={data.description} image={data.image} type="article" noindex={data.draft}>
+  <div class="container">
+    <header class="page-head">
+      <Breadcrumbs items={[{ label: 'Blog', href: '/blog/' }, { label: data.title }]} />
+      <h1>{data.title}</h1>
+      <p class="article-meta">
+        <time datetime={data.date.toISOString()}>{formatDate(data.date)}</time>
+        {data.updated && <> · Updated <time datetime={data.updated.toISOString()}>{formatDate(data.updated)}</time></>}
+      </p>
+    </header>
+    <article class="article" data-pagefind-body>
+      {data.image && <img class="article__hero" src={data.image} alt={data.imageAlt ?? data.title} decoding="async" fetchpriority="high" />}
+      <div class="prose">
+        <Content />
+      </div>
+      {
+        data.tags.length > 0 && (
+          <ul class="chips" data-pagefind-ignore>
+            {data.tags.map((t) => (
+              <li>
+                <a class="chip" href={url.tag(t)}>
+                  #{t}
+                </a>
+              </li>
+            ))}
+          </ul>
+        )
+      }
+    </article>
+    <section class="section">
+      <div class="section__head">
+        <h2>Latest reviews</h2>
+        <a href="/blog/">See all</a>
+      </div>
+      <ReviewList entries={latest} tax={tax} />
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .article-meta {
+    color: var(--muted);
+    margin: 0;
+  }
+</style>

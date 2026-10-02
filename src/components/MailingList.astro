@@ -1,0 +1,18 @@
+---
+import { SITE } from '../site.config';
+---
+
+<section class="signup" data-pagefind-ignore>
+  <h2>Get notified</h2>
+  <p>Be the first to know about new rooms, new locations, giveaways, and promos.</p>
+  <form action={SITE.mailchimp.action} method="post" target="_blank">
+    <label class="visually-hidden" for="mce-EMAIL">Email address</label>
+    <input type="email" name="EMAIL" id="mce-EMAIL" placeholder="Email address" required />
+    <label class="visually-hidden" for="mce-FNAME">First name</label>
+    <input type="text" name="FNAME" id="mce-FNAME" placeholder="First name (optional)" />
+    <div style="position:absolute;left:-5000px" aria-hidden="true">
+      <input type="text" name={SITE.mailchimp.honeypot} tabindex="-1" value="" />
+    </div>
+    <button type="submit" class="button">Subscribe</button>
+  </form>
+</section>

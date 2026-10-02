@@ -1,0 +1,19 @@
+---
+import { SITE } from '../site.config';
+---
+
+{
+  SITE.adsense.enabled && (
+    <div class="ad-slot" data-pagefind-ignore>
+      <ins
+        class="adsbygoogle"
+        style="display:block"
+        data-ad-client={SITE.adsense.client}
+        data-ad-slot={SITE.adsense.slot}
+        data-ad-format="auto"
+        data-full-width-responsive="true"
+      />
+      <script is:inline>(window.adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+  )
+}

@@ -1,0 +1,104 @@
+---
+import '../styles/global.css';
+import { SITE, NAV } from '../site.config';
+
+interface Props {
+  title: string;
+  description?: string;
+  image?: string;
+  type?: 'website' | 'article';
+  noindex?: boolean;
+  ads?: boolean;
+  jsonLd?: Record<string, unknown>;
+}
+
+const { title, description = SITE.description, image, type = 'website', noindex = false, ads = false, jsonLd } = Astro.props;
+const fullTitle = title === SITE.name ? title : `${title} | ${SITE.name}`;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const ogImage = new URL(image ?? SITE.defaultImage, Astro.site);
+const path = Astro.url.pathname;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    {noindex && <meta name="robots" content="noindex" />}
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="alternate" type="application/rss+xml" title={SITE.name} href="/rss.xml" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <meta property="og:site_name" content={SITE.name} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content={type} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta name="twitter:card" content="summary_large_image" />
+    {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
+    {
+      ads && SITE.adsense.enabled && (
+        <script
+          async
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${SITE.adsense.client}`}
+          crossorigin="anonymous"
+        />
+      )
+    }
+    <slot name="head" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="brand" href="/">
+          <svg class="brand__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 14a5 5 0 1 1 4.9-6H22v4h-2v3h-3v-3h-5.1A5 5 0 0 1 7 14Zm0-3a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" fill="currentColor"/></svg>
+          <span>{SITE.name}</span>
+        </a>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation" />
+        <label for="nav-toggle" class="nav-toggle__label" aria-hidden="true"><span></span></label>
+        <nav class="site-nav" aria-label="Main">
+          <ul>
+            {
+              NAV.map((item) => (
+                <li>
+                  <a href={item.href} aria-current={path.startsWith(item.href) && item.href !== '/' ? 'page' : undefined}>
+                    {item.label}
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main id="main" class="site-main">
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <div>
+          <p class="brand brand--footer">{SITE.name}</p>
+          <p>{SITE.tagline}.</p>
+        </div>
+        <ul class="footer-links">
+          <li><a href="/category/genre/">Browse by genre</a></li>
+          <li><a href="/category/location/">Browse by venue</a></li>
+          <li><a href="/category/city/">Browse by location</a></li>
+          <li><a href="/map/">Escape rooms near you</a></li>
+        </ul>
+        <ul class="footer-links">
+          <li><a href="/inquire/">Contact &amp; review requests</a></li>
+          <li><a href="/professional-escape-room-analysis-in-ontario/">Professional room analysis</a></li>
+          <li><a href="/rss.xml">RSS feed</a></li>
+        </ul>
+      </div>
+      <div class="container site-footer__legal">
+        <p>&copy; {new Date().getFullYear()} {SITE.name}. Reviews reflect our own experiences.</p>
+      </div>
+    </footer>
+  </body>
+</html>

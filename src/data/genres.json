@@ -1,0 +1,102 @@
+[
+  {
+    "id": "books-movies",
+    "name": "Books & Movies",
+    "image": "/images/2021/10/genre-books-and-movies.gif",
+    "description": "A list of the best movie-themed and book-themed escape rooms in Canada. Our escape room reviews are an honest and complete examination of specific rooms, completed by people just like you!"
+  },
+  {
+    "id": "creepy",
+    "name": "Creepy",
+    "image": "/images/2021/10/genre-scary.gif",
+    "description": "A list of the best creepy escape rooms in Canada.  Our escape room reviews are an honest and complete examination of specific rooms, completed by people just like you!  These rooms may have jump scares, live actors, or dark themes with ghosts or murders."
+  },
+  {
+    "id": "egypt",
+    "name": "Egypt",
+    "image": "/images/2021/10/genre-pyramid-1.gif"
+  },
+  {
+    "id": "fantasy",
+    "name": "Fantasy",
+    "image": "/images/2021/10/genre-fantasy-1.gif",
+    "description": "A list of the best fantasy escape rooms in Canada.  Our escape room reviews are an honest and complete examination of specific rooms, completed by people just like you!  These rooms contain themes from TV shows, movies, or books!"
+  },
+  {
+    "id": "historic",
+    "name": "Historic",
+    "image": "/images/2021/10/genre-history.gif",
+    "description": "A list of the best historic escape rooms in Canada.  Our escape room reviews are an honest and complete examination of specific rooms, completed by people just like you! These rooms contain themes such as Egyptian tombs, the Wild West, or the Middle Ages."
+  },
+  {
+    "id": "infections",
+    "name": "Infections",
+    "image": "/images/2021/10/genre-outbreak.gif",
+    "description": "A list of the best infection and outbreak escape rooms in Canada.  Our escape room reviews are an honest and complete examination of specific rooms, completed by people just like you!  These rooms contain themes of outbreaks, zombies, viruses, etc.  Some may contain scares so ask your host or read our reviews!"
+  },
+  {
+    "id": "made-for-kids",
+    "name": "Made For Kids"
+  },
+  {
+    "id": "magic",
+    "name": "Magic",
+    "image": "/images/2021/10/genre-magic.gif",
+    "description": "A list of the best magic themed escape rooms in Canada. Our escape room reviews are an honest and complete examination of specific rooms, completed by people just like you!"
+  },
+  {
+    "id": "medieval",
+    "name": "Medieval",
+    "image": "/images/2021/10/genre-medieval.gif"
+  },
+  {
+    "id": "modern-day",
+    "name": "Modern Day",
+    "image": "/images/2021/10/genre-modern.gif",
+    "description": "A list of the best modern-day escape rooms in Canada.  Our escape room reviews are an honest and complete examination of specific rooms, completed by people just like you! These rooms contain themes that are plausible in the real modern-day world.  Themes like prisons, the outdoors, government conspiracies, and hotels!"
+  },
+  {
+    "id": "mystery",
+    "name": "Mystery",
+    "image": "/images/2021/10/genre-mystery.gif",
+    "description": "A list of the best mystery themed escape rooms in Canada. Our escape room reviews are an honest and complete examination of specific rooms, completed by people just like you! These rooms may include themes such as murder, kidnapping, and horror-adjacent stories."
+  },
+  {
+    "id": "others",
+    "name": "Others",
+    "image": "/images/2021/10/genre-others.gif"
+  },
+  {
+    "id": "pirates",
+    "name": "Pirates",
+    "image": "/images/2021/10/genre-pirates.gif",
+    "description": "A list of the best pirate escape rooms in Canada.  Our escape room reviews are an honest and complete examination of specific rooms, completed by people just like you!  These rooms contain themes like... pirates!  And that's about it.  A bridge between fantasy escape rooms and historic escape rooms."
+  },
+  {
+    "id": "prison",
+    "name": "Prison",
+    "image": "/images/2021/10/genre-prison.gif"
+  },
+  {
+    "id": "prohibition",
+    "name": "Prohibition",
+    "image": "/images/2021/10/genre-prohibition.gif"
+  },
+  {
+    "id": "space",
+    "name": "Space",
+    "image": "/images/2021/10/genre-scifi.gif",
+    "description": "A list of the best space escape rooms in Canada.  Our escape room reviews are an honest and complete examination of specific rooms, completed by people just like you!  These rooms contain themes like aliens and space travel."
+  },
+  {
+    "id": "virtual",
+    "name": "Virtual",
+    "image": "/images/2021/10/genre-virtual.gif"
+  },
+  {
+    "id": "water",
+    "name": "Water",
+    "image": "/images/2021/10/genre-water.gif",
+    "description": "Ahoy! A list of the best boating, submarine, and Atlantis themed escape rooms in Canada. Our escape room reviews are an honest and complete examination of specific rooms, completed by people just like you!"
+  }
+]

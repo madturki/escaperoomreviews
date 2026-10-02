@@ -1,0 +1,81 @@
+---
+import { render, type CollectionEntry } from 'astro:content';
+import BaseLayout from './BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import ReviewList from '../components/ReviewList.astro';
+import VenueMap from '../components/VenueMap.astro';
+import AdSlot from '../components/AdSlot.astro';
+import { SITE } from '../site.config';
+import { filterReviews, sortByScore, buildPins, type Review, type Taxonomies } from '../lib/data';
+
+interface Props {
+  page: CollectionEntry<'pages'>;
+  reviews: Review[];
+  tax: Taxonomies;
+}
+
+const { page, reviews, tax } = Astro.props;
+const { data } = page;
+const { Content } = await render(page);
+
+let listed: Review[] = [];
+if (data.reviewList) {
+  const { sort, limit, ranked, ...filter } = data.reviewList;
+  listed = filterReviews(reviews, tax, filter);
+  if (ranked) listed = listed.filter((r) => r.data.reviewed);
+  if (sort === 'score') listed = sortByScore(listed);
+  if (limit) listed = listed.slice(0, limit);
+}
+const pins = data.map ? buildPins(tax, reviews, data.map) : [];
+---
+
+<BaseLayout title={data.title} description={data.description} ads={data.ads} noindex={data.draft}>
+  <div class="container">
+    <header class="page-head">
+      <Breadcrumbs items={[{ label: data.title }]} />
+      <h1>{data.title}</h1>
+    </header>
+    <article class="article" data-pagefind-body>
+      <div class="prose">
+        <Content />
+      </div>
+      {
+        data.contact && (
+          <p class="contact-cta">
+            <a class="button" href={`mailto:${SITE.email}?subject=${encodeURIComponent('Escape room review request')}`}>
+              Email us at {SITE.email}
+            </a>
+          </p>
+        )
+      }
+    </article>
+
+    {
+      data.reviewList && (
+        <section class="section">
+          <ReviewList entries={listed} tax={tax} ranked={data.reviewList.ranked} />
+        </section>
+      )
+    }
+
+    {data.ads && <AdSlot />}
+
+    {
+      pins.length > 0 && (
+        <section class="section">
+          <div class="section__head">
+            <h2>Escape rooms near you</h2>
+            <a href="/map/">Full map</a>
+          </div>
+          <VenueMap pins={pins} />
+        </section>
+      )
+    }
+  </div>
+</BaseLayout>
+
+<style>
+  .contact-cta {
+    margin-top: 1.5rem;
+  }
+</style>

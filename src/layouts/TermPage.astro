@@ -1,0 +1,75 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import ReviewList from '../components/ReviewList.astro';
+import VenueMap from '../components/VenueMap.astro';
+import { sortByScore, type Review, type Article, type MapPin, type Taxonomies } from '../lib/data';
+
+interface Props {
+  title: string;
+  heading?: string;
+  eyebrow?: string;
+  description: string;
+  intro?: string;
+  crumbs: { label: string; href?: string }[];
+  reviews: Review[];
+  articles?: Article[];
+  pins?: MapPin[];
+  tax: Taxonomies;
+}
+
+const { title, heading = title, eyebrow, description, intro, crumbs, reviews, articles = [], pins = [], tax } = Astro.props;
+const reviewed = sortByScore(reviews.filter((r) => r.data.reviewed));
+const pending = reviews.filter((r) => !r.data.reviewed);
+---
+
+<BaseLayout title={title} description={description}>
+  <div class="container">
+    <header class="page-head">
+      <Breadcrumbs items={crumbs} />
+      {eyebrow && <p class="eyebrow">{eyebrow}</p>}
+      <h1>{heading}</h1>
+      <p>{intro ?? description}</p>
+    </header>
+
+    <slot />
+
+    <section class="section">
+      <div class="section__head">
+        <h2>Top rated</h2>
+        <span class="card__meta">{reviewed.length} reviewed</span>
+      </div>
+      <ReviewList entries={reviewed} tax={tax} empty="We haven't reviewed any rooms here yet." />
+    </section>
+
+    {
+      pins.length > 0 && (
+        <section class="section">
+          <div class="section__head">
+            <h2>Map</h2>
+            <a href="/map/">Full map</a>
+          </div>
+          <VenueMap pins={pins} />
+        </section>
+      )
+    }
+
+    {
+      articles.length > 0 && (
+        <section class="section">
+          <h2>Articles</h2>
+          <ReviewList entries={articles} tax={tax} />
+        </section>
+      )
+    }
+
+    {
+      pending.length > 0 && (
+        <section class="section">
+          <h2>On our list (not yet reviewed)</h2>
+          <ReviewList entries={pending} tax={tax} />
+        </section>
+      )
+    }
+  </div>
+</BaseLayout>

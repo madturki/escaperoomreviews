@@ -1,0 +1,39 @@
+---
+interface Props {
+  items: { href: string; image?: string; label: string; count?: number }[];
+}
+
+const { items } = Astro.props;
+---
+
+<ul class="genre-grid">
+  {
+    items.map((item) => (
+      <li>
+        <a href={item.href}>
+          {item.image ? (
+            <img src={item.image} alt="" loading="lazy" decoding="async" width="250" height="250" />
+          ) : (
+            <span class="gallery__placeholder">{item.label.charAt(0)}</span>
+          )}
+          {item.label}
+          {item.count !== undefined && <span class="chip__count">({item.count})</span>}
+        </a>
+      </li>
+    ))
+  }
+</ul>
+
+<style>
+  .gallery__placeholder {
+    display: grid;
+    place-items: center;
+    aspect-ratio: 1;
+    border-radius: var(--radius);
+    background: linear-gradient(135deg, #2d4256, #3b4f45);
+    color: var(--accent);
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 0.4rem;
+  }
+</style>

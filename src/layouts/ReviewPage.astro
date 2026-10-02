@@ -1,0 +1,221 @@
+---
+import { render } from 'astro:content';
+import BaseLayout from './BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import ReviewScoreBox from '../components/ReviewScoreBox.astro';
+import ReviewList from '../components/ReviewList.astro';
+import VenueMap from '../components/VenueMap.astro';
+import { url, formatDate, buildPins, sortByScore, type Review, type Taxonomies } from '../lib/data';
+
+interface Props {
+  review: Review;
+  reviews: Review[];
+  tax: Taxonomies;
+}
+
+const { review, reviews, tax } = Astro.props;
+const { data } = review;
+const { Content } = await render(review);
+
+const venue = data.venue ? tax.venues.get(data.venue) : undefined;
+const region = data.region ? tax.regions.get(data.region) : undefined;
+const cities = data.cities.map((id) => tax.cities.get(id)).filter((c) => c !== undefined);
+const genres = data.genres.map((id) => tax.genres.get(id)).filter((g) => g !== undefined);
+const pins = venue ? buildPins({ ...tax, venues: new Map([[venue.id, venue]]) }, reviews) : [];
+
+const moreAtVenue = venue ? sortByScore(reviews.filter((r) => r.data.venue === venue.id && r.id !== review.id)).slice(0, 6) : [];
+const moreInCity = cities[0]
+  ? sortByScore(reviews.filter((r) => r.data.cities.includes(cities[0]!.id) && r.data.venue !== data.venue && r.data.reviewed)).slice(0, 4)
+  : [];
+
+const crumbs = [
+  ...(region ? [{ label: region.data.name, href: url.region(region.id) }] : []),
+  ...(cities[0] && region ? [{ label: cities[0].data.name, href: url.city(region.id, cities[0].id) }] : []),
+  ...(venue ? [{ label: venue.data.name, href: url.venue(venue.id) }] : []),
+  { label: data.room ?? data.title },
+];
+
+const jsonLd =
+  data.reviewed && data.score != null
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'Review',
+        name: data.title,
+        datePublished: data.date.toISOString().slice(0, 10),
+        author: { '@type': 'Organization', name: 'Escape Room Reviews' },
+        reviewRating: { '@type': 'Rating', ratingValue: data.score, bestRating: 10, worstRating: 0 },
+        itemReviewed: {
+          '@type': 'EntertainmentBusiness',
+          name: venue ? `${data.room ?? data.title} at ${venue.data.name}` : (data.room ?? data.title),
+          ...(venue?.data.locations[0]
+            ? {
+                address: {
+                  '@type': 'PostalAddress',
+                  streetAddress: venue.data.locations[0].address,
+                  addressLocality: cities[0]?.data.name ?? venue.data.locations[0].city,
+                  postalCode: venue.data.locations[0].postalCode,
+                },
+              }
+            : {}),
+        },
+        reviewBody: data.summary,
+      }
+    : undefined;
+---
+
+<BaseLayout title={data.title} description={data.description} image={data.image} type="article" jsonLd={jsonLd} noindex={data.draft}>
+  <div class="container">
+    <header class="page-head">
+      <Breadcrumbs items={crumbs} />
+      <h1>{data.title}</h1>
+      <p class="review-meta">
+        <time datetime={data.date.toISOString()}>{formatDate(data.date)}</time>
+        {data.updated && <> · Updated <time datetime={data.updated.toISOString()}>{formatDate(data.updated)}</time></>}
+        {venue && <> · <a href={url.venue(venue.id)}>{venue.data.name}</a></>}
+        {
+          region &&
+            cities.map((c) => (
+              <>
+                {' · '}
+                <a href={url.city(region.id, c.id)}>{c.data.name}</a>
+              </>
+            ))
+        }
+      </p>
+      {
+        genres.length > 0 && (
+          <ul class="chips">
+            {genres.map((g) => (
+              <li>
+                <a class="chip" href={url.genre(g.id)}>
+                  {g.data.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+        )
+      }
+    </header>
+
+    <div class="article-layout">
+      <article class="article" data-pagefind-body>
+        {data.image && <img class="article__hero" src={data.image} alt={data.imageAlt ?? data.title} decoding="async" fetchpriority="high" />}
+        <ReviewScoreBox review={review} />
+        <div class="prose">
+          <Content />
+        </div>
+        {
+          data.tags.length > 0 && (
+            <ul class="chips review-tags" data-pagefind-ignore>
+              {data.tags.map((t) => (
+                <li>
+                  <a class="chip" href={url.tag(t)}>
+                    #{t}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          )
+        }
+      </article>
+
+      <aside class="sidebar">
+        {
+          venue && (
+            <section class="panel">
+              <h2>
+                <a href={url.venue(venue.id)}>{venue.data.name}</a>
+              </h2>
+              {venue.data.locations.map((loc) => (
+                <p class="venue-address">
+                  <strong>{loc.name}</strong>
+                  <br />
+                  {loc.address}
+                  {loc.phone && (
+                    <>
+                      <br />
+                      <a href={`tel:${loc.phone.replace(/[^\d+]/g, '')}`}>{loc.phone}</a>
+                    </>
+                  )}
+                </p>
+              ))}
+              {pins.length > 0 && <VenueMap pins={pins} height="220px" />}
+              {data.bookingUrl && (
+                <p>
+                  <a class="button" href={data.bookingUrl} target="_blank" rel="noopener sponsored">
+                    Book this room
+                  </a>
+                </p>
+              )}
+            </section>
+          )
+        }
+        {
+          moreAtVenue.length > 0 && venue && (
+            <section class="panel">
+              <h2>More at {venue.data.name}</h2>
+              <ul class="mini-list">
+                {moreAtVenue.map((r) => (
+                  <li>
+                    <a href={url.post(r.id)}>{r.data.room ?? r.data.title}</a>
+                    <span>{r.data.reviewed && r.data.score != null ? r.data.score.toFixed(1) : '–'}</span>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )
+        }
+      </aside>
+    </div>
+
+    {
+      moreInCity.length > 0 && (
+        <section class="section">
+          <div class="section__head">
+            <h2>Top rated in {cities[0]!.data.name}</h2>
+            {region && <a href={url.city(region.id, cities[0]!.id)}>See all</a>}
+          </div>
+          <ReviewList entries={moreInCity} tax={tax} />
+        </section>
+      )
+    }
+  </div>
+</BaseLayout>
+
+<style>
+  .review-meta {
+    color: var(--muted);
+    font-size: 0.95rem;
+    margin: 0 0 0.75rem;
+  }
+
+  .review-tags {
+    margin-top: 2rem;
+  }
+
+  .venue-address {
+    font-size: 0.92rem;
+    margin: 0 0 0.75rem;
+  }
+
+  .mini-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+    font-size: 0.92rem;
+  }
+
+  .mini-list li {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.75rem;
+  }
+
+  .mini-list span {
+    font-weight: 700;
+    color: var(--ink-soft);
+  }
+</style>

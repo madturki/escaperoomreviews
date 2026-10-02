@@ -1,0 +1,36 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+---
+
+<BaseLayout title="Search" description="Search all of our escape room reviews and articles." noindex>
+  <link slot="head" href="/pagefind/pagefind-ui.css" rel="stylesheet" />
+  <div class="container">
+    <header class="page-head">
+      <Breadcrumbs items={[{ label: 'Search' }]} />
+      <h1>Search reviews</h1>
+      <p>Search by room name, venue, city, or theme.</p>
+    </header>
+    <div class="article">
+      <div id="search"></div>
+      <noscript>Search needs JavaScript. You can also browse by <a href="/category/genre/">genre</a>, <a href="/category/location/">venue</a>, or <a href="/category/city/">location</a>.</noscript>
+    </div>
+  </div>
+  <script is:inline src="/pagefind/pagefind-ui.js"></script>
+  <script is:inline>
+    window.addEventListener('DOMContentLoaded', () => {
+      const ui = new PagefindUI({ element: '#search', showImages: true, showSubResults: false, resetStyles: false });
+      const q = new URLSearchParams(window.location.search).get('q');
+      if (q) ui.triggerSearch(q);
+    });
+  </script>
+</BaseLayout>
+
+<style is:global>
+  #search {
+    --pagefind-ui-primary: var(--accent-dark);
+    --pagefind-ui-text: var(--ink);
+    --pagefind-ui-border: var(--line);
+    --pagefind-ui-font: var(--font);
+  }
+</style>

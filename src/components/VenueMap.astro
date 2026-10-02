@@ -1,0 +1,217 @@
+---
+import 'leaflet/dist/leaflet.css';
+import type { MapPin } from '../lib/data';
+
+interface Props {
+  pins: MapPin[];
+  height?: string;
+  nearMe?: boolean;
+  zoom?: number;
+}
+
+const { pins, height = '420px', nearMe = false, zoom = 13 } = Astro.props;
+const sorted = [...pins].sort((a, b) => a.name.localeCompare(b.name));
+---
+
+{
+  pins.length > 0 && (
+    <div class="venue-map" data-zoom={zoom} data-pagefind-ignore>
+      {nearMe && (
+        <div class="venue-map__toolbar">
+          <button type="button" class="button" data-near-me>
+            Find escape rooms near me
+          </button>
+          <span class="venue-map__status" data-status role="status" />
+        </div>
+      )}
+      <div class="venue-map__canvas" style={`height:${height}`} data-canvas data-pins={JSON.stringify(pins)} />
+      {nearMe && (
+        <ol class="venue-map__list" data-list>
+          {sorted.map((p) => (
+            <li data-lat={p.lat} data-lng={p.lng}>
+              <a href={p.url}>{p.name}</a>
+              <span class="venue-map__address">{p.address}</span>
+              <span class="venue-map__distance" data-distance />
+            </li>
+          ))}
+        </ol>
+      )}
+    </div>
+  )
+}
+
+<script>
+  import L from 'leaflet';
+
+  interface Pin {
+    name: string;
+    venueName: string;
+    address: string;
+    lat: number;
+    lng: number;
+    phone?: string;
+    url: string;
+    reviewCount: number;
+    topScore: number | null;
+  }
+
+  const escapeHtml = (s: string) =>
+    s.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]!);
+
+  const icon = L.divIcon({
+    className: 'venue-pin',
+    html: '<span></span>',
+    iconSize: [26, 26],
+    iconAnchor: [13, 26],
+    popupAnchor: [0, -24],
+  });
+  const meIcon = L.divIcon({ className: 'venue-pin venue-pin--me', html: '<span></span>', iconSize: [20, 20], iconAnchor: [10, 10] });
+
+  function distanceKm(aLat: number, aLng: number, bLat: number, bLng: number) {
+    const rad = Math.PI / 180;
+    const dLat = (bLat - aLat) * rad;
+    const dLng = (bLng - aLng) * rad;
+    const h = Math.sin(dLat / 2) ** 2 + Math.cos(aLat * rad) * Math.cos(bLat * rad) * Math.sin(dLng / 2) ** 2;
+    return 12742 * Math.asin(Math.sqrt(h));
+  }
+
+  for (const root of document.querySelectorAll<HTMLElement>('.venue-map')) {
+    const canvas = root.querySelector<HTMLElement>('[data-canvas]')!;
+    const pins: Pin[] = JSON.parse(canvas.dataset.pins ?? '[]');
+    const map = L.map(canvas, { scrollWheelZoom: false });
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    }).addTo(map);
+
+    for (const p of pins) {
+      const reviews = p.reviewCount ? `${p.reviewCount} review${p.reviewCount === 1 ? '' : 's'}` : 'No reviews yet';
+      const best = p.topScore != null ? ` · best ${p.topScore.toFixed(1)}/10` : '';
+      L.marker([p.lat, p.lng], { icon, title: p.name })
+        .addTo(map)
+        .bindPopup(
+          `<strong><a href="${p.url}">${escapeHtml(p.name)}</a></strong><br>${escapeHtml(p.address)}` +
+            `${p.phone ? `<br>${escapeHtml(p.phone)}` : ''}<br><small>${reviews}${best}</small>`,
+        );
+    }
+
+    // Frame the main cluster so a couple of far-away venues (e.g. Spain) don't zoom the map out to the whole Atlantic.
+    const median = (values: number[]) => [...values].sort((a, b) => a - b)[Math.floor(values.length / 2)];
+    const centerLat = median(pins.map((p) => p.lat));
+    const centerLng = median(pins.map((p) => p.lng));
+    const cluster = pins.filter((p) => distanceKm(centerLat, centerLng, p.lat, p.lng) < 1500);
+    const framed = cluster.length ? cluster : pins;
+    const bounds = L.latLngBounds(framed.map((p) => [p.lat, p.lng] as [number, number]));
+    if (framed.length === 1) map.setView(bounds.getCenter(), Number(root.dataset.zoom));
+    else map.fitBounds(bounds, { padding: [30, 30] });
+
+    const button = root.querySelector<HTMLButtonElement>('[data-near-me]');
+    const status = root.querySelector<HTMLElement>('[data-status]');
+    const list = root.querySelector<HTMLOListElement>('[data-list]');
+    button?.addEventListener('click', () => {
+      if (!navigator.geolocation) {
+        status!.textContent = 'Your browser does not support location lookup.';
+        return;
+      }
+      status!.textContent = 'Finding your location…';
+      navigator.geolocation.getCurrentPosition(
+        ({ coords }) => {
+          const { latitude, longitude } = coords;
+          L.marker([latitude, longitude], { icon: meIcon, title: 'You are here' }).addTo(map);
+          const items = [...list!.querySelectorAll<HTMLLIElement>('li')].map((li) => {
+            const km = distanceKm(latitude, longitude, Number(li.dataset.lat), Number(li.dataset.lng));
+            li.querySelector<HTMLElement>('[data-distance]')!.textContent = km < 10 ? `${km.toFixed(1)} km` : `${Math.round(km)} km`;
+            return { li, km };
+          });
+          items.sort((a, b) => a.km - b.km).forEach(({ li }) => list!.appendChild(li));
+          const nearest = items.slice(0, 5).map(({ li }) => [Number(li.dataset.lat), Number(li.dataset.lng)] as [number, number]);
+          map.fitBounds(L.latLngBounds([[latitude, longitude], ...nearest]), { padding: [40, 40] });
+          status!.textContent = `Sorted by distance. Nearest: ${items[0]?.li.querySelector('a')?.textContent ?? ''} (${items[0]?.li.querySelector('[data-distance]')?.textContent})`;
+        },
+        () => {
+          status!.textContent = 'We could not get your location. Check your browser permissions and try again.';
+        },
+        { enableHighAccuracy: false, timeout: 10000, maximumAge: 600000 },
+      );
+    });
+  }
+</script>
+
+<style is:global>
+  .venue-map__canvas {
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    z-index: 0;
+  }
+
+  .venue-map__toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .venue-map__status {
+    color: var(--ink-soft);
+    font-size: 0.92rem;
+  }
+
+  .venue-map__list {
+    margin: 1.5rem 0 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 0.6rem;
+  }
+
+  .venue-map__list li {
+    background: var(--surface);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    padding: 0.7rem 0.9rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .venue-map__list a {
+    font-weight: 700;
+    color: var(--ink);
+    text-decoration: none;
+  }
+
+  .venue-map__address {
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+
+  .venue-map__distance {
+    position: absolute;
+    top: 0.7rem;
+    right: 0.9rem;
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: var(--accent-dark);
+  }
+
+  .venue-pin span {
+    display: block;
+    width: 26px;
+    height: 26px;
+    border-radius: 50% 50% 50% 0;
+    background: var(--accent);
+    border: 3px solid #fff;
+    transform: rotate(-45deg);
+    box-shadow: 0 2px 6px rgb(0 0 0 / 35%);
+  }
+
+  .venue-pin--me span {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #2f6fde;
+    transform: none;
+  }
+</style>

@@ -1,0 +1,158 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ReviewList from '../components/ReviewList.astro';
+import Gallery from '../components/Gallery.astro';
+import VenueMap from '../components/VenueMap.astro';
+import MailingList from '../components/MailingList.astro';
+import AdSlot from '../components/AdSlot.astro';
+import { SITE } from '../site.config';
+import { getReviews, getArticles, getTaxonomies, buildPins, sortByScore, url } from '../lib/data';
+
+const [reviews, articles, tax] = await Promise.all([getReviews(), getArticles(), getTaxonomies()]);
+const reviewed = reviews.filter((r) => r.data.reviewed);
+const latest = reviewed.slice(0, 6);
+const topRated = sortByScore(reviewed).slice(0, 6);
+const pins = buildPins(tax, reviews);
+const genres = [...tax.genres.values()].map((g) => ({ href: url.genre(g.id), image: g.data.image, label: g.data.name }));
+const regions = [...tax.regions.values()].map((region) => ({
+  region,
+  count: reviews.filter((r) => r.data.region === region.id && r.data.reviewed).length,
+}));
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: SITE.name,
+  url: SITE.url,
+  potentialAction: {
+    '@type': 'SearchAction',
+    target: `${SITE.url}/search/?q={search_term_string}`,
+    'query-input': 'required name=search_term_string',
+  },
+};
+---
+
+<BaseLayout title="The Best Escape Rooms in Ontario" description={SITE.description} ads jsonLd={jsonLd}>
+  <section class="hero">
+    <div class="container">
+      <p class="eyebrow">Escape Room Reviews</p>
+      <h1>Honest, room-by-room reviews of the best escape rooms</h1>
+      <p>
+        We're David and Danielle, a husband and wife team who have played nearly 150 escape rooms as a duo across Ontario, Quebec, Saskatchewan, New
+        York, and Spain. We score every room on theme, puzzles, environment, and the little extras.
+      </p>
+      <div class="hero__actions">
+        <a class="button" href="/top-50-escape-rooms-in-ontario/">Top 50 in Ontario</a>
+        <a class="button button--ghost" href="/map/">Find rooms near me</a>
+      </div>
+      <ul class="stats">
+        <li><strong>{reviewed.length}</strong><span>rooms reviewed</span></li>
+        <li><strong>{tax.venues.size}</strong><span>venues visited</span></li>
+        <li><strong>{tax.cities.size}</strong><span>cities</span></li>
+        <li><strong>72%</strong><span>escape rate as a duo</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="container">
+    <section class="section">
+      <div class="section__head">
+        <h2>Latest reviews</h2>
+        <a href="/blog/">All reviews</a>
+      </div>
+      <ReviewList entries={latest} tax={tax} />
+    </section>
+
+    <section class="section">
+      <div class="section__head">
+        <h2>Top rated escape rooms</h2>
+        <a href="/top-50-escape-rooms-in-ontario/">Top 50 Ontario</a>
+      </div>
+      <ReviewList entries={topRated} tax={tax} />
+    </section>
+
+    <section class="section">
+      <div class="section__head">
+        <h2>Browse escape rooms by genre</h2>
+        <a href="/category/genre/">All genres</a>
+      </div>
+      <Gallery items={genres} />
+    </section>
+
+    <section class="section">
+      <div class="section__head">
+        <h2>Escape room reviews near you</h2>
+        <a href="/map/">Open the full map</a>
+      </div>
+      <ul class="chips region-chips">
+        {
+          regions.map(({ region, count }) => (
+            <li>
+              <a class="chip" href={url.region(region.id)}>
+                {region.data.name} <span class="chip__count">{count}</span>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+      <VenueMap pins={pins} height="440px" />
+    </section>
+
+    <AdSlot />
+
+    <MailingList />
+
+    <section class="section about">
+      <div>
+        <h2>Who we are</h2>
+        <p>
+          We're a husband and wife team that loves escape rooms! Nothing has been better for improving our communication and problem-solving skills than
+          doing back-to-back escape rooms. As some of our hosts can attest, we don't always agree on the best way to solve a puzzle.
+        </p>
+        <p>
+          Our <strong>escape room reviews</strong> are based on our experience and preferences and, while we try to be as objective as possible, our
+          readers will have subjectively different opinions from us, and visit experiences can vary from time to time.
+        </p>
+      </div>
+      <div>
+        <h2>Are you an escape room owner?</h2>
+        <p>
+          When people read reviews on our site they click that "Book now" button. Having your rooms reviewed here helps people find your location and
+          your rooms.
+        </p>
+        <p>
+          <a class="button" href="/inquire/">Get your rooms reviewed</a>
+          <a class="button button--ghost" href="/professional-escape-room-analysis-in-ontario/">Professional room analysis</a>
+        </p>
+      </div>
+    </section>
+
+    {
+      articles.length > 0 && (
+        <section class="section">
+          <div class="section__head">
+            <h2>From the blog</h2>
+            <a href="/blog/">More articles</a>
+          </div>
+          <ReviewList entries={articles.slice(0, 3)} tax={tax} />
+        </section>
+      )
+    }
+  </div>
+</BaseLayout>
+
+<style>
+  .region-chips {
+    margin-bottom: 1rem;
+  }
+
+  .about {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+
+  .about .button {
+    margin: 0 0.5rem 0.5rem 0;
+  }
+</style>

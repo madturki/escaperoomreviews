@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import VenueMap from '../components/VenueMap.astro';
+import { getReviews, getTaxonomies, buildPins } from '../lib/data';
+
+const [reviews, tax] = await Promise.all([getReviews(), getTaxonomies()]);
+const pins = buildPins(tax, reviews);
+---
+
+<BaseLayout
+  title="Escape rooms near you"
+  description="Map of every escape room venue we've reviewed. Use your location to find the closest escape rooms and read our reviews before you book."
+>
+  <div class="container">
+    <header class="page-head">
+      <Breadcrumbs items={[{ label: 'Map' }]} />
+      <h1>Find escape rooms near you</h1>
+      <p>
+        {pins.length} venue locations we've visited. Tap a pin for the address and our reviews, or use your location to sort venues by distance.
+        Your location stays in your browser and is never sent to us.
+      </p>
+    </header>
+    <VenueMap pins={pins} height="min(70vh, 640px)" nearMe />
+  </div>
+</BaseLayout>

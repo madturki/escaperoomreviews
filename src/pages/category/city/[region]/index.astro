@@ -1,0 +1,55 @@
+---
+import TermPage from '../../../../layouts/TermPage.astro';
+import { getReviews, getArticles, getTaxonomies, buildPins, url } from '../../../../lib/data';
+
+export async function getStaticPaths() {
+  const [reviews, articles, tax] = await Promise.all([getReviews(), getArticles(), getTaxonomies()]);
+  return [...tax.regions.values()].map((region) => ({
+    params: { region: region.id },
+    props: {
+      region,
+      reviews: reviews.filter((r) => r.data.region === region.id),
+      articles: articles.filter((a) => a.data.region === region.id),
+      pins: buildPins(tax, reviews, { region: region.id }),
+      tax,
+    },
+  }));
+}
+
+const { region, reviews, articles, pins, tax } = Astro.props;
+const country = tax.countries.get(region.data.country);
+const cities = [...tax.cities.values()]
+  .filter((c) => c.data.region === region.id)
+  .map((city) => ({ city, count: reviews.filter((r) => r.data.cities.includes(city.id)).length }))
+  .filter(({ count }) => count > 0);
+const name = region.data.name;
+---
+
+<TermPage
+  title={`Best Escape Rooms in ${name}`}
+  eyebrow={country?.data.name}
+  description={`Our reviews and ratings of escape rooms in ${name}, sorted by score, with a map of every venue.`}
+  crumbs={[
+    { label: 'Locations', href: '/category/city/' },
+    ...(country ? [{ label: country.data.name, href: url.country(country.id) }] : []),
+    { label: name },
+  ]}
+  reviews={reviews}
+  articles={articles}
+  pins={pins}
+  tax={tax}
+>
+  {
+    cities.length > 0 && (
+      <ul class="chips">
+        {cities.map(({ city, count }) => (
+          <li>
+            <a class="chip" href={url.city(region.id, city.id)}>
+              {city.data.name} <span class="chip__count">{count}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    )
+  }
+</TermPage>

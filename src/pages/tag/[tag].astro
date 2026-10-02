@@ -1,0 +1,31 @@
+---
+import TermPage from '../../layouts/TermPage.astro';
+import { getReviews, getArticles, getTaxonomies, slugify } from '../../lib/data';
+
+export async function getStaticPaths() {
+  const [reviews, articles, tax] = await Promise.all([getReviews(), getArticles(), getTaxonomies()]);
+  const tags = new Map<string, string>();
+  for (const entry of [...reviews, ...articles]) {
+    for (const t of entry.data.tags) if (slugify(t)) tags.set(slugify(t), tags.get(slugify(t)) ?? t);
+  }
+  return [...tags].map(([slug, name]) => {
+    const has = (e: { data: { tags: string[] } }) => e.data.tags.some((t) => slugify(t) === slug);
+    return {
+      params: { tag: slug },
+      props: { name, reviews: reviews.filter(has), articles: articles.filter(has), tax },
+    };
+  });
+}
+
+const { name, reviews, articles, tax } = Astro.props;
+---
+
+<TermPage
+  title={`Escape rooms tagged “${name}”`}
+  eyebrow="Tag"
+  description={`Escape room reviews and articles tagged ${name}.`}
+  crumbs={[{ label: 'Blog', href: '/blog/' }, { label: `#${name}` }]}
+  reviews={reviews}
+  articles={articles}
+  tax={tax}
+/>

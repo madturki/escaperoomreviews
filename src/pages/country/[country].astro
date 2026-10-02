@@ -1,0 +1,45 @@
+---
+import TermPage from '../../layouts/TermPage.astro';
+import { getReviews, getTaxonomies, buildPins, filterReviews, url } from '../../lib/data';
+
+export async function getStaticPaths() {
+  const [reviews, tax] = await Promise.all([getReviews(), getTaxonomies()]);
+  return [...tax.countries.values()].map((country) => ({
+    params: { country: country.id },
+    props: {
+      country,
+      reviews: filterReviews(reviews, tax, { country: country.id }),
+      pins: buildPins(tax, reviews, { country: country.id }),
+      tax,
+    },
+  }));
+}
+
+const { country, reviews, pins, tax } = Astro.props;
+const regions = [...tax.regions.values()]
+  .filter((r) => r.data.country === country.id)
+  .map((region) => ({ region, count: reviews.filter((r) => r.data.region === region.id).length }));
+const name = country.data.name;
+---
+
+<TermPage
+  title={`Best Escape Rooms in ${name}`}
+  eyebrow="Country"
+  description={`Every escape room we've reviewed in ${name}, sorted by score.`}
+  crumbs={[{ label: 'Locations', href: '/category/city/' }, { label: name }]}
+  reviews={reviews}
+  pins={pins}
+  tax={tax}
+>
+  <ul class="chips">
+    {
+      regions.map(({ region, count }) => (
+        <li>
+          <a class="chip" href={url.region(region.id)}>
+            {region.data.name} <span class="chip__count">{count}</span>
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</TermPage>

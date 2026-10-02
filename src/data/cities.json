@@ -1,0 +1,117 @@
+[
+  {
+    "id": "aurora",
+    "name": "Aurora",
+    "region": "ontario"
+  },
+  {
+    "id": "barrie",
+    "name": "Barrie",
+    "region": "ontario"
+  },
+  {
+    "id": "buffalo",
+    "name": "Buffalo",
+    "region": "new-york"
+  },
+  {
+    "id": "burlington",
+    "name": "Burlington",
+    "region": "ontario"
+  },
+  {
+    "id": "caledonia",
+    "name": "Caledonia",
+    "region": "ontario"
+  },
+  {
+    "id": "cambridge",
+    "name": "Cambridge",
+    "region": "ontario"
+  },
+  {
+    "id": "guelph",
+    "name": "Guelph",
+    "region": "ontario"
+  },
+  {
+    "id": "hamilton",
+    "name": "Hamilton",
+    "region": "ontario"
+  },
+  {
+    "id": "kingston",
+    "name": "Kingston",
+    "region": "ontario"
+  },
+  {
+    "id": "kitchener",
+    "name": "Kitchener",
+    "region": "ontario"
+  },
+  {
+    "id": "london",
+    "name": "London",
+    "region": "ontario"
+  },
+  {
+    "id": "madrid",
+    "name": "Madrid",
+    "region": "spain"
+  },
+  {
+    "id": "markham",
+    "name": "Markham",
+    "region": "ontario"
+  },
+  {
+    "id": "milton",
+    "name": "Milton",
+    "region": "ontario"
+  },
+  {
+    "id": "mississauga",
+    "name": "Mississauga",
+    "region": "ontario"
+  },
+  {
+    "id": "niagara-falls",
+    "name": "Niagara Falls",
+    "region": "ontario"
+  },
+  {
+    "id": "ottawa",
+    "name": "Ottawa",
+    "region": "ontario"
+  },
+  {
+    "id": "peterborough",
+    "name": "Peterborough",
+    "region": "ontario"
+  },
+  {
+    "id": "picton",
+    "name": "Picton",
+    "region": "ontario"
+  },
+  {
+    "id": "quebec-city",
+    "name": "Quebec City",
+    "region": "quebec"
+  },
+  {
+    "id": "regina",
+    "name": "Regina",
+    "region": "saskatchewan"
+  },
+  {
+    "id": "st-catharines",
+    "name": "St. Catharines",
+    "region": "ontario"
+  },
+  {
+    "id": "toronto",
+    "name": "Toronto",
+    "region": "ontario"
+  }
+]

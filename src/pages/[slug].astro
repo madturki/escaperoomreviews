@@ -1,0 +1,29 @@
+---
+import { getCollection } from 'astro:content';
+import ReviewPage from '../layouts/ReviewPage.astro';
+import ArticlePage from '../layouts/ArticlePage.astro';
+import StaticPage from '../layouts/StaticPage.astro';
+import { getReviews, getArticles, getTaxonomies } from '../lib/data';
+
+export async function getStaticPaths() {
+  const [reviews, articles, pages, tax] = await Promise.all([
+    getReviews(),
+    getArticles(),
+    getCollection('pages', ({ data }) => import.meta.env.DEV || !data.draft),
+    getTaxonomies(),
+  ]);
+  const entries = [...reviews, ...articles, ...pages];
+  const seen = new Map<string, string>();
+  for (const e of entries) {
+    if (seen.has(e.id)) throw new Error(`URL collision: /${e.id}/ is used by both ${seen.get(e.id)} and ${e.collection}`);
+    seen.set(e.id, e.collection);
+  }
+  return entries.map((entry) => ({ params: { slug: entry.id }, props: { entry, reviews, tax } }));
+}
+
+const { entry, reviews, tax } = Astro.props;
+---
+
+{entry.collection === 'reviews' && <ReviewPage review={entry} reviews={reviews} tax={tax} />}
+{entry.collection === 'articles' && <ArticlePage article={entry} reviews={reviews} tax={tax} />}
+{entry.collection === 'pages' && <StaticPage page={entry} reviews={reviews} tax={tax} />}

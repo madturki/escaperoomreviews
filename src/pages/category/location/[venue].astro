@@ -1,0 +1,89 @@
+---
+import { render } from 'astro:content';
+import TermPage from '../../../layouts/TermPage.astro';
+import { getReviews, getTaxonomies, buildPins, url } from '../../../lib/data';
+
+export async function getStaticPaths() {
+  const [reviews, tax] = await Promise.all([getReviews(), getTaxonomies()]);
+  return [...tax.venues.values()].map((venue) => ({
+    params: { venue: venue.id },
+    props: { venue, reviews, tax },
+  }));
+}
+
+const { venue, reviews, tax } = Astro.props;
+const venueReviews = reviews.filter((r) => r.data.venue === venue.id);
+const pins = buildPins({ ...tax, venues: new Map([[venue.id, venue]]) }, reviews);
+const { Content } = await render(venue);
+const name = venue.data.name;
+const cityNames = [...new Set(venue.data.locations.map((l) => (l.city && tax.cities.get(l.city)?.data.name) ?? l.city).filter(Boolean))];
+const region = venue.data.locations[0]?.region ? tax.regions.get(venue.data.locations[0].region) : undefined;
+const where = cityNames.length ? ` in ${cityNames.join(', ')}` : '';
+---
+
+<TermPage
+  title={`${name} Escape Room Reviews`}
+  heading={`${name} escape room reviews`}
+  eyebrow="Venue"
+  description={`Room-by-room reviews and scores for every escape room we've played at ${name}${where}.`}
+  crumbs={[
+    { label: 'Venues', href: '/category/location/' },
+    ...(region ? [{ label: region.data.name, href: url.region(region.id) }] : []),
+    { label: name },
+  ]}
+  reviews={venueReviews}
+  pins={pins}
+  tax={tax}
+>
+  <section class="venue-info">
+    {venue.data.closed && <p class="venue-closed">This venue has closed. Reviews are kept for reference.</p>}
+    <div class="prose"><Content /></div>
+    {
+      venue.data.locations.length > 0 && (
+        <ul class="venue-locations">
+          {venue.data.locations.map((loc) => (
+            <li class="panel">
+              <strong>{loc.name}</strong>
+              <span>{loc.address}</span>
+              <span>{[(loc.city && tax.cities.get(loc.city)?.data.name) ?? loc.city, loc.postalCode].filter(Boolean).join(', ')}</span>
+              {loc.phone && <a href={`tel:${loc.phone.replace(/[^\d+]/g, '')}`}>{loc.phone}</a>}
+            </li>
+          ))}
+        </ul>
+      )
+    }
+    {
+      venue.data.website && (
+        <p>
+          <a class="button button--ghost" href={venue.data.website} target="_blank" rel="noopener">
+            Visit {name}
+          </a>
+        </p>
+      )
+    }
+  </section>
+</TermPage>
+
+<style>
+  .venue-locations {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 0.75rem;
+  }
+
+  .venue-locations li {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.92rem;
+  }
+
+  .venue-closed {
+    background: #fdecea;
+    color: #8a2a21;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+  }
+</style>
