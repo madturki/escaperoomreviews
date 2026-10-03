@@ -8,8 +8,8 @@ export const SITE = {
   defaultImage: '/og-default.png',
   mailchimp: {
     action:
-      'https://escaperoomreviews.us5.list-manage.com/subscribe/post?u=3cbf5b8352130aadcb483bf8a&id=e5c6d9cf24&f_id=00aa0ce6f0',
-    honeypot: 'b_3cbf5b8352130aadcb483bf8a_e5c6d9cf24',
+      'https://escaperoomreviews.us3.list-manage.com/subscribe/post?u=534d6a2cc6466a442fe954a33&id=0e4bbf910b&f_id=00b6c3e1f0',
+    honeypot: 'b_534d6a2cc6466a442fe954a33_0e4bbf910b',
   },
   adsense: {
     enabled: true,

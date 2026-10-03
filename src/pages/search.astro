@@ -4,7 +4,6 @@ import Breadcrumbs from '../components/Breadcrumbs.astro';
 ---
 
 <BaseLayout title="Search" description="Search all of our escape room reviews and articles." noindex>
-  <link slot="head" href="/pagefind/pagefind-ui.css" rel="stylesheet" />
   <div class="container">
     <header class="page-head">
       <Breadcrumbs items={[{ label: 'Search' }]} />
@@ -12,25 +11,165 @@ import Breadcrumbs from '../components/Breadcrumbs.astro';
       <p>Search by room name, venue, city, or theme.</p>
     </header>
     <div class="article">
-      <div id="search"></div>
+      <form id="search" class="search" role="search" onsubmit="return false">
+        <input id="search-term" class="search__input" type="search" placeholder="Search" aria-label="Search" autocomplete="off" />
+        <div class="search__filters">
+          <label>Province<select data-filter="Province"><option value="">All provinces</option></select></label>
+          <label>City<select data-filter="City"><option value="">All cities</option></select></label>
+          <label>Rating<select data-filter="Rating"><option value="">All ratings</option></select></label>
+          <label>Genre<select data-filter="Genre"><option value="">All genres</option></select></label>
+        </div>
+      </form>
+      <p id="search-status" class="search__status" aria-live="polite"></p>
+      <ol id="search-results" class="search__results"></ol>
+      <button id="search-more" class="button button--ghost" type="button" hidden>Load more results</button>
       <noscript>Search needs JavaScript. You can also browse by <a href="/category/genre/">genre</a>, <a href="/category/location/">venue</a>, or <a href="/category/city/">location</a>.</noscript>
     </div>
   </div>
-  <script is:inline src="/pagefind/pagefind-ui.js"></script>
-  <script is:inline>
-    window.addEventListener('DOMContentLoaded', () => {
-      const ui = new PagefindUI({ element: '#search', showImages: true, showSubResults: false, resetStyles: false });
-      const q = new URLSearchParams(window.location.search).get('q');
-      if (q) ui.triggerSearch(q);
-    });
+  <script is:inline type="module">
+    const RATING_ORDER = ['9 – 10', '8 – 8.9', '7 – 7.9', '6 – 6.9', 'Under 6', 'Not yet reviewed'];
+    const PAGE = 10;
+    const pagefind = await import('/pagefind/pagefind.js');
+    await pagefind.options({ excerptLength: 30 });
+
+    const term = document.getElementById('search-term');
+    const selects = [...document.querySelectorAll('[data-filter]')];
+    const status = document.getElementById('search-status');
+    const list = document.getElementById('search-results');
+    const more = document.getElementById('search-more');
+    let results = [];
+    let shown = 0;
+    let run = 0;
+
+    const available = await pagefind.filters();
+    for (const select of selects) {
+      const key = select.dataset.filter;
+      const values = Object.keys(available[key] ?? {});
+      values.sort(key === 'Rating' ? (a, b) => RATING_ORDER.indexOf(a) - RATING_ORDER.indexOf(b) : (a, b) => a.localeCompare(b));
+      for (const value of values) select.add(new Option(`${value} (${available[key][value]})`, value));
+    }
+
+    const params = new URLSearchParams(location.search);
+    term.value = params.get('q') ?? '';
+    for (const select of selects) select.value = params.get(select.dataset.filter.toLowerCase()) ?? '';
+
+    const escape = (s) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
+
+    async function showMore() {
+      const id = run;
+      const batch = await Promise.all(results.slice(shown, shown + PAGE).map((r) => r.data()));
+      if (id !== run) return;
+      for (const d of batch) {
+        const li = document.createElement('li');
+        li.className = 'search__result';
+        li.innerHTML =
+          (d.meta.image ? `<img src="${escape(d.meta.image)}" alt="" loading="lazy" />` : '<span></span>') +
+          `<div><h3><a href="${escape(d.url)}">${escape(d.meta.title ?? d.url)}</a></h3><p>${d.excerpt}</p></div>`;
+        list.append(li);
+      }
+      shown += batch.length;
+      more.hidden = shown >= results.length;
+    }
+
+    async function search() {
+      const id = ++run;
+      const filters = {};
+      const query = new URLSearchParams();
+      if (term.value.trim()) query.set('q', term.value.trim());
+      for (const select of selects) {
+        if (!select.value) continue;
+        filters[select.dataset.filter] = select.value;
+        query.set(select.dataset.filter.toLowerCase(), select.value);
+      }
+      history.replaceState(null, '', query.size ? `?${query}` : location.pathname);
+      list.innerHTML = '';
+      more.hidden = true;
+      if (!term.value.trim() && !Object.keys(filters).length) {
+        status.textContent = '';
+        return;
+      }
+      const res = await pagefind.debouncedSearch(term.value.trim() || null, { filters }, 250);
+      if (res === null || id !== run) return;
+      results = res.results;
+      shown = 0;
+      status.textContent = `${results.length} result${results.length === 1 ? '' : 's'}`;
+      await showMore();
+    }
+
+    term.addEventListener('input', search);
+    for (const select of selects) select.addEventListener('change', search);
+    more.addEventListener('click', showMore);
+    search();
   </script>
 </BaseLayout>
 
 <style is:global>
-  #search {
-    --pagefind-ui-primary: var(--accent-dark);
-    --pagefind-ui-text: var(--ink);
-    --pagefind-ui-border: var(--line);
-    --pagefind-ui-font: var(--font);
+  .search__input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    font: inherit;
+    font-size: 1.05rem;
+  }
+  .search__filters {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 0.75rem;
+    margin-top: 0.9rem;
+  }
+  .search__filters label {
+    display: grid;
+    gap: 0.3rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--ink-soft);
+  }
+  .search__filters select {
+    padding: 0.55rem 0.6rem;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    font: inherit;
+    font-weight: 400;
+    color: var(--ink);
+    background: var(--surface);
+  }
+  .search__status {
+    margin: 1.25rem 0 0.5rem;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  .search__results {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem;
+  }
+  .search__result {
+    display: grid;
+    grid-template-columns: 64px 1fr;
+    gap: 1rem;
+    padding: 1rem 0;
+    border-top: 1px solid var(--line);
+  }
+  .search__result img {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+  .search__result h3 {
+    margin: 0 0 0.3rem;
+    font-size: 1rem;
+  }
+  .search__result p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--ink-soft);
+  }
+  .search__result mark {
+    background: #fde68a;
+  }
+  #search-more[hidden] {
+    display: none;
   }
 </style>

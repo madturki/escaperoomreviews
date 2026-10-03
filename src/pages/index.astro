@@ -10,6 +10,9 @@ import { getReviews, getArticles, getTaxonomies, buildPins, sortByScore, url } f
 
 const [reviews, articles, tax] = await Promise.all([getReviews(), getArticles(), getTaxonomies()]);
 const reviewed = reviews.filter((r) => r.data.reviewed);
+const verified = reviews.filter((r) => r.data.tags.some((t) => t.toLowerCase() === 'verified'));
+const verifiedVenues = new Set(verified.flatMap((r) => (r.data.venue ? [r.data.venue] : [])));
+const verifiedCities = new Set(verified.flatMap((r) => r.data.cities));
 const latest = reviewed.slice(0, 8);
 const topRated = sortByScore(reviewed).slice(0, 8);
 const pins = buildPins(tax, reviews);
@@ -47,8 +50,8 @@ const jsonLd = {
       </div>
       <ul class="stats">
         <li><strong>{reviewed.length}</strong><span>rooms reviewed</span></li>
-        <li><strong>{tax.venues.size}</strong><span>venues visited</span></li>
-        <li><strong>{tax.cities.size}</strong><span>cities</span></li>
+        <li><strong>{verifiedVenues.size}</strong><span>venues visited</span></li>
+        <li><strong>{verifiedCities.size}</strong><span>cities</span></li>
         <li><strong>72%</strong><span>escape rate as a duo</span></li>
       </ul>
     </div>
@@ -57,18 +60,18 @@ const jsonLd = {
   <div class="container">
     <section class="section">
       <div class="section__head">
-        <h2>Latest reviews</h2>
-        <a href="/blog/">All reviews</a>
-      </div>
-      <ReviewList entries={latest} tax={tax} />
-    </section>
-
-    <section class="section">
-      <div class="section__head">
         <h2>Top rated escape rooms</h2>
         <a href="/top-50-escape-rooms-in-ontario/">Top 50 Ontario</a>
       </div>
       <ReviewList entries={topRated} tax={tax} />
+    </section>
+
+    <section class="section">
+      <div class="section__head">
+        <h2>Latest reviews</h2>
+        <a href="/blog/">All reviews</a>
+      </div>
+      <ReviewList entries={latest} tax={tax} />
     </section>
 
     <section class="section">

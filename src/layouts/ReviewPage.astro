@@ -30,6 +30,19 @@ const moreInCity = cities[0]
   ? sortByScore(reviews.filter((r) => r.data.cities.includes(cities[0]!.id) && r.data.venue !== data.venue && r.data.reviewed)).slice(0, 4)
   : [];
 
+const rating =
+  !data.reviewed || data.score == null
+    ? 'Not yet reviewed'
+    : data.score >= 9
+      ? '9 – 10'
+      : data.score >= 8
+        ? '8 – 8.9'
+        : data.score >= 7
+          ? '7 – 7.9'
+          : data.score >= 6
+            ? '6 – 6.9'
+            : 'Under 6';
+
 const crumbs = [
   ...(region ? [{ label: region.data.name, href: url.region(region.id) }] : []),
   ...(cities[0] && region ? [{ label: cities[0].data.name, href: url.city(region.id, cities[0].id) }] : []),
@@ -101,6 +114,12 @@ const jsonLd =
       <article class="article" data-pagefind-body>
         {data.image && <img class="article__hero" src={data.image} alt={data.imageAlt ?? data.title} decoding="async" fetchpriority="high" />}
         <ReviewScoreBox review={review} />
+        <div hidden>
+          {region && <span data-pagefind-filter={`Province:${region.data.name}`} />}
+          {cities.map((c) => <span data-pagefind-filter={`City:${c.data.name}`} />)}
+          <span data-pagefind-filter={`Rating:${rating}`} />
+          {genres.map((g) => <span data-pagefind-filter={`Genre:${g.data.name}`} />)}
+        </div>
         <div class="prose">
           <Content />
         </div>

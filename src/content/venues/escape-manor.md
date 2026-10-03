@@ -23,8 +23,8 @@ locations:
     region: ontario
     postalCode: M5V 1K1
     country: canada
-    lat: 43.531525
-    lng: -79.827679
+    lat: 43.64568
+    lng: -79.393344
 ---
 
 
