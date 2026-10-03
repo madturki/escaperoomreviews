@@ -3,7 +3,7 @@ import { render } from 'astro:content';
 import BaseLayout from './BaseLayout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import ReviewList from '../components/ReviewList.astro';
-import { url, formatDate, type Article, type Review, type Taxonomies } from '../lib/data';
+import { url, type Article, type Review, type Taxonomies } from '../lib/data';
 
 interface Props {
   article: Article;
@@ -22,10 +22,6 @@ const latest = reviews.filter((r) => r.data.reviewed).slice(0, 4);
     <header class="page-head">
       <Breadcrumbs items={[{ label: 'Blog', href: '/blog/' }, { label: data.title }]} />
       <h1>{data.title}</h1>
-      <p class="article-meta">
-        <time datetime={data.date.toISOString()}>{formatDate(data.date)}</time>
-        {data.updated && <> · Updated <time datetime={data.updated.toISOString()}>{formatDate(data.updated)}</time></>}
-      </p>
     </header>
     <article class="article" data-pagefind-body>
       {data.image && <img class="article__hero" src={data.image} alt={data.imageAlt ?? data.title} decoding="async" fetchpriority="high" />}
@@ -55,10 +51,3 @@ const latest = reviews.filter((r) => r.data.reviewed).slice(0, 4);
     </section>
   </div>
 </BaseLayout>
-
-<style>
-  .article-meta {
-    color: var(--muted);
-    margin: 0;
-  }
-</style>

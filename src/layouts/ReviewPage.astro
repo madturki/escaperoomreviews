@@ -5,7 +5,7 @@ import Breadcrumbs from '../components/Breadcrumbs.astro';
 import ReviewScoreBox from '../components/ReviewScoreBox.astro';
 import ReviewList from '../components/ReviewList.astro';
 import VenueMap from '../components/VenueMap.astro';
-import { url, formatDate, buildPins, sortByScore, type Review, type Taxonomies } from '../lib/data';
+import { url, buildPins, sortByScore, type Review, type Taxonomies } from '../lib/data';
 
 interface Props {
   review: Review;
@@ -70,14 +70,12 @@ const jsonLd =
       <Breadcrumbs items={crumbs} />
       <h1>{data.title}</h1>
       <p class="review-meta">
-        <time datetime={data.date.toISOString()}>{formatDate(data.date)}</time>
-        {data.updated && <> · Updated <time datetime={data.updated.toISOString()}>{formatDate(data.updated)}</time></>}
-        {venue && <> · <a href={url.venue(venue.id)}>{venue.data.name}</a></>}
+        {venue && <a href={url.venue(venue.id)}>{venue.data.name}</a>}
         {
           region &&
-            cities.map((c) => (
+            cities.map((c, i) => (
               <>
-                {' · '}
+                {(venue || i > 0) && ' · '}
                 <a href={url.city(region.id, c.id)}>{c.data.name}</a>
               </>
             ))

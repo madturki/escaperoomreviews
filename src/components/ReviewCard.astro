@@ -1,6 +1,6 @@
 ---
 import ScoreBadge from './ScoreBadge.astro';
-import { url, formatDate, type Review, type Article, type Taxonomies } from '../lib/data';
+import { url, type Review, type Article, type Taxonomies } from '../lib/data';
 
 interface Props {
   entry: Review | Article;
@@ -13,7 +13,7 @@ const data = entry.data;
 const review = isReview ? (entry as Review).data : undefined;
 const venueName = review?.venue ? tax.venues.get(review.venue)?.data.name : undefined;
 const cityName = review?.cities[0] ? tax.cities.get(review.cities[0])?.data.name : undefined;
-const meta = isReview ? [venueName, cityName].filter(Boolean).join(' · ') : formatDate(data.date);
+const meta = isReview ? [venueName, cityName].filter(Boolean).join(' · ') : undefined;
 const closed = !!review && (review.tags.some((t) => t.toLowerCase() === 'closed') || !!(review.venue && tax.venues.get(review.venue)?.data.closed));
 ---
 
