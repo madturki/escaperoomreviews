@@ -14,11 +14,13 @@ const review = isReview ? (entry as Review).data : undefined;
 const venueName = review?.venue ? tax.venues.get(review.venue)?.data.name : undefined;
 const cityName = review?.cities[0] ? tax.cities.get(review.cities[0])?.data.name : undefined;
 const meta = isReview ? [venueName, cityName].filter(Boolean).join(' · ') : formatDate(data.date);
+const closed = !!review && (review.tags.some((t) => t.toLowerCase() === 'closed') || !!(review.venue && tax.venues.get(review.venue)?.data.closed));
 ---
 
 <article class="card" data-pagefind-ignore>
   <div class="card__media">
     {data.image ? <img src={data.image} alt={data.imageAlt ?? ''} loading="lazy" decoding="async" /> : <div class="card__placeholder" />}
+    {closed && <img class="card__closed" src="/images/closed.png" alt="Closed" loading="lazy" decoding="async" />}
   </div>
   {isReview && <ScoreBadge score={review!.score} reviewed={review!.reviewed} class="card__score" />}
   <div class="card__body">
@@ -32,5 +34,13 @@ const meta = isReview ? [venueName, cityName].filter(Boolean).join(' · ') : for
     width: 100%;
     height: 100%;
     background: linear-gradient(135deg, #2d4256, #3b4f45);
+  }
+  .card__media {
+    position: relative;
+  }
+  .card__closed {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
   }
 </style>
