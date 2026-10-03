@@ -21,7 +21,8 @@ const venue = data.venue ? tax.venues.get(data.venue) : undefined;
 const region = data.region ? tax.regions.get(data.region) : undefined;
 const cities = data.cities.map((id) => tax.cities.get(id)).filter((c) => c !== undefined);
 const genres = data.genres.map((id) => tax.genres.get(id)).filter((g) => g !== undefined);
-const pins = venue ? buildPins({ ...tax, venues: new Map([[venue.id, venue]]) }, reviews) : [];
+const locations = venue ? venue.data.locations.filter((loc) => loc.city && data.cities.includes(loc.city)) : [];
+const pins = venue ? buildPins({ ...tax, venues: new Map([[venue.id, { ...venue, data: { ...venue.data, locations } }]]) }, reviews) : [];
 
 const moreAtVenue = venue ? sortByScore(reviews.filter((r) => r.data.venue === venue.id && r.id !== review.id)).slice(0, 6) : [];
 const moreInCity = cities[0]
@@ -47,13 +48,13 @@ const jsonLd =
         itemReviewed: {
           '@type': 'EntertainmentBusiness',
           name: venue ? `${data.room ?? data.title} at ${venue.data.name}` : (data.room ?? data.title),
-          ...(venue?.data.locations[0]
+          ...(locations[0]
             ? {
                 address: {
                   '@type': 'PostalAddress',
-                  streetAddress: venue.data.locations[0].address,
-                  addressLocality: cities[0]?.data.name ?? venue.data.locations[0].city,
-                  postalCode: venue.data.locations[0].postalCode,
+                  streetAddress: locations[0].address,
+                  addressLocality: cities[0]?.data.name ?? locations[0].city,
+                  postalCode: locations[0].postalCode,
                 },
               }
             : {}),
@@ -126,7 +127,7 @@ const jsonLd =
               <h2>
                 <a href={url.venue(venue.id)}>{venue.data.name}</a>
               </h2>
-              {venue.data.locations.map((loc) => (
+              {locations.map((loc) => (
                 <p class="venue-address">
                   <strong>{loc.name}</strong>
                   <br />
