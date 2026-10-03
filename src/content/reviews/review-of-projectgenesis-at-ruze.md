@@ -25,6 +25,8 @@ summary: '"As top agents of T.Y.M.E. Corp, your mission is to go back in time to
 bookingUrl: https://www.ruzeescaperooms.com/bookings
 image: /images/2021/12/project-genesis-ruze-escape-room.png
 description: '"As top agents of T.Y.M.E. Corp, your mission is to go back in time to follow Mr. E''s tracks, successfully recover the items, and return them all where they…'
+tags:
+  - Verified
 ---
 
 Ruze is a clever space tucked away in the basement of a building on Brant St. The foyer is pretty small and very light on the decor BUT don't let this turn you off or take away from your upcoming experiences. These puzzle masters know how to put together a good challenge.

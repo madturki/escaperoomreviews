@@ -25,6 +25,8 @@ summary: '"You’re being held hostage by the evil pirate Blackbeard. He has gon
 bookingUrl: https://confundrumescaperooms.com/book-virtual/
 image: /images/2020/11/Screen-Shot-2020-11-07-at-11.05.05-AM.jpg
 description: '"You’re being held hostage by the evil pirate Blackbeard. He has gone ashore to pillage and plunder leaving you to ponder a terrifying end. You have 60 minutes…'
+tags:
+  - Verified
 ---
 
 Confundrum is rated as the best escape room in Burlington on some sites.  While we have done all of the rooms there, we need to revisit some of them as it's been a while.  Blackbeard's Brig is a classic, typical western-themed room.

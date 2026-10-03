@@ -24,6 +24,8 @@ criteria:
 bookingUrl: https://bookeo.com/lookingglass?type=41551XU343L16388DBE6F8
 image: /images/2022/10/shutterstock_1410543194.jpg
 description: Looking Glass Adventures is rated very well on Google which is probably what lead you to search for specific room reviews! We decided to do all of their rooms…
+tags:
+  - Verified
 ---
 
 Looking Glass Adventures is rated very well on Google which is probably what lead you to search for specific room reviews! We decided to do all of their rooms in one night so we can tell you which room is your best option. The staff here were great - friendly, enthusiastic, and knowledgable of the puzzles, stories, and location. There are snacks and drinks available as well as a wide range of games available for purchase.

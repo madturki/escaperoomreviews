@@ -25,6 +25,8 @@ summary: The land of Elmir is in danger. You are a detachment of knights who mus
 bookingUrl: https://jigsawescape.com/ottawa/booking/
 image: /images/2021/10/the-castle-lg-e1726512174476.jpg
 description: The land of Elmir is in danger. You are a detachment of knights who must find a way to defeat the darkness plaguing your land...
+tags:
+  - Verified
 ---
 
 One of our highest-rated rooms ([The Pirates' Code](/review-of-the-pirates-code-at-jigsaw/)) is at [Jigsaw Escape Rooms](/category/location/jigsaw/) at Byward market. The level of detail that Jigsaw puts into their rooms is incredible. We've only been to a few places that put so much effort into their builds.

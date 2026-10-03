@@ -26,6 +26,8 @@ bookingUrl: https://www.missionpossibleescaperooms.com/bookings-milton/
 image: /images/2021/08/Resized_2-600x800-1-e1630892811426.jpg
 imageAlt: Wizarding World
 description: “You and your friends have unknowingly found yourself in the midst of a magical adventure. You been given the opportunity to prove yourself and become a part…
+tags:
+  - Verified
 ---
 
 We’ve enjoyed the Mission Possible escape rooms so far.  The Wizarding World is in their Milton location inside of Champs sports bar and so there are lots of things to do, eat, or drink at the same location, although not technically part of Mission Possible.

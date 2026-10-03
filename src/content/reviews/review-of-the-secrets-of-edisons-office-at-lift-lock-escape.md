@@ -25,6 +25,8 @@ summary: “Can you find Edison’s secret in one hour?”
 bookingUrl: https://www.liftlockescape.com/book-online
 image: /images/2021/10/edisons-secrets.jpg
 description: “Can you find Edison’s secret in one hour?”
+tags:
+  - Verified
 ---
 
 This room was _really_ cool and one of our first favorites.  We experienced some of the most unique locks and puzzles in this room that required teamwork to solve physical and mental puzzles.  Now, more than 100 rooms later, we'd love to revisit this experience to see if it's stood the test of time.

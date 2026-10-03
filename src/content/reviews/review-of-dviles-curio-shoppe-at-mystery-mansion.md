@@ -11,6 +11,7 @@ genres:
   - creepy
 tags:
   - nyctophobia
+  - Verified
 format: room
 reviewed: true
 score: 7.5

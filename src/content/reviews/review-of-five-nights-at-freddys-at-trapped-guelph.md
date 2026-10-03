@@ -15,6 +15,8 @@ tags:
   - Trapped
   - Video Games
   - Movies
+  - closed
+  - Verified
 format: room
 reviewed: true
 score: 7.3

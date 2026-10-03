@@ -25,6 +25,8 @@ summary: The Syndicate is back and this time the threat is real. Can your team o
 bookingUrl: https://www.escapemanor.com/hamilton/booking?utm_source=escaperoomreviews.ca
 image: /images/2020/11/5A2BA962-7DD9-467C-B13B-27AED226C232.jpeg
 description: The Syndicate is back and this time the threat is real. Can your team of fellow recruits rise to the occasion or will your first day be your last? Solve your…
+tags:
+  - Verified
 ---
 
 I can’t help but start Escape Manor reviews by praising their staff.  They’re always so friendly and are a key part of setting the atmosphere. 

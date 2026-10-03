@@ -11,6 +11,7 @@ genres:
   - historic
 tags:
   - Ontario
+  - Verified
 format: room
 reviewed: true
 score: 8

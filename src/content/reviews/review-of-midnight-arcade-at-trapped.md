@@ -15,6 +15,7 @@ tags:
   - Toronto
   - Trapped
   - Arcade
+  - Verified
 format: room
 reviewed: true
 score: 8

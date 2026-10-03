@@ -10,6 +10,7 @@ cities:
 tags:
   - tombs
   - egpyt
+  - Verified
 format: room
 reviewed: true
 score: 8.3

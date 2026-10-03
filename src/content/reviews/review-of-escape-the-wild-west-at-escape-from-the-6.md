@@ -26,6 +26,8 @@ bookingUrl: https://escapefromthe6.com/reservations/
 image: /images/2021/08/Screen-Shot-2020-11-06-at-8.54.12-PM-e1630892716285.jpg
 imageAlt: Escape The Wild West
 description: “You are North America’s most wanted outlaws that have finally been caught by the sheriff. He is keeping you in the sheriff’s office holding cell overnight…
+tags:
+  - Verified
 ---
 
 This is a classic (dare I say typical?) Western-themed escape room.  This was actually the first escape room I ever completed so I can credit it with instilling a love for escape to this room and location. More than 100 rooms later, I was able to peak back into this room and see that it had been updated and adapted based on players' experiences. It still had many of my favorite elements still here.

@@ -14,6 +14,7 @@ tags:
   - Cartoon
   - TV Shows
   - Ontario
+  - Verified
 format: room
 reviewed: true
 score: 7.8

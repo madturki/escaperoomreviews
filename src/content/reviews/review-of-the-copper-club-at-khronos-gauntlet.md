@@ -11,6 +11,7 @@ genres:
   - prohibition
 tags:
   - closed
+  - Verified
 format: room
 reviewed: true
 score: 7.3

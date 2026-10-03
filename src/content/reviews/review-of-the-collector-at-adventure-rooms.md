@@ -26,6 +26,8 @@ bookingUrl: https://adventureroomscanada.checkfront.com/reserve/?inline=&header=
 image: /images/2021/08/L19-1-e1630892880421.jpeg
 imageAlt: The Collector
 description: “He’s got quite the collection and it looks like you were caught in his place. Uh oh. Can you make it through his exhibits to freedom before his return?”
+tags:
+  - Verified
 ---
 
 I have to say that Adventure Rooms packs value into their rooms.  They’re very reasonably priced for the number of items in the room and the area you have to explore.  We’ve certainly received much less for more money in the past at other rooms.

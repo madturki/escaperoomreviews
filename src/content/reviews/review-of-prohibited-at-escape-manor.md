@@ -14,6 +14,7 @@ tags:
   - Bar
   - Musical
   - Ontario
+  - Verified
 format: room
 reviewed: true
 score: 8.3

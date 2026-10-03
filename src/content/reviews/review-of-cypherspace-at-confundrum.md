@@ -13,6 +13,7 @@ tags:
   - confundrum
   - space
   - Ontario
+  - Verified
 format: room
 reviewed: true
 score: 6.4

@@ -25,6 +25,8 @@ summary: "We have received some detrimental timeline-altering information. Recen
 bookingUrl: https://www.ruzeescaperooms.com/bookings
 image: /images/2021/12/project-home-ruze-escape-room.png-e1726512256726.png
 description: We have received some detrimental timeline-altering information. Recently, we detected not just one, but three occurrences of "timeline-tampering" making this…
+tags:
+  - Verified
 ---
 
 Ruze is a clever space tucked away in the basement of a building on Brant St. The foyer is pretty small and very light on the decor BUT don't let this turn you off or take away from your upcoming experiences. These puzzle masters know how to put together a good challenge.

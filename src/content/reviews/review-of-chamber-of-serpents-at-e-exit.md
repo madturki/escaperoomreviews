@@ -15,6 +15,7 @@ tags:
   - Books
   - Movies
   - Magic
+  - Verified
 format: room
 reviewed: true
 score: 8

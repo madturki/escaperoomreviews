@@ -25,6 +25,8 @@ summary: "\"We are glad to have investigators of your skill here to help us figu
 bookingUrl: https://wwwescaperoombarrie.resova.us/#
 image: /images/2022/02/thumb_1644183895.jpg
 description: '"We are glad to have investigators of your skill here to help us figure out what’s going on. Our patients have been disappearing, never to be heard from again.…'
+tags:
+  - Verified
 ---
 
 With such an incredible rating on Google we just had to check this place out. We were well received and the staff are friendly and helpful.

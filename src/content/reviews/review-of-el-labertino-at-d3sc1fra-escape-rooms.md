@@ -12,6 +12,7 @@ genres:
 tags:
   - madrid
   - spain
+  - Verified
 format: room
 reviewed: true
 score: 8

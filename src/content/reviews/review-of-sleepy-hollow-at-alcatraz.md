@@ -26,6 +26,8 @@ bookingUrl: https://alcatrazescaperooms.com/book-now/
 image: /images/2020/11/Screen-Shot-2020-11-06-at-12.05.26-AM-e1630900103669.jpg
 imageAlt: Sleepy Hollow
 description: “Haunted by spirits and mysterious deaths, the little town of Sleepy Hollow is in desperate need of a hero. This is the end of the century and the legend says…
+tags:
+  - Verified
 ---
 
 Sleepy Hollow is at the same location as one of the hardest rooms we’ve done but still enjoyed.  However, this room is a big departure from the immersive experience of [The Secret Society](/review-of-the-secret-society-at-alcatraz/).

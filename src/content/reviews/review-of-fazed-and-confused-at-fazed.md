@@ -26,6 +26,8 @@ summary: “It’s 1976! You and your friends have snuck into a high school Seni
 bookingUrl: https://fazedescape.resova.us/
 image: /images/2020/11/247E7A0C-A12F-40B7-BAE2-A8C1D6C111CD.jpg
 description: “It’s 1976! You and your friends have snuck into a high school Seniors house to save all the juniors from tomorrows huge prank at school. Can you get out…
+tags:
+  - Verified
 ---
 
 This 70’s theme room had an interesting storyline and is in the same location as one of our favourite rooms, The Morgue.  However, this room turned out to be our least favourite room we’ve ever done.

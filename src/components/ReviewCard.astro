@@ -1,5 +1,6 @@
 ---
 import ScoreBadge from './ScoreBadge.astro';
+import VerifiedKey from './VerifiedKey.astro';
 import { url, type Review, type Article, type Taxonomies } from '../lib/data';
 
 interface Props {
@@ -24,7 +25,7 @@ const closed = !!review && (review.tags.some((t) => t.toLowerCase() === 'closed'
   </div>
   {isReview && <ScoreBadge score={review!.score} reviewed={review!.reviewed} class="card__score" />}
   <div class="card__body">
-    <h3 class="card__title"><a href={url.post(entry.id)}>{data.title}</a></h3>
+    <h3 class="card__title">{review && <VerifiedKey tags={review.tags} />}<a href={url.post(entry.id)}>{data.title}</a></h3>
     {meta && <p class="card__meta">{meta}</p>}
   </div>
 </article>

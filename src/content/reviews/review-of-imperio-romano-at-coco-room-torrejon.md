@@ -14,6 +14,7 @@ tags:
   - roman
   - spain
   - gladiator
+  - Verified
 format: room
 reviewed: true
 score: 8.8

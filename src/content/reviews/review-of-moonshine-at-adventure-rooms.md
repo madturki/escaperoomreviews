@@ -26,6 +26,8 @@ bookingUrl: https://adventureroomscanada.checkfront.com/reserve/?inline=&header=
 image: /images/2020/11/0558C5A4-0149-48E2-BF27-01E5EC1A0BD0-scaled-e1630893821362.jpg
 imageAlt: Moonshine
 description: “You’ve heard there may be a Speakeasy in the area and decide to check it out. Be careful,they are prone to police raids, so you better be quick!”
+tags:
+  - Verified
 ---
 
 I have to say that I’ve found a new favourite room.  I was a little skeptical at the start because there isn’t a door on the room and because of that you feel like maybe you’re not really in the room yet.  However, Adventure Rooms, so far, has the best ambient audio we’ve heard which changes as you move through different areas.  The lighting as well fits each part of the room perfectly.

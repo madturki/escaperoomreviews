@@ -13,6 +13,7 @@ tags:
   - Prison
   - nyctophobia
   - Quebec
+  - Verified
 format: room
 reviewed: true
 score: 7.3

@@ -26,6 +26,8 @@ summary: “An unexpected call. A distant relative has passed and you just inher
 bookingUrl: https://www.escapemanor.com/hamilton/booking?utm_source=escaperoomreviews.ca
 image: /images/2021/10/the-final-viewing.jpg
 description: “An unexpected call. A distant relative has passed and you just inherited a home. In the wake of this curious news, you decide to visit the property with a few…
+tags:
+  - Verified
 ---
 
 **Word on the street is that this room may be going away soon! I would just go ahead and book it now!**

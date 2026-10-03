@@ -15,6 +15,7 @@ tags:
   - ET
   - Ontario
   - Toronto
+  - Verified
 format: room
 reviewed: true
 score: 6

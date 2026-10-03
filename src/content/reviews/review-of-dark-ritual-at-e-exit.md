@@ -25,6 +25,8 @@ summary: "Word around the block is that strange things have been happening. Disa
 bookingUrl: https://www-14e.bookeo.com/bookeo/b_yorkville_start.html?ctlsrc2=c%2Bsvmcd54vBnsas61O9LfMsVMUk8SAXzhFnmYbjdawM%3D&src=02i
 image: /images/2021/09/Dark-Ritual-Poster-social.jpg
 description: Word around the block is that strange things have been happening. Disappearing pets, reports of strange animals, and now, your classmate who’s been acting…
+tags:
+  - Verified
 ---
 
 E-Exit has a very nice location in Yorkville in Toronto.  The location is great - close to restaurants and transit or paid parking.  It looks really nice inside and the staff at the counter were friendly and helpful.

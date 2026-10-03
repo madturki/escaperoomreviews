@@ -6,11 +6,12 @@ updated: '2024-09-16'
 venue: improbable-escapes
 region: ontario
 cities:
-  - kitchener
+  - kingston
 genres:
   - magic
 tags:
   - Ontario
+  - Verified
 format: room
 reviewed: true
 score: 9.3

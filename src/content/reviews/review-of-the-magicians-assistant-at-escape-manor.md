@@ -25,6 +25,8 @@ summary: Shrouded in mystery, his assistant has vanished. All fingers are pointe
 bookingUrl: https://www.escapemanor.com/hamilton/booking?utm_source=escaperoomreviews.ca
 image: /images/2021/10/The-Magicians-Assisstant-1.jpg
 description: Shrouded in mystery, his assistant has vanished. All fingers are pointed at the magician. He is standing trial and time is running out. Can you uncover the…
+tags:
+  - Verified
 ---
 
 This is one of now four escape rooms at the Hamilton Escape Manor.  Once again the room starts off with an excellent presentation of the story by a team member who then shows you into the room.  The staff member did a great job at not giving us hints without us asking and the hints are delivered remotely as to not break the experience.

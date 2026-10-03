@@ -14,6 +14,7 @@ tags:
   - Godfather
   - Toronto
   - Ontario
+  - Verified
 format: room
 reviewed: true
 score: 6.3

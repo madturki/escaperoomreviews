@@ -14,6 +14,7 @@ tags:
   - guelph
   - Trapped
   - Sphinx
+  - Verified
 format: room
 reviewed: true
 score: 7.3

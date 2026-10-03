@@ -12,6 +12,7 @@ genres:
   - magic
 tags:
   - nyctophobia
+  - Verified
 format: room
 reviewed: true
 score: 9

@@ -25,6 +25,8 @@ summary: '"As you and friends are on a road trip and traveling through an unfami
 bookingUrl: https://www.missionpossibleescaperooms.com/bookings/
 image: /images/2020/11/Escape-From-The-Bronx-Burlington-1-e1630902415441.jpg
 description: '"As you and friends are on a road trip and traveling through an unfamiliar neighbourhood the most unfortunate thing happens; your car breaks down. You’re in a…'
+tags:
+  - Verified
 ---
 
 This is one of the few we've been to where a single large room actually works well.  The immersion could be slightly improved through a better introduction and some details added to the room itself, but it does have some nice touches like the rolling garage door to the outside and a cute little yellow car in the room.  This is in stark contrast to our least favourite room in which you used the car key in a keyhole on the wall.  It does need some ambient sound - the sounds of traffic or the city in the background would wrap this room up nicely.

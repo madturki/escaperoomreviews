@@ -15,6 +15,7 @@ tags:
   - laundry
   - madrid
   - spain
+  - Verified
 format: room
 reviewed: true
 score: 9

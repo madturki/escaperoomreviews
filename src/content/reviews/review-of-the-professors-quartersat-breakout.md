@@ -25,6 +25,8 @@ bookingUrl: https://www-1558h.bookeo.com/bookeo/b_breakoutescapes_start.html?ctl
 image: /images/2021/10/shutterstock_1801282.jpg
 description: This week, Professor Pettywood is away at a conference, so you decide to sneak into his Quarters and see what he’s hiding. His secretary will be returning from…
 draft: true
+tags:
+  - Verified
 ---
 
 Similar to other rooms at this location the immersion is fairly light.  While this room contains several areas to explore it feels very linear and forced to fit the space rather than being purpose-built.  It has some wear to it with some damaged decor.

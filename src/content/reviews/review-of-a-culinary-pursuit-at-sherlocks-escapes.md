@@ -14,6 +14,7 @@ tags:
   - kitchen
   - Restaurant
   - Ontario
+  - Verified
 format: room
 reviewed: true
 score: 4.8

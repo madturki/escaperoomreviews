@@ -12,6 +12,7 @@ genres:
   - historic
 tags:
   - closed
+  - Verified
 format: room
 reviewed: true
 score: 9

@@ -14,6 +14,7 @@ tags:
   - Hint Hunt
   - Ontario
   - Immersive
+  - Verified
 format: room
 reviewed: true
 score: 8.5

@@ -12,6 +12,7 @@ genres:
 tags:
   - Vampires
   - Mystery
+  - Verified
 format: room
 reviewed: true
 score: 7

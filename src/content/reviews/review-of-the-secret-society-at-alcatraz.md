@@ -25,6 +25,8 @@ summary: '"Your parents have mysteriously gone missing. Your search for them has
 bookingUrl: https://alcatrazescaperooms.com/book-now/
 image: /images/2020/11/Screen-Shot-2020-11-05-at-11.49.43-PM-e1630902742930.jpg
 description: '"Your parents have mysteriously gone missing. Your search for them has led you to a local masonic lodge. Once you are inside, the door locks behind you and…'
+tags:
+  - Verified
 ---
 
 The Secret Society room at Alcatraz was one of my favourite rooms that we didn't complete.  Often when we fail at rooms I like to believe that it's because the puzzles were convoluted or just plain bad.  This room is HARD with good puzzles (except maybe one) that take a lot of thinking!

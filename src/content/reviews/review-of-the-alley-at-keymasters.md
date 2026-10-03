@@ -26,6 +26,8 @@ bookingUrl: https://keymasters.ca/bookings/
 image: /images/2020/11/The-Alley-Poster-1-e1630894179473.jpg
 imageAlt: The Alley
 description: '“You will be going undercover into Hamilton’s #1 gang operation, in hopes of finally putting them away for good. We have people on the inside disguised as…'
+tags:
+  - Verified
 ---
 
 The Alley is a very well set up room requiring individual skill as well as good teamwork. The space is large enough for multiple people (four to eight) to keep busy and challenges a variety of ways of thinking.

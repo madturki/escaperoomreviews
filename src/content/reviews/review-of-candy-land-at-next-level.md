@@ -14,6 +14,7 @@ tags:
   - Ontario
   - store
   - next level
+  - Verified
 format: room
 reviewed: true
 score: 6.9

@@ -24,6 +24,8 @@ criteria:
 bookingUrl: https://www.thecrux.ca/#booknow
 image: /images/2023/08/shutterstock_1724785402-e1691679424333.jpg
 description: Your friends have been locked into a prison cell and you've managed to make your way into the guards room. Your next steps are to open the cell the door and…
+tags:
+  - Verified
 ---
 
 Your friends have been locked into a prison cell and you've managed to make your way into the guards room. Your next steps are to open the cell the door and find a way to escape all together.

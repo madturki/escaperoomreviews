@@ -22,6 +22,8 @@ criteria:
 summary: Someone at the Sallinger & Jewel Law Firm has been murdered! It's your job as part of the Cyber Crime Unit to figure out who the killer is and what their motives were. By utilizing your unique tools you must search for clues online, analyze data, interrogate suspects, and collaborate with your team. Good luck!
 image: /images/2021/08/221385429_124071403259053_5888455903741263369_n.jpg
 description: Someone at the Sallinger & Jewel Law Firm has been murdered! It's your job as part of the Cyber Crime Unit to figure out who the killer is and what their…
+tags:
+  - Verified
 ---
 
 > This was our first virtual escape room and we didn't really know what to expect. At first I was thrown off by the thought that we would each need our own computer but it quickly made sense as to why. It costs $20CAD to access the game but only one person in your party needs to pay and the rest can join the game remotely. One player will be designated the Detective, while the rest of the players will be Forensic Agents. Each type of player is assigned different pieces of information and you'll need to communicate together to solve the puzzles.

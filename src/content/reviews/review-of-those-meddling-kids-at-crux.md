@@ -25,6 +25,8 @@ summary: In Cruxton exists a house stuck in time. This house sits undisturbed as
 bookingUrl: https://www.thecrux.ca/#booknow
 image: /images/2021/09/those_meddling_kids-e1630891762916.png
 description: In Cruxton exists a house stuck in time. This house sits undisturbed as its last resident passed away some time ago. Being a new group of realtors, you’ve been…
+tags:
+  - Verified
 ---
 
 We’d heard a lot about Crux since our earliest days of escape rooming but never made it around to their location until today. It really seems like a place that would’ve been the height of escape rooms in Canada around 2015, but had since been let go.  The main entrance room, the washrooms, and general areas were all worn down (perhaps due to COVID shutdowns?)  Even the website seems to have been forgotten about.  But, we’re here to discuss _Those Meddling Kids_ specifically.

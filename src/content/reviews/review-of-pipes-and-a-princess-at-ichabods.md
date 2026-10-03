@@ -15,6 +15,7 @@ tags:
   - Princess Peach
   - Super Mario
   - Ichabods
+  - Verified
 format: room
 reviewed: true
 score: 5.9

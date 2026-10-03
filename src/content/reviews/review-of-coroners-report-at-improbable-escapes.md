@@ -14,6 +14,7 @@ tags:
   - nyctophobia
   - live actor
   - Ontario
+  - Verified
 format: room
 reviewed: true
 score: 9.4

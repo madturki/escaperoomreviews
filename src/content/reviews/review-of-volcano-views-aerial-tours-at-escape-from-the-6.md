@@ -14,6 +14,7 @@ tags:
   - mississauga
   - Volcano
   - physical
+  - Verified
 format: room
 reviewed: true
 score: 8.5

@@ -15,6 +15,7 @@ tags:
   - Trapped
   - Ontario
   - clowns
+  - Verified
 format: room
 reviewed: true
 score: 6.6

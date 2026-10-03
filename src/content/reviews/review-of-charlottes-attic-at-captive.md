@@ -12,6 +12,7 @@ tags:
   - nyctophobia
   - dark
   - creepy
+  - Verified
 format: room
 reviewed: true
 score: 7

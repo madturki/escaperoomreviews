@@ -11,6 +11,7 @@ genres:
   - modern-day
 tags:
   - Ontario
+  - Verified
 format: room
 reviewed: true
 score: 7.8

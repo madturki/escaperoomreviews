@@ -14,6 +14,7 @@ tags:
   - madrid
   - storm
   - spain
+  - Verified
 format: room
 reviewed: true
 score: 9

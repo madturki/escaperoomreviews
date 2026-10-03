@@ -16,6 +16,7 @@ tags:
   - Santa Clause
   - Toys
   - Workshop
+  - Verified
 format: room
 reviewed: true
 score: 7.8

@@ -11,6 +11,7 @@ genres:
   - mystery
 tags:
   - Rubix
+  - Verified
 format: room
 reviewed: true
 score: 6

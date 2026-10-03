@@ -16,6 +16,7 @@ tags:
   - Secret City
   - Live Actors
   - Corporate
+  - Verified
 format: room
 reviewed: true
 score: 9.5

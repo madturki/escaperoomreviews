@@ -13,3 +13,5 @@ reviewList:
 After reviewing almost 150 rooms as a husband and wife team and escaping more than 72% as a duo, we've put together a list of our **Top 50 Escape Rooms in Ontario.** We've gone through each room with a 40-point checklist to find the most [immersive escape rooms](/most-immersive-escape-rooms-in-ontario/), well-built escape rooms, [best corporate escape rooms](/best-escape-rooms-for-corporate-events/), and best run escape rooms in Ontario.
 
 Remember - no matter what we've rated them, we encourage you to give them a try yourself! And if you need some help, check our [tips for completing escape rooms](/escape-room-tips-how-to-beat-an-escape-room/).
+
+<p style="display:flex;flex-wrap:wrap;gap:0.6rem"><a class="button" href="/top-10-english-escape-rooms-in-quebec/">Top 10 English Escape Rooms in Quebec</a> <a class="button" href="/top-10-escape-rooms-in-regina/">Top 10 Escape Rooms in Regina</a></p>

@@ -15,6 +15,7 @@ tags:
   - Trapped
   - creepy
   - nyctophobia
+  - Verified
 format: room
 reviewed: true
 score: 7.6

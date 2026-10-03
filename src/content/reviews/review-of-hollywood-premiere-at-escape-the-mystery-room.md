@@ -13,6 +13,7 @@ tags:
   - Movies
   - buffalo
   - closed
+  - Verified
 format: room
 reviewed: true
 score: 3.5

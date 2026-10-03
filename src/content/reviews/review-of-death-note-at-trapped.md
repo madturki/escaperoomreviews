@@ -11,6 +11,7 @@ genres:
   - books-movies
 tags:
   - nyctophobia
+  - Verified
 format: room
 reviewed: true
 score: 6.3

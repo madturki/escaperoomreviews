@@ -15,6 +15,7 @@ tags:
   - Ontario
   - mississauga
   - Captive Kids
+  - Verified
 format: room
 reviewed: true
 score: 7.2

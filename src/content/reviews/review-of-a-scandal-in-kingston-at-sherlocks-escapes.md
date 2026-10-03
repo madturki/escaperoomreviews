@@ -23,6 +23,8 @@ summary: "Break and Enter? Better be quick…\r\nIrene has a secret apartment he
 bookingUrl: https://www.sherlocksescapes.com/scandal-rooms-sherlocks/
 image: /images/2022/10/A-Scandal-in-Kingston.png
 description: Break and Enter? Better be quick… Irene has a secret apartment here in Kingston. While she is occupied, you have a one hour window to snoop around and find…
+tags:
+  - Verified
 ---
 
 We completed this room back in 2023 and held off on posting the review. This room, like their others, was unique with some really cool elements. I was blown away when we walked in and with some of the surprise elements.

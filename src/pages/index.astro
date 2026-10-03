@@ -10,8 +10,8 @@ import { getReviews, getArticles, getTaxonomies, buildPins, sortByScore, url } f
 
 const [reviews, articles, tax] = await Promise.all([getReviews(), getArticles(), getTaxonomies()]);
 const reviewed = reviews.filter((r) => r.data.reviewed);
-const latest = reviewed.slice(0, 6);
-const topRated = sortByScore(reviewed).slice(0, 6);
+const latest = reviewed.slice(0, 8);
+const topRated = sortByScore(reviewed).slice(0, 8);
 const pins = buildPins(tax, reviews);
 const genres = [...tax.genres.values()].map((g) => ({ href: url.genre(g.id), image: g.data.image, label: g.data.name }));
 const regions = [...tax.regions.values()].map((region) => ({
@@ -134,7 +134,7 @@ const jsonLd = {
             <h2>From the blog</h2>
             <a href="/blog/">More articles</a>
           </div>
-          <ReviewList entries={articles.slice(0, 3)} tax={tax} />
+          <ReviewList entries={articles.slice(0, 8)} tax={tax} />
         </section>
       )
     }

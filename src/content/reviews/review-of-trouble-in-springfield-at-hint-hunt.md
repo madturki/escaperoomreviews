@@ -14,6 +14,7 @@ tags:
   - The Simpsons
   - TV Shows
   - mississauga
+  - Verified
 format: room
 reviewed: true
 score: 8.1

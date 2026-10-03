@@ -25,6 +25,8 @@ summary: '"An underground Russian medical research facility experimenting with r
 bookingUrl: https://escapeclub.ca/our-escape-rooms/secure/
 image: /images/2021/11/SeCure-724x1024-1-e1637964326284.jpg
 description: '"An underground Russian medical research facility experimenting with reanimating dead cells has gone into emergency lockdown. Only your team can stop a further…'
+tags:
+  - Verified
 ---
 
 As we said in our other reviews for this location, this location is fantastic. We loved the owner, Dale, we loved the decor, we loved the rooms. This place has a huge selection of board games available to play while you wait, drinks and snacks, and six physical escape rooms.

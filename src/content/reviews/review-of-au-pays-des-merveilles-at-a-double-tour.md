@@ -14,6 +14,7 @@ tags:
   - Books
   - Movies
   - Quebec
+  - Verified
 format: room
 reviewed: true
 score: 7.8

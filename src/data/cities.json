@@ -10,6 +10,16 @@
     "region": "ontario"
   },
   {
+    "id": "belleville",
+    "name": "Belleville",
+    "region": "ontario"
+  },
+  {
+    "id": "brantford",
+    "name": "Brantford",
+    "region": "ontario"
+  },
+  {
     "id": "buffalo",
     "name": "Buffalo",
     "region": "new-york"
@@ -30,6 +40,21 @@
     "region": "ontario"
   },
   {
+    "id": "cornwall",
+    "name": "Cornwall",
+    "region": "ontario"
+  },
+  {
+    "id": "goderich",
+    "name": "Goderich",
+    "region": "ontario"
+  },
+  {
+    "id": "greater-sudbury",
+    "name": "Greater Sudbury",
+    "region": "ontario"
+  },
+  {
     "id": "guelph",
     "name": "Guelph",
     "region": "ontario"
@@ -37,6 +62,11 @@
   {
     "id": "hamilton",
     "name": "Hamilton",
+    "region": "ontario"
+  },
+  {
+    "id": "huntsville",
+    "name": "Huntsville",
     "region": "ontario"
   },
   {
@@ -75,13 +105,38 @@
     "region": "ontario"
   },
   {
+    "id": "mono",
+    "name": "Mono",
+    "region": "ontario"
+  },
+  {
+    "id": "napanee",
+    "name": "Greater Napanee",
+    "region": "ontario"
+  },
+  {
     "id": "niagara-falls",
     "name": "Niagara Falls",
     "region": "ontario"
   },
   {
+    "id": "niagara-on-the-lake",
+    "name": "Niagara-on-the-Lake",
+    "region": "ontario"
+  },
+  {
+    "id": "orillia",
+    "name": "Orillia",
+    "region": "ontario"
+  },
+  {
     "id": "ottawa",
     "name": "Ottawa",
+    "region": "ontario"
+  },
+  {
+    "id": "penetanguishene",
+    "name": "Penetanguishene",
     "region": "ontario"
   },
   {
@@ -105,13 +160,58 @@
     "region": "saskatchewan"
   },
   {
+    "id": "richmond-hill",
+    "name": "Richmond Hill",
+    "region": "ontario"
+  },
+  {
+    "id": "sarnia",
+    "name": "Sarnia",
+    "region": "ontario"
+  },
+  {
+    "id": "simcoe",
+    "name": "Simcoe",
+    "region": "ontario"
+  },
+  {
     "id": "st-catharines",
     "name": "St. Catharines",
     "region": "ontario"
   },
   {
+    "id": "stratford",
+    "name": "Stratford",
+    "region": "ontario"
+  },
+  {
+    "id": "thunder-bay",
+    "name": "Thunder Bay",
+    "region": "ontario"
+  },
+  {
+    "id": "timmins",
+    "name": "Timmins",
+    "region": "ontario"
+  },
+  {
     "id": "toronto",
     "name": "Toronto",
+    "region": "ontario"
+  },
+  {
+    "id": "vaughan",
+    "name": "Vaughan",
+    "region": "ontario"
+  },
+  {
+    "id": "whitby",
+    "name": "Whitby",
+    "region": "ontario"
+  },
+  {
+    "id": "windsor",
+    "name": "Windsor",
     "region": "ontario"
   }
 ]

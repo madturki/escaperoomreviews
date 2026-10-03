@@ -10,6 +10,7 @@ genres:
   - magic
 tags:
   - closed
+  - Verified
 format: room
 reviewed: true
 score: 5.3

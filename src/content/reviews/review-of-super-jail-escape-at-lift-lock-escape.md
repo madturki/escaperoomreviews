@@ -24,6 +24,8 @@ criteria:
 summary: The guards have left you for just a few moments. Can you get out in time?
 image: /images/2021/08/6a9ce4_0ed8e4349fb44a65bf8a8381da11ede5_mv2_d_1514_1492_s_2.jpg
 description: The guards have left you for just a few moments. Can you get out in time?
+tags:
+  - Verified
 ---
 
 We really enjoy going to Lift Lock Escape. The owner is very friendly and proud of his work. It's nice to visit locations where the owners still participate and have personal knowledge of the experience.

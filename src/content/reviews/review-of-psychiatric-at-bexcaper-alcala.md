@@ -13,6 +13,7 @@ tags:
   - hospital
   - madrid
   - spain
+  - Verified
 format: room
 reviewed: true
 score: 7

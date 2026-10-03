@@ -2,6 +2,7 @@
 title: Professional Escape Room Analysis in Ontario
 description: We've had the pleasure of visiting and reviewing nearly 150 escape rooms as a couple. Most of those have been in Ontario, but we've also completed many abroad.…
 updated: '2024-09-06'
+contact: true
 ---
 
 We've had the pleasure of visiting and reviewing nearly 150 escape rooms as a couple. Most of those have been in Ontario, but we've also completed many abroad. We've visited almost every venue in Ontario and completed escape rooms across the province with a 72% escape rate.

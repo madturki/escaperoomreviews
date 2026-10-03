@@ -16,6 +16,7 @@ tags:
   - Marvel
   - Books
   - Movies
+  - Verified
 format: room
 reviewed: true
 score: 6.8

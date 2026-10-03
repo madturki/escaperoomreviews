@@ -41,11 +41,26 @@ const pins = data.map ? buildPins(tax, reviews, data.map) : [];
       </div>
       {
         data.contact && (
-          <p class="contact-cta">
-            <a class="button" href={`mailto:${SITE.email}?subject=${encodeURIComponent('Escape room review request')}`}>
-              Email us at {SITE.email}
-            </a>
-          </p>
+          <>
+            <p class="contact-cta">
+              <a class="button" href={`mailto:${SITE.email}?subject=${encodeURIComponent('Escape room review request')}`}>
+                Email us at {SITE.email}
+              </a>
+            </p>
+            <form class="contact-form" action="https://formsubmit.co/dayvudmorin@gmail.com" method="post" data-pagefind-ignore>
+              <input type="hidden" name="_subject" value="Escape room review inquiry" />
+              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="_captcha" value="true" />
+              <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+              <label>Contact Name<input type="text" name="Contact Name" required /></label>
+              <label>Contact Email<input type="email" name="email" required /></label>
+              <label>Contact Phone<input type="tel" name="Contact Phone" /></label>
+              <label>Location Name<input type="text" name="Location Name" required /></label>
+              <label>Location City<input type="text" name="Location City" required /></label>
+              <label>Message<textarea name="Message" rows="5" required></textarea></label>
+              <button type="submit" class="button">Send</button>
+            </form>
+          </>
         )
       }
     </article>
@@ -77,5 +92,27 @@ const pins = data.map ? buildPins(tax, reviews, data.map) : [];
 <style>
   .contact-cta {
     margin-top: 1.5rem;
+  }
+  .contact-form {
+    display: grid;
+    gap: 0.9rem;
+    max-width: 560px;
+    margin-top: 2rem;
+  }
+  .contact-form label {
+    display: grid;
+    gap: 0.3rem;
+    font-weight: 600;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    padding: 0.65rem 0.9rem;
+    border: 1px solid #ccd3db;
+    border-radius: 8px;
+    font: inherit;
+    font-weight: 400;
+  }
+  .contact-form button {
+    justify-self: start;
   }
 </style>

@@ -1,6 +1,7 @@
 ---
 import ReviewCard from './ReviewCard.astro';
 import ScoreBadge from './ScoreBadge.astro';
+import VerifiedKey from './VerifiedKey.astro';
 import { url, type Review, type Article, type Taxonomies } from '../lib/data';
 
 interface Props {
@@ -25,6 +26,7 @@ const { entries, tax, ranked = false, empty = 'No reviews here yet.' } = Astro.p
             {r.data.image ? <img src={r.data.image} alt="" loading="lazy" decoding="async" /> : <span />}
             <div>
               <h3>
+                <VerifiedKey tags={r.data.tags} />
                 <a href={url.post(r.id)}>{r.data.room ?? r.data.title}</a>
               </h3>
               <p>{[venue, city].filter(Boolean).join(' · ')}</p>

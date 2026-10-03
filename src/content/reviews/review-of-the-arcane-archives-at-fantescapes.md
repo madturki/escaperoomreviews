@@ -15,6 +15,7 @@ tags:
   - Magic
   - fantescapes
   - closed
+  - Verified
 format: room
 reviewed: true
 score: 9

@@ -14,6 +14,7 @@ tags:
   - Water
   - Atlantis
   - Ontario
+  - Verified
 format: room
 reviewed: true
 score: 8.3

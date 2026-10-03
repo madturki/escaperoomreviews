@@ -12,6 +12,7 @@ genres:
 tags:
   - nyctophobia
   - live actor
+  - Verified
 format: room
 reviewed: true
 score: 8.5

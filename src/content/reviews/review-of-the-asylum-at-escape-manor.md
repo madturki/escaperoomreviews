@@ -26,6 +26,8 @@ bookingUrl: https://www.escapemanor.com/hamilton/booking?utm_source=escaperoomre
 image: /images/2021/09/Screen-Shot-2021-09-05-at-10.19.37-PM.jpg
 imageAlt: The Asylum
 description: “A gurney, a physician’s scale, jars filled with—god only knows—and the door slams shut behind you. “Is our tour guide coming back?” you whisper. A scream from…
+tags:
+  - Verified
 ---
 
 Similar to [The Final Viewing](/review-of-the-final-viewing-at-escape-manor/), this room begins with a narrative delivered by the host who did an excellent job of setting the scene for us.  The combination of visuals and audio effects do an excellent job of setting the stage for a truly maddening escape room.  The puzzles are presented in unique ways and there were even a couple of new challenges for us.

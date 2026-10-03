@@ -25,6 +25,8 @@ summary: “You’re the biggest pranksters in high school, but you never leave 
 bookingUrl: https://keymasters.ca/bookings/
 image: /images/2021/08/Expelled-305-Grays-Hamilton.jpg
 description: “You’re the biggest pranksters in high school, but you never leave behind any evidence to get caught, causing others to get in trouble for your pranks. You…
+tags:
+  - Verified
 ---
 
 We chose this room because the back-to-school season is quickly approaching – and we’d already completed [The Alley](/review-of-the-alley-at-keymasters/) and [Santa’s Workshop](/review-of-santas-workshop-at-keymasters/) at this location. Also, being themed on a popular 90’s TV show brought back some memories for us – not so much for our teenagers that joined us.

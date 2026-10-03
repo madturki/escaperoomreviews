@@ -9,6 +9,7 @@ cities:
   - niagara-falls
 tags:
   - prohibition
+  - Verified
 format: room
 reviewed: true
 score: 6.8

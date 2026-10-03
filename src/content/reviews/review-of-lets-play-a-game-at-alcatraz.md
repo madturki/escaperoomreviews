@@ -12,6 +12,7 @@ genres:
 tags:
   - nyctophobia
   - Ontario
+  - Verified
 format: room
 reviewed: true
 score: 8

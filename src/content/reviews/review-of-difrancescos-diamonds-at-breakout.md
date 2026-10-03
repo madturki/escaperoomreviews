@@ -24,6 +24,8 @@ bookingUrl: https://www-1558h.bookeo.com/bookeo/b_breakoutescapes_start.html?ctl
 image: /images/2021/10/shutterstock_1610169505-scaled.jpg
 description: DeAngelo DiFrancesco, a wealthy Italian heir and pro footballer, has just been signed to your team; Romano FC. It is well known that DiFrancesco has a penchant…
 draft: true
+tags:
+  - Verified
 ---
 
 DiFrancesco’s Diamonds was actually a fairly interesting room considering it’s quite small physically.  The atmosphere is pretty good although it’s fairly easy to recreate a locker room in a commercial space.  It would be nice to have some ambient audio like stadium sounds in the room.  Rather, we had the sounds from the neighbouring room to keep us company.

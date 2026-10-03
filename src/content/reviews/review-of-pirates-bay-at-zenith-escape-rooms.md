@@ -13,6 +13,7 @@ tags:
   - Zenith
   - Barrie
   - closed
+  - Verified
 format: room
 reviewed: true
 score: 6.25

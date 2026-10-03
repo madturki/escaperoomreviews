@@ -13,6 +13,7 @@ tags:
   - Egypt
   - Archaeology
   - Quebec
+  - Verified
 format: room
 reviewed: true
 score: 8.8

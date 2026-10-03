@@ -12,6 +12,7 @@ genres:
 tags:
   - closed
   - london
+  - Verified
 format: room
 reviewed: true
 score: 8

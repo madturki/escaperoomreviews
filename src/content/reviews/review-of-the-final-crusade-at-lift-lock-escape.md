@@ -26,6 +26,8 @@ bookingUrl: https://www.liftlockescape.com/book-online
 image: /images/2020/11/C316AEF0-85BD-4AD8-80B9-AD93D9A913F9.jpg
 imageAlt: The Final Crusade
 description: Can you find the Holy Grail and keep it out of the clutches of evil?
+tags:
+  - Verified
 ---
 
 Lift Lock Escapes makes some really interesting rooms.  The thing that got us today is how they fit so much in a relatively small space. They make great use of technology for dramatic reveals. When we first did this room we saw elements that we hadn't seen anywhere before.

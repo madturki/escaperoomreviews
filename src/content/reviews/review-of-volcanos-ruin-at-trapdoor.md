@@ -14,6 +14,7 @@ tags:
   - Volcano
   - Ontario
   - closed
+  - Verified
 format: room
 reviewed: true
 score: 9.3

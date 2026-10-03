@@ -11,6 +11,7 @@ tags:
   - Ontario
   - Picton
   - Camp Picton
+  - Verified
 format: room
 reviewed: true
 score: 7.8

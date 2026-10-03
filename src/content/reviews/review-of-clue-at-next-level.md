@@ -26,6 +26,8 @@ bookingUrl: https://nextlevelescaperooms.ca/bookings/
 image: /images/2021/08/Clue-Escape-Room-Hamilton-1-1-e1630892274842.jpg
 imageAlt: Clue
 description: “Last week Mr. Boddy hosted a dinner party with 6 people, who have now become our only possible suspects. The detectives have narrowed down the weapons that…
+tags:
+  - Verified
 ---
 
 One of my personal favourite rooms ([Graveyard](/review-of-the-graveyard-at-next-level/)) is at this location as is [The Thompsons](/review-of-the-thompsons-at-next-level/) which was a great environment, but I didn’t enjoy the puzzles as much.  I was hopeful but cautiously optimistic about this experience and I have to say I was quite happy in the end.

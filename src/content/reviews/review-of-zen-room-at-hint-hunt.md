@@ -25,6 +25,8 @@ summary: A journey to the heart of Tokyo, you and your team alongside private in
 bookingUrl: https://hinthuntcanada.com/bookyourescaperoom/
 image: /images/2022/03/Screen-Shot-2022-03-08-at-7.44.14-PM-e1646834872722.png
 description: A journey to the heart of Tokyo, you and your team alongside private investigator James Murdock have been contacted by Miss Miharu about a robbery that has…
+tags:
+  - Verified
 ---
 
 Hint Hunt loves immersion. Their rooms are 360 degrees of goodness with not only the walls but the doors, floors, and ceilings all designed and built to give you an uninterrupted visual experience. Even the HVAC and sprinklers which pose a challenge to so many other rooms have been thoughtfully integrated. Electronics are all hidden away including the speakers which are embedded throughout the room.

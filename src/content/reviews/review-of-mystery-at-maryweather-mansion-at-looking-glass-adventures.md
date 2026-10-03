@@ -25,6 +25,8 @@ summary: Ms. Maryweather is a world renowned archaeologist and explorer however 
 bookingUrl: https://bookeo.com/lookingglass?type=41551XJJHU615FDA0B0836
 image: /images/2022/10/Looking-Glass-Adventures-Mayweathers-e1666448269536.jpg
 description: Ms. Maryweather is a world renowned archaeologist and explorer however her collection of artifacts is in jeopardy. You and your team will have 1 hour to…
+tags:
+  - Verified
 ---
 
 Looking Glass Adventures is rated very highly on Google which is probably what lead you to search for specific room reviews! We decided to do all of their rooms in one night so we can tell you which room is your best option. The staff here were great - friendly, enthusiastic, and knowledgeable of the puzzles, stories, and location. There are snacks and drinks available as well as a wide range of games available for purchase.

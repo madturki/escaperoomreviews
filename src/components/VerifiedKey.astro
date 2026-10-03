@@ -1,0 +1,29 @@
+---
+interface Props {
+  tags: string[];
+}
+
+const verified = Astro.props.tags.some((t) => t.toLowerCase() === 'verified');
+---
+
+{
+  verified && (
+    <span class="verified-key" title="Official ERR review!">
+      <svg viewBox="0 0 24 24" role="img" aria-label="Official ERR review!"><path d="M7 14a5 5 0 1 1 4.9-6H22v4h-2v3h-3v-3h-5.1A5 5 0 0 1 7 14Zm0-3a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" fill="currentColor" /></svg>
+    </span>
+  )
+}
+
+<style>
+  .verified-key {
+    display: inline-flex;
+    vertical-align: -0.1em;
+    margin-right: 0.3em;
+    color: var(--high);
+    cursor: help;
+  }
+  .verified-key svg {
+    width: 1em;
+    height: 1em;
+  }
+</style>

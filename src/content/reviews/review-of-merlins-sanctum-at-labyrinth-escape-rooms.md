@@ -24,6 +24,8 @@ criteria:
 bookingUrl: https://www.labyrinthescape.ca/booking.html
 image: /images/2022/09/Screen-Shot-2022-09-19-at-1.58.54-PM-e1663610401924.png
 description: '"You and your team of adventurers have stumbled onto the ancient sanctum of the legendary wizard Merlin. He has collected many treasures and now gives you the…'
+tags:
+  - Verified
 ---
 
 _"You and your team of adventurers have stumbled onto the ancient sanctum of the legendary wizard Merlin. He has collected many treasures and now gives you the chance to enter his domain and collect the single most powerful artifact in his collection, Excalibur! But can you make it past all the traps and puzzles that guard his most prized possession? We shall see!"_

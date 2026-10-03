@@ -14,6 +14,7 @@ tags:
   - madrid
   - Prison
   - spain
+  - Verified
 format: room
 reviewed: true
 score: 7.3

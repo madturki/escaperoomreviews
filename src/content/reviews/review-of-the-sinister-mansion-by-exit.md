@@ -22,6 +22,8 @@ criteria:
 summary: You are invited to be a guest at a palatial mansion, but upon arrival, you find yourselves forced to take part in a macabre game. The clock is ticking, and there is not much time left to solve the puzzles. Can you escape the mansion before it's too late?
 image: /images/2020/11/694036_EXIT_Sinister_Mansion_3DBox_648d26a2-2610-4893-b9fb-b4544e607e71_2048x.jpg
 description: You are invited to be a guest at a palatial mansion, but upon arrival, you find yourselves forced to take part in a macabre game. The clock is ticking, and…
+tags:
+  - Verified
 ---
 
 If this is your first escape-room-in-a-box, you may not enjoy it - but you will enjoy your second more! It definitely takes some time to get used to doing this sort of activity which is why I've come back to edit this review.  A boxed experience is a bit more like a board game experience that you can only use once. With the Exit series of boxes especially, you destroy elements of the game in the process so it can't be used again by someone else.  Though we weren't exactly in love with the [Deckscape escape-room-in-a-box experience](/review-of-deckscape-the-fate-of-london/), we were at least able to pass it on to a friend to be enjoyed again.

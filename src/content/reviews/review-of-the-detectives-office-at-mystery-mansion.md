@@ -12,6 +12,7 @@ genres:
 tags:
   - Mystery
   - Detective
+  - Verified
 format: room
 reviewed: true
 score: 6.5

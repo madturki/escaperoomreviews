@@ -11,6 +11,7 @@ genres:
   - creepy
 tags:
   - Quebec
+  - Verified
 format: room
 reviewed: true
 score: 7.8

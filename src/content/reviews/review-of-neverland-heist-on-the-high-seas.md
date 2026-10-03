@@ -15,6 +15,7 @@ tags:
   - Immersive
   - Peter Pan
   - Ontario
+  - Verified
 format: room
 reviewed: true
 score: 9.3

@@ -5,6 +5,7 @@ import Breadcrumbs from '../components/Breadcrumbs.astro';
 import ReviewScoreBox from '../components/ReviewScoreBox.astro';
 import ReviewList from '../components/ReviewList.astro';
 import VenueMap from '../components/VenueMap.astro';
+import VerifiedKey from '../components/VerifiedKey.astro';
 import { url, buildPins, sortByScore, type Review, type Taxonomies } from '../lib/data';
 
 interface Props {
@@ -68,7 +69,7 @@ const jsonLd =
   <div class="container">
     <header class="page-head">
       <Breadcrumbs items={crumbs} />
-      <h1>{data.title}</h1>
+      <h1><VerifiedKey tags={data.tags} />{data.title}</h1>
       <p class="review-meta">
         {venue && <a href={url.venue(venue.id)}>{venue.data.name}</a>}
         {

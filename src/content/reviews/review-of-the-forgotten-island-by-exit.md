@@ -22,6 +22,8 @@ criteria:
 summary: 'A boat is chained to a palm tree. Everything on this island seems to be secured with locks … and you soon come to realize: You must figure out all the combinations to open the locks in to order to escape. If not, you will never leave this island! Can you solve the riddles left for you and escape the island?'
 image: /images/2021/08/Forgotten_front-e1630195810210.jpg
 description: 'A boat is chained to a palm tree. Everything on this island seems to be secured with locks … and you soon come to realize: You must figure out all the…'
+tags:
+  - Verified
 ---
 
 If this is your first escape-room-in-a-box, I'm going to warn you that you may not enjoy it - **but** you will enjoy your second more! It definitely takes some time to get used to doing this sort of activity which is why I've come back to edit this review.  A boxed experience is a bit more like a board game experience that you can only use once. With the Exit series of boxes especially, you destroy elements of the game in the process so it can't be used again by someone else.

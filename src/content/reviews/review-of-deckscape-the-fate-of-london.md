@@ -22,6 +22,8 @@ criteria:
 summary: '"In this title, a terrible threat hangs over London, and the Crown of England needs your help! Your mission is to find four devices hidden in secret locations and defuse them before midnight. A single mistake, and the situation could degenerate quickly…"'
 image: /images/2020/11/pic3616771-1.jpg
 description: '"In this title, a terrible threat hangs over London, and the Crown of England needs your help! Your mission is to find four devices hidden in secret locations…'
+tags:
+  - Verified
 ---
 
 This escape-room-in-a-box takes you on a journey through London where you and your party must find and defuse a series of bombs.  As you travel through the deck you are given very clear instructions, so, if this is your first escape-room-in-a-box don't be worried!

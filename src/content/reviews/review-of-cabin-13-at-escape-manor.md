@@ -6,15 +6,14 @@ updated: '2024-10-25'
 venue: escape-manor
 region: ontario
 cities:
-  - toronto
   - hamilton
-  - ottawa
 tags:
   - creepy
   - Escape Manor
   - Hamilton
   - Scary
   - Immersive
+  - Verified
 format: room
 reviewed: true
 score: 8.5

@@ -26,6 +26,8 @@ bookingUrl: https://www-1568p.bookeo.com/bookeo/startroute_41568CHRXAP16489B8B8A
 image: /images/2021/08/A9448F9A-EAAC-44AD-8B00-89133D82ABDB-e1630893566652.jpg
 imageAlt: Shipwrecked
 description: You and your team have been searching for the ancient Red Rock ship for decades. Legitimate archeologists are on the way, but you don’t want to share the…
+tags:
+  - Verified
 ---
 
 The worker at Unlocked was great.  She was kind, friendly, helpful, enthusiastic, and a good storyteller which helps set the atmosphere when going into the room.  The storyline was clear and present throughout the game.  In fact, this is the only room we’ve done (at the time of writing this) where your score is not just the time left, but the amount of treasure you managed to retrieve from the ship.

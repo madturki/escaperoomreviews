@@ -11,6 +11,7 @@ genres:
   - medieval
 tags:
   - closed
+  - Verified
 format: room
 reviewed: true
 score: 6.5

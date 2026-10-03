@@ -14,6 +14,7 @@ tags:
   - Snow White
   - Immersive
   - Ontario
+  - Verified
 format: room
 reviewed: true
 score: 7.8

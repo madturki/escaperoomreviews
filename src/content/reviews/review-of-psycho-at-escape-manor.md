@@ -25,6 +25,8 @@ summary: Your investigation brings you to Vincent’s office. As you comb throug
 bookingUrl: https://www.escapemanor.com/hamilton/booking?utm_source=escaperoomreviews.ca
 image: /images/2020/11/1B0A9129-85B2-43F1-8D29-71E939B0CF47.jpeg
 description: Your investigation brings you to Vincent’s office. As you comb through the evidence you begin to feel uneasy. Are you now part of his twisted game?
+tags:
+  - Verified
 ---
 
 Escape Manor has a lot of really great rooms.  I think this is one of their older rooms and has been reconfigured over the years.  There is definitely wear on the room and the props.  A good bit of touching up the physical experience would go a long way to improve this experience.

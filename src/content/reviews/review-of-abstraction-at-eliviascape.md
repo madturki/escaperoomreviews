@@ -14,6 +14,7 @@ tags:
   - hospital
   - infection
   - Quebec
+  - Verified
 format: room
 reviewed: true
 score: 9

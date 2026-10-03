@@ -12,6 +12,7 @@ genres:
 tags:
   - nyctophobia
   - closed
+  - Verified
 format: room
 reviewed: true
 score: 4.3

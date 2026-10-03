@@ -15,6 +15,7 @@ tags:
   - closed
   - mississauga
   - Immersive
+  - Verified
 format: room
 reviewed: true
 score: 7.8

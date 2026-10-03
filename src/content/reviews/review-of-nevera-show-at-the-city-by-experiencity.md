@@ -13,6 +13,7 @@ tags:
   - madrid
   - spain
   - live actor
+  - Verified
 format: room
 reviewed: true
 score: 8
