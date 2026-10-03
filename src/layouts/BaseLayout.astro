@@ -47,7 +47,7 @@ const path = Astro.url.pathname;
     <meta name="twitter:card" content="summary_large_image" />
     {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
     {
-      ads && SITE.adsense.enabled && (
+      SITE.adsense.enabled && (
         <script
           async
           src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${SITE.adsense.client}`}

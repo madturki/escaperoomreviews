@@ -54,6 +54,12 @@ import Breadcrumbs from '../components/Breadcrumbs.astro';
     for (const select of selects) select.value = params.get(select.dataset.filter.toLowerCase()) ?? '';
 
     const escape = (s) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
+    const scoreBadge = (score) => {
+      if (!score) return '';
+      const n = parseFloat(score);
+      const cls = isNaN(n) ? 'score--none' : n >= 8 ? 'score--high' : n >= 6 ? 'score--mid' : 'score--low';
+      return `<span class="score ${cls}">${escape(score)}</span>`;
+    };
 
     async function showMore() {
       const id = run;
@@ -64,7 +70,7 @@ import Breadcrumbs from '../components/Breadcrumbs.astro';
         li.className = 'search__result';
         li.innerHTML =
           (d.meta.image ? `<img src="${escape(d.meta.image)}" alt="" loading="lazy" />` : '<span></span>') +
-          `<div><h3><a href="${escape(d.url)}">${escape(d.meta.title ?? d.url)}</a></h3><p>${d.excerpt}</p></div>`;
+          `<div><h3><a href="${escape(d.url)}">${escape(d.meta.title ?? d.url)}</a>${scoreBadge(d.meta.score)}</h3><p>${d.excerpt}</p></div>`;
         list.append(li);
       }
       shown += batch.length;
@@ -160,6 +166,10 @@ import Breadcrumbs from '../components/Breadcrumbs.astro';
   .search__result h3 {
     margin: 0 0 0.3rem;
     font-size: 1rem;
+  }
+  .search__result h3 .score {
+    margin-left: 0.5rem;
+    vertical-align: middle;
   }
   .search__result p {
     margin: 0;

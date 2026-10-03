@@ -118,6 +118,7 @@ const jsonLd =
           {region && <span data-pagefind-filter={`Province:${region.data.name}`} />}
           {cities.map((c) => <span data-pagefind-filter={`City:${c.data.name}`} />)}
           <span data-pagefind-filter={`Rating:${rating}`} />
+          <span data-pagefind-meta={`score:${data.reviewed && data.score != null ? data.score.toFixed(1) : 'Not yet reviewed'}`} />
           {genres.map((g) => <span data-pagefind-filter={`Genre:${g.data.name}`} />)}
         </div>
         <div class="prose">
