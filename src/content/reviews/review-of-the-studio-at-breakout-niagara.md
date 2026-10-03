@@ -10,6 +10,7 @@ tags:
   - Breakout
   - Niagara Falls
   - Ontario
+  - closed
 format: room
 reviewed: false
 image: /images/2024/10/The-Studio-Escape-Room-Review.png
@@ -22,10 +23,10 @@ We have not yet completed a review of The Studio at Breakout in Niagara. We hope
 
 ## What others are saying
 
-The Studio appears to have been retired. Morty has listed it as permanently closed, and it isn't among BreakOUT Escapes' current Niagara Falls rooms on WhereToEscape. We couldn't find many reviews of this room specifically.
+The Studio appears to have been retired. World of Escapes lists it as closed, and it isn't among BreakOUT Escapes' current Niagara Falls rooms on WhereToEscape. We couldn't find many reviews of this room specifically.
 
-From what we found, it was a lighter, family-friendly game. Morty lists it as an easy, not-scary room, and one Google reviewer said their group of eight, including four kids, all had a blast.
+From what we found, it was a lighter, family-friendly game. Morty lists it as an easy, not-scary room, and one Google reviewer said their large group of adults and kids all had a blast.
 
-Enthusiasts on Morty were mixed on it, but we found no written reviews explaining why. Reviews of BreakOUT's other Niagara rooms from the same era mention open ceilings that let in noise from neighbouring games and puzzles that felt random. We couldn't confirm whether those issues applied to The Studio.
+Enthusiasts on Morty were mixed on it, but we found no written reviews explaining why.
 
-_Sources: [Morty](https://morty.app/attraction/17018/the-studio), [Google reviews via librairie-leliseron.fr](https://librairie-leliseron.fr/breakout-escapes-niagara/), [WhereToEscape](https://www.wheretoescape.com/en-ca/escape-rooms-by-breakout-escapes-inc), [Escape The Roomers](https://www.escapetheroomers.com/post/breakout-escapes-niagara-falls-taps-brewhouse)_
+_Sources: [World of Escapes](https://ca.worldofescapes.com/niagara-falls/quests/breakout-escapes-nf-the-studio), [Morty](https://morty.app/attraction/17018/the-studio), [Google reviews via librairie-leliseron.fr](https://librairie-leliseron.fr/breakout-escapes-niagara/), [WhereToEscape](https://www.wheretoescape.com/en-ca/escape-rooms-by-breakout-escapes-inc)_

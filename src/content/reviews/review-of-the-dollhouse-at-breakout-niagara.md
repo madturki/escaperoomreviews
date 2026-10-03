@@ -10,6 +10,7 @@ tags:
   - Breakout
   - Niagara Falls
   - Ontario
+  - closed
 format: room
 reviewed: false
 image: /images/2024/10/The-Dollhouse-Escape-Room-Review.png
@@ -32,7 +33,7 @@ We have not yet completed a review of The Dollhouse at Breakout in Niagara. We h
 
 The Dollhouse is listed as permanently closed on Morty, and it isn't among BreakOUT Escapes' current Niagara Falls rooms on WhereToEscape. We couldn't find many reviews of this room specifically, and the few written by enthusiasts were mostly negative.
 
-We found little praise for the room itself, although enthusiasts on Morty were generally positive about the customer service.
+On the plus side, enthusiasts on Morty were generally positive about the customer service.
 
 The main complaint was the lack of ceilings. One reviewer said they could hear full conversations from groups in nearby rooms, including lock codes, which spoiled the immersion. Reviewers also found the space sparse. They said the puzzles were okay but felt random and didn't fit the witch-and-dolls theme.
 

@@ -10,6 +10,7 @@ tags:
   - Breakout
   - Niagara Falls
   - Ontario
+  - closed
 format: room
 reviewed: false
 image: /images/2024/10/Review-of-Taps-Beerhouse-Escape-Room.png
@@ -24,9 +25,9 @@ We have not yet completed a review of Taps Brewhouse at Breakout in Niagara. We 
 
 ## What others are saying
 
-Taps Brewhouse appears to have been retired. World of Escapes lists it as closed, and it no longer appears among BreakOUT Escapes' current Niagara Falls rooms on WhereToEscape, so check with the venue before planning a visit. When it was running, casual groups often had fun, but puzzle enthusiasts were much less impressed.
+Taps Brewhouse appears to have been retired. World of Escapes lists it as closed, and it no longer appears among BreakOUT Escapes' current Niagara Falls rooms on WhereToEscape, so check with the venue before planning a visit. When it was running, some casual groups had fun, but puzzle enthusiasts were much less impressed.
 
-On the positive side, the Escape The Roomers blog said the decor made it feel like a real bar, with a bar counter, local beer brands and even a stage. They also enjoyed a few hidden compartments and the local Niagara concept. Some Google reviewers mentioned having a great time with their group and praised the staff.
+On the positive side, the Escape The Roomers blog said the decor made it feel like a real bar, with a bar counter, local beer brands and even a stage. They also enjoyed a few hidden compartments and the local Niagara concept. One Google reviewer said their group had a lot of fun and praised the staff.
 
 The criticism is mostly about puzzle design. Escape The Roomers, who received complimentary tickets, described it as a basic, no-tech room with too many red herrings and lots of trial and error. They also complained about maths puzzles that required guesswork and a frustrating final deduction puzzle. The open ceilings meant they could hear people outside, and they had to shout to ask for hints. An experienced Google reviewer in 2025 had similar complaints: no clear starting point, answers that didn't feel logical even after hints, and little sense of payoff when things opened.
 

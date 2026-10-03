@@ -7,6 +7,8 @@ venue: captive
 region: ontario
 cities:
   - toronto
+tags:
+  - closed
 format: room
 reviewed: false
 description: '"The Idea of spending a week on a real working farm seemed like a dream come true. Life in the big city can be so stressful and demanding, it’s going to be…'
@@ -20,10 +22,10 @@ We have not yet completed a review of The Farm at Captive in Toronto. We hope to
 
 ## What others are saying
 
-The Farm appears to be closed. It ran at Captive's downtown Toronto location, which escape room directories report closed in early 2026, and the room itself is now listed as closed. While it was open, reactions were lukewarm, and even some Captive fans called it one of the company's weaker games.
+The Farm appears to be closed. It ran at Captive's downtown Toronto location, and the room is now listed as closed. While it was open, reactions were lukewarm, and even some Captive fans called it one of the company's weaker games.
 
-On the plus side, players said the room looked decent and matched its creepy storyline, and some enjoyed the variety of puzzles.
+On the plus side, players said the room looked decent and matched its storyline, and some enjoyed the variety of puzzles.
 
 The complaints were more consistent. Players described a small, older-style room built entirely around combination locks with no electronics, which some felt was pricey for what you get. Reviewers mentioned red herrings, a room in need of repair and broken locks that caused groups to skip sections, plus an unclear ending that left one team searching for a next step that didn't exist. A player on Reddit found the space small and not very immersive.
 
-_Sources: [The Escapers](https://www.the-escapers.com/escape-game/toronto/captive-escape-rooms), [World of Escapes](https://ca.worldofescapes.com/toronto/quests/captive-the-farm), [Morty](https://morty.app/attraction/17030/the-farm), [Reddit r/escaperooms](https://www.reddit.com/r/escaperooms/comments/13kepsw/immersive_escape_rooms_in_downtown_toronto/)_
+_Sources: [World of Escapes](https://ca.worldofescapes.com/toronto/quests/captive-the-farm), [Morty](https://morty.app/attraction/17030/the-farm), [Reddit r/escaperooms](https://www.reddit.com/r/escaperooms/comments/13kepsw/immersive_escape_rooms_in_downtown_toronto/)_

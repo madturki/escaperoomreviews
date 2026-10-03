@@ -20,9 +20,9 @@ We haven't yet completed a review of The Doctor's Redemption at Sherlock' Escape
 
 ## What others are saying
 
-The Doctor's Redemption appears to have been retired. World of Escapes lists the room as closed and its TripAdvisor booking page says the experience is currently unavailable, although Sherlock's Escapes itself still seems to be operating in Kingston with other rooms.
+The Doctor's Redemption may have been retired. World of Escapes lists the room as closed and its TripAdvisor booking page says the experience is currently unavailable, although Sherlock's Escapes itself still seems to be operating in Kingston with other rooms.
 
-While it was running, the room was generally well received on TripAdvisor. One family called it possibly the best room they'd played all year, describing hard puzzles in a very well laid-out space and a helpful room host. Reviewers of Sherlock's Escapes more broadly praised the friendly staff, the thoughtful details and decor, and puzzles that worked for a wide range of ages.
+We found only a couple of TripAdvisor reviews that clearly referred to this room. One family called it possibly the best room they'd played all year, describing hard puzzles in a very well laid-out space and a helpful room host.
 
 The main complaint we found was about hints. One group got stuck early and felt the hints were too vague to get them moving, leaving them only a few minutes once they finally reached the cell, so the visit didn't feel worth it. The company replied that the room was built around teamwork and communication, that it tried not to spoil puzzles when giving hints, and that unlimited hints were available for groups not worried about the leaderboard.
 

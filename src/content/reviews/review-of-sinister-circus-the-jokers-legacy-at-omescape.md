@@ -20,7 +20,7 @@ We have not yet completed a review of Sinister Circus: The Joker's Legacy at Ome
 
 ## What others are saying
 
-Omescape now operates as Omventure, and Sinister Circus is still running in Markham. Players on Morty are largely enthusiastic about it, and several describe it as one of the hardest and most distinctive rooms at the location. Omventure itself bills it as a spooky, high-difficulty game.
+Omescape now operates as Omventure, and Sinister Circus is still running in Markham. Players on Morty are largely enthusiastic about it, and several describe it as tough and distinctive. Omventure itself bills it as a spooky, high-difficulty game.
 
 The standout feature for most players is that your team is split up at the start and has to communicate to find its way back together, which many found clever and a lot of fun. Reviewers also praised the atmosphere and props, the variety of unusual puzzles, the reasonably interesting story, and an intense final puzzle.
 

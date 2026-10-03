@@ -14,6 +14,7 @@ tags:
   - guelph
   - Magic
   - fantescapes
+  - closed
 format: room
 reviewed: true
 score: 9

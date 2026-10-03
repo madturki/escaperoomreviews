@@ -9,6 +9,8 @@ cities:
   - barrie
 genres:
   - medieval
+tags:
+  - closed
 format: room
 reviewed: true
 score: 6.5

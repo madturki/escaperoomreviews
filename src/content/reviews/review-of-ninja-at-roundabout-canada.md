@@ -22,9 +22,9 @@ description: You have been training for years under Master Fuma Kotaro. To asses
 
 ## What others are saying
 
-The Ninja (as Roundabout calls it) is often described as the venue's most original room, and enthusiasts tend to like it more than Roundabout's other games. That said, the reliability of its physical puzzles comes up again and again.
+The Ninja (as Roundabout calls it) is often praised for its original theme. That said, the reliability of its physical puzzles comes up again and again.
 
-People love the theme. The We Try to Escape blog said it's rarely seen elsewhere and enjoyed small touches like taking your shoes off before entering the dojo, and warnings written to fit the story instead of big "do not touch" signs. A TripAdvisor reviewer said the room fully embraces its theme and has fun physical puzzles. Players on the Morty app called the dojo well themed and the puzzles creative, and liked that it isn't just a string of padlocks.
+People love the theme. The We Try to Escape blog said it's rarely seen elsewhere and enjoyed small touches like taking your shoes off before entering the dojo, and warnings written to fit the story instead of big "do not touch" signs. A TripAdvisor reviewer said the room fully embraces its theme and has fun physical puzzles. Players on the Morty app called the dojo well themed and the puzzles creative.
 
 The downside is that those physical and mechanical pieces can be finicky. Several Morty players said they knew what to do but couldn't get a device to cooperate, and some older reviews describe solved puzzles not working until the game master stepped in. We Try to Escape found it a little short: it's linear, mostly one regular-sized room plus a tiny second space, and some objects were damaged. One player also found it harder to tell which tasks were connected without traditional locks.
 

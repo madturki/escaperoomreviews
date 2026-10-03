@@ -10,6 +10,7 @@ tags:
   - Breakout
   - Niagara Falls
   - Ontario
+  - closed
 format: room
 reviewed: false
 image: /images/2024/10/The-Matrix-escape-room-review.jpg

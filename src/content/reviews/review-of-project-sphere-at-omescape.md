@@ -24,6 +24,6 @@ Omescape now operates as Omventure, and Project Sphere is still running in Markh
 
 Players on Morty praised the fun, high-tech mechanics, the immersion and how smoothly the puzzles flow into each other, and one called it a favourite. An older review from the Escape Games Review blog, written just after the revamp, felt the update improved the storytelling, tech and polish, and made the room more intuitive.
 
-The criticisms are mostly about scale and story. Some Morty reviewers found it average and less grand than Omventure's newer, longer rooms, a couple said the plot was hard to follow, and one felt it leaned heavily on memory puzzles. One group found the hints unhelpful or confusing.
+The criticisms are mostly about scale and story. One Morty reviewer found it average and less grand than Omventure's newer, longer rooms, a couple said the plot was hard to follow, and one felt it leaned heavily on memory puzzles. One group found the hints unhelpful or confusing.
 
 _Sources: [Morty](https://morty.app/attraction/18091/project-sphere), [Escape Games Review](https://torontoescapegames.wordpress.com/2016/08/18/omescape-project-sphere/), [Omventure](https://www.omventure.ca/items/project-sphere)_

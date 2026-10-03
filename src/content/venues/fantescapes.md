@@ -1,5 +1,6 @@
 ---
 name: Fantescapes
+closed: true
 ---
 
 

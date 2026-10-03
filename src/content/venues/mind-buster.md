@@ -1,5 +1,6 @@
 ---
 name: Mind Buster
+closed: true
 locations:
   - name: Mind Buster
     address: 102 Commerce Park Dr, Unit 6

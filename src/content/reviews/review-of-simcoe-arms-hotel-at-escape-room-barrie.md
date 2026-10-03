@@ -23,9 +23,9 @@ We have not yet completed a review of Simcoe Arms Hotel at Escape Room Barrie in
 
 ## What others are saying
 
-Simcoe Arms Hotel is still running at Escape Room Barrie and is generally well liked. It's one of the venue's longer-running games and sits on the easier, family-friendly side. Detailed reviews are fairly scarce, but what we found is positive.
+Simcoe Arms Hotel is still running at Escape Room Barrie and is generally well liked. Morty lists it as one of the easier games, and reviewers describe it as family-friendly. Detailed reviews are fairly scarce, but what we found is positive.
 
-A player on Reddit said it wasn't the flashiest escape room they'd done but had a very good variety of puzzles and was a good length. An experienced player on Morty found the room design and props decent and nearly all the puzzles reasonable, and praised the staff for being happy to chat about how they build and run their games. Google reviewers describe it as an old-school game with fun, challenging puzzles, hints that arrive at the right moment, and everything working as it should. A TripAdvisor reviewer described a family outing where the kids cracked the locks quickly.
+A player on Reddit said it wasn't the flashiest escape room they'd done but had a very good variety of puzzles and was a good length. An experienced player on Morty found the room design and props decent and nearly all the puzzles reasonable, and praised the staff for being happy to chat about how they build and run their games. Google reviewers describe it as an old-school game with fun, challenging puzzles, hints that arrive at the right moment, and everything working as it should. A TripAdvisor reviewer said the kids in their group solved the locks fairly quickly.
 
 The biggest caution is the replica guns. The Morty reviewer found the very realistic prop guns, which you actually have to fire, startling, and felt the room description didn't prepare them for it. They also thought one puzzle felt less fair than the rest. Back in 2022, an owner told a Reddit player this room would probably be the next one to get a refresh, so some details may have changed since these reviews were written.
 

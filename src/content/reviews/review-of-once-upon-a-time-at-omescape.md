@@ -22,8 +22,8 @@ We have not yet completed a review of Once Upon A Time at Omescape in Markham. W
 
 Omescape now operates as Omventure, and Once Upon a Time is still running in Markham. Players generally have warm things to say about it, describing it as a cute, easy, family-friendly room rather than a challenge for seasoned teams.
 
-Players on Morty called it charming and nostalgic, with lots of little surprises and plenty of guidance on what to do next, making it a good pick for families with kids or people new to escape rooms. The We Try To Escape blog found the decor beautiful and cute.
+Players on Morty called it cute, enchanting and nostalgic, with lots of little surprises and plenty of guidance on what to do next, making it a good pick for families with kids or people new to escape rooms. The We Try To Escape blog found the decor beautiful and cute.
 
-On the downside, experienced players found it very linear and simple, and one called it among Omventure's less unique rooms. Several Morty reviewers warned that you'll want to brush up on your fairy tales, since a few puzzles depend on that knowledge and some of the stories are less familiar. One mentioned finicky sensors. We Try To Escape felt the room was too dark for a family game, the audio between puzzles slowed the pace, and the puzzles were mostly about placing objects in the right spots. Most suggest a small group.
+On the downside, experienced players found it very linear and simple, and one called it among Omventure's less unique rooms. Several Morty reviewers warned that you'll want to brush up on your fairy tales, since a few puzzles depend on that knowledge and some of the stories are less familiar. One mentioned finicky sensors. We Try To Escape felt the room was too dark for a family game, the audio between puzzles slowed the pace, and the puzzles were mostly about placing objects in the right spots. A couple of reviewers suggest a small group.
 
 _Sources: [Morty](https://morty.app/attraction/18090/once-upon-a-time), [We Try To Escape](https://wetrytoescape.com/once-upon-a-time-omventure/), [Omventure](https://www.omventure.ca/markham)_

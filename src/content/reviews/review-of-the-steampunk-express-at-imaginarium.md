@@ -20,7 +20,7 @@ We have not yet completed a review of The Steampunk Express at Imaginarium in To
 
 ## What others are saying
 
-The Steampunk Express is still running at The Imaginarium, which has moved from North York to Scarborough. It's a longer game and widely seen as the company's hardest. Reception has mostly been very positive, though a few recent enthusiast reviews are more critical.
+The Steampunk Express is still running at The Imaginarium, which has moved from North York to Scarborough. It's a longer game with a reputation as a very hard room. Reception has mostly been very positive, though a few recent enthusiast reviews are more critical.
 
 Fans praise the immersive train set, the sheer number and variety of puzzles, and the heavy use of tech in place of padlocks. The Escape the Roomers blog loved how the puzzles get the whole team working together and called the tense finale very satisfying, naming it their favourite Imaginarium room. Experienced players on Morty said it offers a real challenge, even for people who have played a lot of rooms.
 

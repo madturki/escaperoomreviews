@@ -9,6 +9,8 @@ cities:
   - guelph
 genres:
   - magic
+tags:
+  - closed
 format: room
 reviewed: true
 score: 7.5

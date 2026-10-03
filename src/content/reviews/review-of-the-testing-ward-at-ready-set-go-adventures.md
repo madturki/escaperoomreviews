@@ -20,7 +20,7 @@ We have not yet completed a review of The Testing Ward at Ready Set Go Adventure
 
 ## What others are saying
 
-The Testing Ward is a point-based game set in an abandoned psych ward, and players describe it as spooky rather than truly scary. Opinions are more mixed than for other Ready Set Go rooms. Plenty of Google reviewers call it a favourite, while some enthusiasts on Morty consider it the company's weakest game.
+The Testing Ward is a point-based game set in an abandoned psych ward, and players describe it as spooky rather than truly scary. Opinions are more mixed than for other Ready Set Go rooms. Google reviewers are often enthusiastic, and one called it one of their favourite escape games, while one enthusiast on Morty called it the company's weakest game.
 
 Almost everyone praises the atmosphere. Reviewers call the set immersive and say the room runs mostly on sensors and lasers rather than padlocks. Players liked the non-linear, hands-on puzzles and the amount of teamwork involved, and staff are frequently described as friendly and helpful.
 

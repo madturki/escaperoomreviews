@@ -1,5 +1,6 @@
 ---
 name: Escape the Mystery Room
+closed: true
 locations:
   - name: Escape the Mystery Room
     address: 1 Walden galleria Drive, Suite B108

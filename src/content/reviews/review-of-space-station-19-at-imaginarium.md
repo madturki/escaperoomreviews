@@ -7,6 +7,8 @@ venue: imaginarium
 region: ontario
 cities:
   - toronto
+tags:
+  - closed
 format: room
 reviewed: false
 description: '"So if you didn’t get the opportunity to play outside, stay tuned for the Grand Opening of an Intergalactic Experience!" We have not yet completed a review of…'
@@ -22,7 +24,7 @@ We have not yet completed a review of Space Station - 19 at Imaginarium in Toron
 
 This room appears to be permanently closed. Morty lists it as closed, and it no longer appears among the games on The Imaginarium's website now that the company has moved to Scarborough. While it was running, it got a very positive reception as an unusual augmented reality escape room that blended a physical set with Microsoft HoloLens 2 goggles.
 
-The Escape the Roomers blog was impressed by how seamlessly the virtual and physical elements fit together, with most puzzles needing both, a detailed set, virtual characters and hints, and a mix of challenges that kept everyone busy. They also appreciated how carefully the game master explained the goggles. Players on Morty called it unlike anything else in the GTA, with plenty to interact with, non-linear puzzles, and friendly staff and owners.
+The Escape the Roomers blog was impressed by how seamlessly the virtual and physical elements fit together, with most puzzles needing both, a detailed set, virtual characters and hints, and a mix of challenges that kept everyone busy. They also appreciated how carefully the game master explained the goggles. Players on Morty called it unlike anything else in the GTA, with plenty to interact with, non-linear puzzles, and friendly staff and owner.
 
 The drawbacks people mentioned were that puzzles could be tricky because there was often little instruction unless you used the virtual hint system, and that one task could only be done by one person at a time, which created a bottleneck. Escape the Roomers also noted the goggles could cause dizziness, headaches or motion sickness for some players.
 

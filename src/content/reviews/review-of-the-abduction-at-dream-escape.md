@@ -9,6 +9,8 @@ cities:
   - toronto
 genres:
   - space
+tags:
+  - closed
 format: room
 reviewed: true
 score: 6.8
