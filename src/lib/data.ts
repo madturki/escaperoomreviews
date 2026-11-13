@@ -55,6 +55,54 @@ export function sortByScore(reviews: Review[]): Review[] {
   return [...reviews].sort((a, b) => (b.data.score ?? -1) - (a.data.score ?? -1));
 }
 
+export function roomName(review: Review): string {
+  const quoted = review.data.title.match(/^Review of ["“](.+?)["”] at /);
+  if (quoted) return quoted[1];
+  if (review.data.room) return review.data.room.replace(/\s+[(-].*$/, '').trim();
+  return review.data.title;
+}
+
+function unwrap(value: string): string {
+  const trimmed = value.trim();
+  if ((trimmed.startsWith('"') && trimmed.endsWith('"')) || (trimmed.startsWith('“') && trimmed.endsWith('”'))) {
+    return trimmed.slice(1, -1).trim();
+  }
+  return trimmed;
+}
+
+export function reviewBlurb(review: Review): string {
+  const summary = review.data.summary ? unwrap(review.data.summary) : '';
+  if (summary) return summary;
+  const description = review.data.description ? unwrap(review.data.description) : '';
+  if (description && !/^escape room booking/i.test(description)) return description;
+  const paragraph = review.body
+    ?.split(/\n\s*\n/)
+    .map((part) => part.trim())
+    .find((part) => part && !part.startsWith('#') && !part.startsWith('!'));
+  if (!paragraph) return '';
+  const plain = paragraph
+    .replace(/!\[[^\]]*]\([^)]*\)/g, '')
+    .replace(/\[([^\]]+)]\([^)]*\)/g, '$1')
+    .replace(/[*_`>#]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+  if (plain.length <= 280) return plain;
+  return `${plain.slice(0, 277).replace(/\s+\S*$/, '')}…`;
+}
+
+export function isClosed(review: Review, tax: Taxonomies): boolean {
+  return (
+    review.data.tags.some((tag) => tag.toLowerCase() === 'closed') ||
+    !!(review.data.venue && tax.venues.get(review.data.venue)?.data.closed)
+  );
+}
+
+export function bestInGenre(reviews: Review[], genreId: string): Review[] {
+  return reviews
+    .filter((review) => review.data.reviewed && review.data.score != null && review.data.score >= 8.5 && review.data.genres.includes(genreId))
+    .sort((a, b) => (b.data.score ?? 0) - (a.data.score ?? 0) || roomName(a).localeCompare(roomName(b)));
+}
+
 export interface ReviewFilter {
   country?: string;
   region?: string;

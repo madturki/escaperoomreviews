@@ -44,6 +44,7 @@ const articles = defineCollection({
     tags: z.array(z.string()).default([]),
     genres: z.array(z.string()).default([]),
     region: z.string().optional(),
+    bestOfGenre: z.string().optional(),
     draft: z.boolean().default(false),
   }),
 });
