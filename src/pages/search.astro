@@ -57,7 +57,7 @@ import Breadcrumbs from '../components/Breadcrumbs.astro';
     const scoreBadge = (score) => {
       if (!score) return '';
       const n = parseFloat(score);
-      const cls = isNaN(n) ? 'score--none' : n >= 8 ? 'score--high' : n >= 6 ? 'score--mid' : 'score--low';
+      const cls = isNaN(n) ? 'score--none' : n >= 8.5 ? 'score--top' : n >= 7.5 ? 'score--high' : n >= 6 ? 'score--mid' : 'score--low';
       return `<span class="score ${cls}">${escape(score)}</span>`;
     };
 

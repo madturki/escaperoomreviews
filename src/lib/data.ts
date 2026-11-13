@@ -86,7 +86,8 @@ export const url = {
 
 export function scoreClass(score?: number | null): string {
   if (score == null) return 'score--none';
-  if (score >= 8) return 'score--high';
+  if (score >= 8.5) return 'score--top';
+  if (score >= 7.5) return 'score--high';
   if (score >= 6) return 'score--mid';
   return 'score--low';
 }
