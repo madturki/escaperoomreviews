@@ -1,0 +1,262 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import ReviewCard from '../components/ReviewCard.astro';
+import { getReviews, getTaxonomies, roomName, type Review, type Taxonomies } from '../lib/data';
+
+const [reviews, tax] = await Promise.all([getReviews(), getTaxonomies()]);
+
+const listed = [...reviews].sort(
+  (a, b) => (b.data.score ?? -1) - (a.data.score ?? -1) || roomName(a).localeCompare(roomName(b)),
+);
+
+function searchText(review: Review): string {
+  const venue = review.data.venue ? tax.venues.get(review.data.venue)?.data.name : '';
+  const cities = review.data.cities.map((id) => tax.cities.get(id)?.data.name ?? '').join(' ');
+  const genres = review.data.genres.map((id) => tax.genres.get(id)?.data.name ?? '').join(' ');
+  return [roomName(review), review.data.title, venue, cities, genres].filter(Boolean).join(' ');
+}
+
+const regions = [...tax.regions.values()]
+  .filter((region) => reviews.some((review) => review.data.region === region.id))
+  .sort((a, b) => a.data.name.localeCompare(b.data.name));
+
+const cities = [...tax.cities.values()]
+  .filter((city) => reviews.some((review) => review.data.cities.includes(city.id)))
+  .sort((a, b) => a.data.name.localeCompare(b.data.name));
+
+const genres = [...tax.genres.values()]
+  .filter((genre) => reviews.some((review) => review.data.genres.includes(genre.id)))
+  .sort((a, b) => a.data.name.localeCompare(b.data.name));
+
+const reviewedCount = reviews.filter((review) => review.data.reviewed).length;
+---
+
+<BaseLayout title="All escape room reviews" description="Every escape room we've played, with search, filters, and sorting by score, date, or name.">
+  <div class="container">
+    <header class="page-head">
+      <Breadcrumbs items={[{ label: 'Reviews' }]} />
+      <h1>All reviews</h1>
+      <p>
+        {reviewedCount} rooms reviewed{reviews.length === reviewedCount ? '' : `, plus ${reviews.length - reviewedCount} still on our list`}. Search by room,
+        venue, or city, then filter and sort the list.
+      </p>
+    </header>
+
+    <form id="review-controls" class="review-controls" role="search" onsubmit="return false">
+      <input id="review-q" class="review-controls__search" type="search" placeholder="Search rooms, venues, or cities" aria-label="Search reviews" autocomplete="off" />
+      <div class="review-controls__filters">
+        <label>
+          Sort
+          <select id="review-sort">
+            <option value="score">Highest score</option>
+            <option value="newest">Newest</option>
+            <option value="name">Room name</option>
+          </select>
+        </label>
+        <label>
+          Region
+          <select id="review-region">
+            <option value="">All regions</option>
+            {regions.map((region) => <option value={region.id}>{region.data.name}</option>)}
+          </select>
+        </label>
+        <label>
+          City
+          <select id="review-city">
+            <option value="">All cities</option>
+            {cities.map((city) => (
+              <option value={city.id} data-region={city.data.region}>
+                {city.data.name}
+              </option>
+            ))}
+          </select>
+        </label>
+        <label>
+          Genre
+          <select id="review-genre">
+            <option value="">All genres</option>
+            {genres.map((genre) => <option value={genre.id}>{genre.data.name}</option>)}
+          </select>
+        </label>
+        <label>
+          Rating
+          <select id="review-rating">
+            <option value="">All ratings</option>
+            <option value="top">8.5 and up</option>
+            <option value="high">7.5 – 8.4</option>
+            <option value="mid">6 – 7.4</option>
+            <option value="low">Under 6</option>
+            <option value="none">Not yet reviewed</option>
+          </select>
+        </label>
+      </div>
+    </form>
+
+    <p id="review-status" class="review-status" aria-live="polite">{listed.length} reviews</p>
+    <p id="review-empty" class="empty" hidden>No reviews match those filters.</p>
+    <div id="review-list" class="card-grid">
+      {
+        listed.map((review) => (
+          <div
+            class="review-item"
+            data-name={roomName(review)}
+            data-search={searchText(review)}
+            data-region={review.data.region ?? ''}
+            data-cities={review.data.cities.join('|')}
+            data-genres={review.data.genres.join('|')}
+            data-score={review.data.reviewed && review.data.score != null ? String(review.data.score) : ''}
+            data-date={String(review.data.date.valueOf())}
+            data-reviewed={review.data.reviewed ? 'true' : 'false'}
+          >
+            <ReviewCard entry={review} tax={tax} />
+          </div>
+        ))
+      }
+    </div>
+  </div>
+  <script is:inline>
+    (function () {
+      const q = document.getElementById('review-q');
+      const sort = document.getElementById('review-sort');
+      const region = document.getElementById('review-region');
+      const city = document.getElementById('review-city');
+      const genre = document.getElementById('review-genre');
+      const rating = document.getElementById('review-rating');
+      const status = document.getElementById('review-status');
+      const empty = document.getElementById('review-empty');
+      const list = document.getElementById('review-list');
+      const items = [...list.children];
+      const cityOptions = [...city.options].filter((option) => option.value);
+
+      const params = new URLSearchParams(location.search);
+      q.value = params.get('q') ?? '';
+      if ([...sort.options].some((option) => option.value === params.get('sort'))) sort.value = params.get('sort');
+      if ([...region.options].some((option) => option.value === params.get('region'))) region.value = params.get('region');
+      if ([...genre.options].some((option) => option.value === params.get('genre'))) genre.value = params.get('genre');
+      if ([...rating.options].some((option) => option.value === params.get('rating'))) rating.value = params.get('rating');
+
+      function syncCities() {
+        for (const option of cityOptions) {
+          const show = !region.value || option.dataset.region === region.value;
+          option.hidden = !show;
+          option.disabled = !show;
+        }
+        if (city.selectedOptions[0]?.disabled) city.value = '';
+      }
+
+      function band(item) {
+        if (item.dataset.reviewed !== 'true' || item.dataset.score === '') return 'none';
+        const score = parseFloat(item.dataset.score);
+        if (score >= 8.5) return 'top';
+        if (score >= 7.5) return 'high';
+        if (score >= 6) return 'mid';
+        return 'low';
+      }
+
+      function matches(item) {
+        const query = q.value.trim().toLowerCase();
+        if (query && !item.dataset.search.toLowerCase().includes(query)) return false;
+        if (region.value && item.dataset.region !== region.value) return false;
+        if (city.value && !item.dataset.cities.split('|').includes(city.value)) return false;
+        if (genre.value && !item.dataset.genres.split('|').includes(genre.value)) return false;
+        if (rating.value && band(item) !== rating.value) return false;
+        return true;
+      }
+
+      function apply() {
+        syncCities();
+        const query = new URLSearchParams();
+        if (q.value.trim()) query.set('q', q.value.trim());
+        if (sort.value !== 'score') query.set('sort', sort.value);
+        if (region.value) query.set('region', region.value);
+        if (city.value) query.set('city', city.value);
+        if (genre.value) query.set('genre', genre.value);
+        if (rating.value) query.set('rating', rating.value);
+        history.replaceState(null, '', query.size ? `?${query}` : location.pathname);
+
+        const ranked = items.slice().sort((a, b) => {
+          if (sort.value === 'newest') return Number(b.dataset.date) - Number(a.dataset.date);
+          if (sort.value === 'name') return a.dataset.name.localeCompare(b.dataset.name);
+          const score = (Number(b.dataset.score) || -1) - (Number(a.dataset.score) || -1);
+          return score || a.dataset.name.localeCompare(b.dataset.name);
+        });
+        let shown = 0;
+        for (const item of ranked) {
+          const visible = matches(item);
+          item.hidden = !visible;
+          if (visible) shown += 1;
+          list.append(item);
+        }
+        status.textContent = `${shown} review${shown === 1 ? '' : 's'}`;
+        empty.hidden = shown !== 0;
+      }
+
+      if ([...city.options].some((option) => option.value === params.get('city') && (!region.value || option.dataset.region === region.value))) {
+        city.value = params.get('city');
+      }
+      q.addEventListener('input', apply);
+      sort.addEventListener('change', apply);
+      region.addEventListener('change', apply);
+      city.addEventListener('change', apply);
+      genre.addEventListener('change', apply);
+      rating.addEventListener('change', apply);
+      apply();
+    })();
+  </script>
+</BaseLayout>
+
+<style>
+  .review-controls__search {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    font: inherit;
+    font-size: 1.05rem;
+  }
+
+  .review-controls__filters {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 0.75rem;
+    margin-top: 0.9rem;
+  }
+
+  .review-controls__filters label {
+    display: grid;
+    gap: 0.3rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--ink-soft);
+  }
+
+  .review-controls__filters select {
+    padding: 0.55rem 0.6rem;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    font: inherit;
+    font-weight: 400;
+    color: var(--ink);
+    background: var(--surface);
+  }
+
+  .review-status {
+    margin: 1.25rem 0 0.75rem;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  .review-item {
+    display: flex;
+    min-width: 0;
+  }
+
+  .review-item[hidden] {
+    display: none;
+  }
+
+  .review-item .card {
+    flex: 1;
+  }
+</style>
