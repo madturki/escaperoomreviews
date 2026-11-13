@@ -1,6 +1,6 @@
 ---
 import type { Review } from '../lib/data';
-import { scoreClass } from '../lib/data';
+import { formatScore, scoreClass } from '../lib/data';
 
 interface Props {
   review: Review;
@@ -17,7 +17,7 @@ const hasScore = data.reviewed && data.score != null;
     {
       hasScore ? (
         <>
-          <span class:list={['scorebox__value', scoreClass(data.score)]}>{data.score!.toFixed(1)}</span>
+          <span class:list={['scorebox__value', scoreClass(data.score)]}>{formatScore(data.score!)}</span>
           <span class="scorebox__label">out of 10</span>
         </>
       ) : (

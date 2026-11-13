@@ -86,7 +86,11 @@ const sorted = [...pins].sort((a, b) => a.name.localeCompare(b.name));
 
     for (const p of pins) {
       const reviews = p.reviewCount ? `${p.reviewCount} review${p.reviewCount === 1 ? '' : 's'}` : 'No reviews yet';
-      const best = p.topScore != null ? ` · best ${p.topScore.toFixed(1)}/10` : '';
+      const scoreText = (score: number) => {
+        const text = score.toFixed(2);
+        return text.endsWith('0') ? score.toFixed(1) : text;
+      };
+      const best = p.topScore != null ? ` · best ${scoreText(p.topScore)}/10` : '';
       L.marker([p.lat, p.lng], { icon, title: p.name })
         .addTo(map)
         .bindPopup(
