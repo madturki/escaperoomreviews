@@ -1,0 +1,188 @@
+---
+import ScoreBadge from './ScoreBadge.astro';
+import { bestInGenre, isClosed, roomName, reviewBlurb, url, type Review, type Taxonomies } from '../lib/data';
+
+interface Props {
+  genreId: string;
+  reviews: Review[];
+  tax: Taxonomies;
+}
+
+const { genreId, reviews, tax } = Astro.props;
+const genreName = tax.genres.get(genreId)?.data.name ?? 'these';
+const rooms = bestInGenre(reviews, genreId);
+---
+
+{
+  rooms.length === 0 ? (
+    <p class="best-empty">None of the {genreName.toLowerCase()} rooms we've played have scored 8.5 or higher yet.</p>
+  ) : (
+    <ol class="best-list">
+      {rooms.map((review) => {
+        const name = roomName(review);
+        const venue = review.data.venue ? tax.venues.get(review.data.venue) : undefined;
+        const closed = isClosed(review, tax);
+        const blurb = reviewBlurb(review);
+        return (
+          <li class="best-room">
+            <div class="best-room__media">
+              {review.data.image ? (
+                <img src={review.data.image} alt={review.data.imageAlt ?? `${name} at ${venue?.data.name ?? 'the venue'}`} loading="lazy" decoding="async" />
+              ) : (
+                <div class="best-room__placeholder" />
+              )}
+              {closed && <img class="best-room__closed" src="/images/closed.png" alt="Closed" />}
+            </div>
+            <div class="best-room__body">
+              <h2 class="best-room__title">
+                <a href={url.post(review.id)}>{name}</a>
+                <ScoreBadge score={review.data.score} />
+              </h2>
+              {venue && (
+                <p class="best-room__venue">
+                  <a href={url.venue(venue.id)}>{venue.data.name}</a>
+                </p>
+              )}
+              {blurb && <p class="best-room__summary">{blurb}</p>}
+              {closed && <p class="best-room__note">This room is closed.</p>}
+              <div class="best-room__actions">
+                {review.data.bookingUrl && !closed && (
+                  <a class="button" href={review.data.bookingUrl} target="_blank" rel="noopener sponsored">
+                    Book this room
+                  </a>
+                )}
+                <a class="button button--ghost" href={url.post(review.id)}>
+                  Read the review
+                </a>
+              </div>
+            </div>
+          </li>
+        );
+      })}
+    </ol>
+  )
+}
+
+<style>
+  .best-empty {
+    color: var(--ink-soft);
+  }
+
+  .best-list {
+    list-style: none;
+    margin: 1.75rem 0 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .best-room {
+    display: grid;
+    grid-template-columns: minmax(200px, 280px) minmax(0, 1fr);
+    gap: 1.15rem;
+    align-items: stretch;
+    background: var(--surface);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+  }
+
+  .best-room__media,
+  .best-room__body {
+    min-width: 0;
+  }
+
+  .best-room__media {
+    position: relative;
+    min-height: 180px;
+    background: #dfe3e8;
+    overflow: hidden;
+  }
+
+  .best-room__media img,
+  .best-room__placeholder {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .best-room__placeholder {
+    background: linear-gradient(135deg, #2d4256, #3b4f45);
+  }
+
+  .best-room__closed {
+    position: absolute;
+    inset: 0;
+  }
+
+  .best-room__body {
+    padding: 1rem 1.15rem 1.15rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.45rem;
+  }
+
+  .best-room__title {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.55rem;
+    margin: 0;
+    font-size: 1.3rem;
+  }
+
+  .best-room__title a {
+    color: var(--ink);
+    text-decoration: none;
+  }
+
+  .best-room__title a:hover {
+    color: var(--accent-dark);
+  }
+
+  .best-room__venue {
+    margin: 0;
+    color: var(--ink-soft);
+  }
+
+  .best-room__venue a {
+    color: inherit;
+  }
+
+  .best-room__summary {
+    margin: 0.2rem 0 0.35rem;
+  }
+
+  .best-room__note {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.92rem;
+  }
+
+  .best-room__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-top: auto;
+  }
+
+  @media (max-width: 700px) {
+    .best-room {
+      grid-template-columns: 1fr;
+    }
+
+    .best-room__media {
+      aspect-ratio: 16 / 10;
+      min-height: 0;
+    }
+
+    .best-room__body {
+      padding: 0.2rem 1rem 1.1rem;
+    }
+  }
+</style>

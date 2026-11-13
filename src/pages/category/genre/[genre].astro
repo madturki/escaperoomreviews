@@ -1,6 +1,6 @@
 ---
 import TermPage from '../../../layouts/TermPage.astro';
-import { getReviews, getArticles, getTaxonomies } from '../../../lib/data';
+import { getReviews, getArticles, getTaxonomies, url } from '../../../lib/data';
 
 export async function getStaticPaths() {
   const [reviews, articles, tax] = await Promise.all([getReviews(), getArticles(), getTaxonomies()]);
@@ -17,6 +17,7 @@ export async function getStaticPaths() {
 
 const { genre, reviews, articles, tax } = Astro.props;
 const name = genre.data.name;
+const best = articles.find((article) => article.data.bestOfGenre === genre.id);
 ---
 
 <TermPage
@@ -25,6 +26,16 @@ const name = genre.data.name;
   description={genre.data.description ?? `Our reviews and ratings of ${name.toLowerCase()} themed escape rooms, sorted by score.`}
   crumbs={[{ label: 'Genres', href: '/category/genre/' }, { label: name }]}
   reviews={reviews}
-  articles={articles}
+  articles={articles.filter((article) => article.data.bestOfGenre !== genre.id)}
   tax={tax}
-/>
+>
+  {
+    best && (
+      <p>
+        <a class="button" href={url.post(best.id)}>
+          {best.data.title}
+        </a>
+      </p>
+    )
+  }
+</TermPage>
