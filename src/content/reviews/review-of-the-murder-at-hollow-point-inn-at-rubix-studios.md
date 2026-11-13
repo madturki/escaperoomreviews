@@ -10,7 +10,7 @@ cities:
 genres:
   - mystery
 tags:
-  - Rubix
+  - "Crimson Codes"
   - Verified
 format: room
 reviewed: true
