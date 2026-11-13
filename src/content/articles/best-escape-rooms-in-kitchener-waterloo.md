@@ -1,7 +1,8 @@
 ---
 title: Best Escape Rooms in Kitchener-Waterloo
 date: '2026-10-03'
-description: Our ranked list of the best escape rooms in Kitchener-Waterloo, featuring KW Escape's Taken, Exits, Twister and more, based on our review scores.
+updated: '2026-11-12'
+description: Our ranked list of the best escape rooms in Kitchener-Waterloo, featuring KW Escape's Mayday, 9-1-1, Taken, and more, based on our review scores.
 image: /images/2021/11/Taken-e1638209046633.jpeg
 imageAlt: Taken at KW Escape
 tags:
@@ -15,9 +16,29 @@ Every room on this list is at KW Escape, one of those rare gems in the escape ro
 
 This list is ranked by our own review scores, highest first, and only includes rooms that are still open.
 
+## 1. [Mayday](/review-of-mayday-at-kw-escape/)
+
+**Our score: 8.8/10** · KW Escape
+
+A real airplane cockpit is built into this room, and the takeoff is convincing enough to cause motion sickness. The space also includes an airport, a jungle, and caves, with puzzles you can work on at the same time. Six to eight people fit comfortably. A duo will not finish it in an hour. Bring a seasoned team of four.
+
+[Read our review of Mayday](/review-of-mayday-at-kw-escape/)
+
+[Book it Now](https://kwescape.ca/book-now/)
+
+## 2. [9-1-1](/review-of-9-1-1-at-kw-escape/)
+
+**Our score: 8.8/10** · KW Escape
+
+A real firetruck is parked inside and is part of the game, with at least 14 puzzle stations and two puzzles at each. A dozen people can each find something to do, which makes it a strong corporate room. It is almost a fully immersive space. The high ceiling is the one piece that is hard to disguise.
+
+[Read our review of 9-1-1](/review-of-9-1-1-at-kw-escape/)
+
+[Book it Now](https://kwescape.ca/book-now/)
+
 ![Taken at KW Escape](/images/2021/11/Taken-e1638209046633.jpeg)
 
-## 1. [Taken](/review-of-taken-at-kw-escape/)
+## 3. [Taken](/review-of-taken-at-kw-escape/)
 
 **Our score: 8.5/10** · KW Escape
 
@@ -29,7 +50,7 @@ The KW Psycho is abducting groups from local entertainment facilities, and they'
 
 ![Exits at KW Escape](/images/2021/08/Screen-Shot-2021-08-09-at-2.56.56-PM.jpg)
 
-## 2. [Exits](/review-of-exits-at-kw-escape/)
+## 4. [Exits](/review-of-exits-at-kw-escape/)
 
 **Our score: 8.3/10** · KW Escape
 
@@ -41,7 +62,7 @@ So many doors, each with its own theme, from a barn door to a subway door to a C
 
 ![Twister at KW Escape](/images/2021/10/twister-escape-room.jpg)
 
-## 3. [Twister](/review-of-twister-at-kw-escape/)
+## 5. [Twister](/review-of-twister-at-kw-escape/)
 
 **Our score: 8.3/10** · KW Escape
 
@@ -53,7 +74,7 @@ You're out camping when the alert sounds: a twister is coming, and you have 60 m
 
 ![Odditorium at KW Escape](/images/2021/11/The-Odditorium_WEB-e1638214380618.png)
 
-## 4. [Odditorium](/review-of-odditorium-at-kw-escape/)
+## 6. [Odditorium](/review-of-odditorium-at-kw-escape/)
 
 **Our score: 7.0/10** · KW Escape
 
