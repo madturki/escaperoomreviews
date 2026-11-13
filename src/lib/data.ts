@@ -62,6 +62,22 @@ export function roomName(review: Review): string {
   return review.data.title;
 }
 
+export function bookingHref(bookingUrl: string, room: string): string {
+  const params = new URLSearchParams({
+    utm_source: 'escaperoomreviews.ca',
+    utm_medium: 'referral',
+    utm_content: room,
+  });
+  try {
+    const url = new URL(bookingUrl);
+    for (const [key, value] of params) url.searchParams.set(key, value);
+    return url.toString();
+  } catch {
+    const joiner = bookingUrl.includes('?') ? '&' : '?';
+    return `${bookingUrl}${joiner}${params.toString()}`;
+  }
+}
+
 function unwrap(value: string): string {
   const trimmed = value.trim();
   if ((trimmed.startsWith('"') && trimmed.endsWith('"')) || (trimmed.startsWith('“') && trimmed.endsWith('”'))) {

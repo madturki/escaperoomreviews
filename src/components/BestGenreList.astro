@@ -1,6 +1,6 @@
 ---
 import ScoreBadge from './ScoreBadge.astro';
-import { bestInGenre, isClosed, roomName, reviewBlurb, url, type Review, type Taxonomies } from '../lib/data';
+import { bestInGenre, bookingHref, isClosed, roomName, reviewBlurb, url, type Review, type Taxonomies } from '../lib/data';
 
 interface Props {
   genreId: string;
@@ -47,7 +47,7 @@ const rooms = bestInGenre(reviews, genreId);
               {closed && <p class="best-room__note">This room is closed.</p>}
               <div class="best-room__actions">
                 {review.data.bookingUrl && !closed && (
-                  <a class="button" href={review.data.bookingUrl} target="_blank" rel="noopener sponsored">
+                  <a class="button" href={bookingHref(review.data.bookingUrl, name)} target="_blank" rel="noopener sponsored">
                     Book this room
                   </a>
                 )}

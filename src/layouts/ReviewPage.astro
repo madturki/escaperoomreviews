@@ -6,7 +6,7 @@ import ReviewScoreBox from '../components/ReviewScoreBox.astro';
 import ReviewList from '../components/ReviewList.astro';
 import VenueMap from '../components/VenueMap.astro';
 import VerifiedKey from '../components/VerifiedKey.astro';
-import { url, buildPins, sortByScore, formatScore, isClosed, type Review, type Taxonomies } from '../lib/data';
+import { url, buildPins, sortByScore, formatScore, isClosed, roomName, bookingHref, type Review, type Taxonomies } from '../lib/data';
 
 interface Props {
   review: Review;
@@ -182,7 +182,7 @@ const jsonLd =
               {pins.length > 0 && <VenueMap pins={pins} height="220px" />}
               {data.bookingUrl && !roomClosed && (
                 <p>
-                  <a class="button" href={data.bookingUrl} target="_blank" rel="noopener sponsored">
+                  <a class="button" href={bookingHref(data.bookingUrl, roomName(review))} target="_blank" rel="noopener sponsored">
                     Book this room
                   </a>
                 </p>
