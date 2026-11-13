@@ -33,6 +33,4 @@ However, it was fraught with technical issues and errors in the puzzles themselv
 
 It is encouraging to see that this year Sherlock's Escapes rebuilt several of their rooms and we hope that our feedback was incorporated into some of their designs.
 
-We hope to return to reevaluate their new experiences.
-
-**Feel free to experience the room yourself and let us know how it goes!**
+We had hoped to return and reevaluate their new experiences. Sherlock's Escapes in Kingston has since closed.

@@ -1,5 +1,6 @@
 ---
 name: Sherlock's Escapes
+closed: true
 locations:
   - name: Sherlock's Escapes
     address: 298B Bagot Street
