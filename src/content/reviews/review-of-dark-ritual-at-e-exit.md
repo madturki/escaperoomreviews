@@ -11,6 +11,7 @@ genres:
   - creepy
 format: room
 reviewed: true
+escaped: false
 score: 5.8
 criteria:
   - name: Theme Consistency

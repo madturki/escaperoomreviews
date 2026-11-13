@@ -12,6 +12,7 @@ genres:
   - modern-day
 format: room
 reviewed: true
+escaped: true
 score: 3.8
 criteria:
   - name: Theme Consistency

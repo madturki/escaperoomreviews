@@ -9,6 +9,7 @@ cities:
   - kingston
 format: room
 reviewed: true
+escaped: false
 score: 5.5
 criteria:
   - name: Theme Consistency

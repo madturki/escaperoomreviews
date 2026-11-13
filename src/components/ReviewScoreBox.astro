@@ -24,6 +24,16 @@ const hasScore = data.reviewed && data.score != null;
         <span class="scorebox__pending">Not yet reviewed</span>
       )
     }
+    {
+      data.escaped === true && (
+        <span class="scorebox__result scorebox__result--escaped">ESCAPED</span>
+      )
+    }
+    {
+      data.escaped === false && (
+        <span class="scorebox__result scorebox__result--failed">WE FAILED</span>
+      )
+    }
   </div>
   <div class="scorebox__detail">
     {data.room && <h2 class="scorebox__title">{data.room}</h2>}
@@ -111,6 +121,25 @@ const hasScore = data.reviewed && data.score != null;
     color: var(--muted);
     font-size: 0.85rem;
     margin-top: 0.4rem;
+  }
+
+  .scorebox__result {
+    margin-top: 0.55rem;
+    padding: 0.22rem 0.65rem;
+    border-radius: 999px;
+    color: #fff;
+    font-size: 0.68rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    line-height: 1.2;
+  }
+
+  .scorebox__result--escaped {
+    background: var(--high);
+  }
+
+  .scorebox__result--failed {
+    background: var(--low);
   }
 
   .scorebox__pending {

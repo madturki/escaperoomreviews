@@ -21,6 +21,7 @@ const reviews = defineCollection({
     tags: z.array(z.string()).default([]),
     format: z.enum(['room', 'boxed', 'virtual', 'outdoor']).default('room'),
     reviewed: z.boolean().default(true),
+    escaped: z.boolean().optional(),
     score: z.number().nullable().optional(),
     criteria: z.array(criterion).default([]),
     summary: z.string().optional(),
