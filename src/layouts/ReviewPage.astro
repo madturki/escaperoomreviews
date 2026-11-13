@@ -160,6 +160,16 @@ const jsonLd =
                   <strong>{loc.name}</strong>
                   <br />
                   {loc.address}
+                  <br />
+                  {
+                    [
+                      (loc.city && tax.cities.get(loc.city)?.data.name) ?? loc.city,
+                      loc.region && tax.regions.get(loc.region)?.data.name,
+                      loc.postalCode,
+                    ]
+                      .filter(Boolean)
+                      .join(', ')
+                  }
                   {loc.phone && (
                     <>
                       <br />
