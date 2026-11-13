@@ -2,7 +2,7 @@
 name: Crimson Codes
 locations:
   - name: Crimson Codes
-    address: 1119 Fennell Ave E Unit 101
+    address: 1119 Fennell Ave E (Unit 101)
     city: hamilton
     region: ontario
     postalCode: L8T 1S2

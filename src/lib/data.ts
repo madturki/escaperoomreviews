@@ -181,7 +181,14 @@ export function buildPins(tax: Taxonomies, reviews: Review[], f: { country?: str
         venue: venue.id,
         venueName: venue.data.name,
         name: loc.name ?? venue.data.name,
-        address: [loc.address, loc.city && (tax.cities.get(loc.city)?.data.name ?? loc.city), loc.postalCode].filter(Boolean).join(', '),
+        address: [
+          loc.address,
+          loc.city && (tax.cities.get(loc.city)?.data.name ?? loc.city),
+          loc.region && tax.regions.get(loc.region)?.data.name,
+          loc.postalCode,
+        ]
+          .filter(Boolean)
+          .join(', '),
         lat: loc.lat,
         lng: loc.lng,
         phone: loc.phone,

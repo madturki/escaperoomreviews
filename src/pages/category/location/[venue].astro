@@ -45,7 +45,17 @@ const where = cityNames.length ? ` in ${cityNames.join(', ')}` : '';
             <li class="panel">
               <strong>{loc.name}</strong>
               <span>{loc.address}</span>
-              <span>{[(loc.city && tax.cities.get(loc.city)?.data.name) ?? loc.city, loc.postalCode].filter(Boolean).join(', ')}</span>
+              <span>
+                {
+                  [
+                    (loc.city && tax.cities.get(loc.city)?.data.name) ?? loc.city,
+                    loc.region && tax.regions.get(loc.region)?.data.name,
+                    loc.postalCode,
+                  ]
+                    .filter(Boolean)
+                    .join(', ')
+                }
+              </span>
               {loc.phone && <a href={`tel:${loc.phone.replace(/[^\d+]/g, '')}`}>{loc.phone}</a>}
             </li>
           ))}
