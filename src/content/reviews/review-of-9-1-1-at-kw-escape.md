@@ -25,7 +25,7 @@ criteria:
     score: 8
   - name: Bonus Items
     score: 9
-summary: A real firetruck is parked inside and built into the game. Huge, packed with puzzles, and a strong value for a big group.
+summary: You've just been called in because the KW Mall is on fire! Quickly, you must clear a section of the mall and rescue the pets from the Rainbow Rescue as it will be engulfed in flames in just 60 minutes!
 bookingUrl: https://kwescape.ca/book-now/
 image: /images/2026/11/911-kw-escape.jpg
 imageAlt: Red fire engine parked inside a station bay with its emergency lights on
