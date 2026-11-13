@@ -6,11 +6,11 @@ updated: '2024-10-31'
 venue: coco-room
 region: spain
 cities:
-  - madrid
+  - torrejon-de-ardoz
 genres:
   - historic
 tags:
-  - madrid
+  - "Torrejón de Ardoz"
   - roman
   - spain
   - gladiator
