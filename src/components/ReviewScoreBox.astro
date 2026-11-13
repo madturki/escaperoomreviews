@@ -4,9 +4,11 @@ import { scoreClass } from '../lib/data';
 
 interface Props {
   review: Review;
+  closed?: boolean;
 }
 
-const { data } = Astro.props.review;
+const { review, closed = false } = Astro.props;
+const { data } = review;
 const hasScore = data.reviewed && data.score != null;
 ---
 
@@ -42,7 +44,7 @@ const hasScore = data.reviewed && data.score != null;
     }
     {data.summary && <p class="scorebox__summary">{data.summary}</p>}
     {
-      data.bookingUrl && (
+      data.bookingUrl && !closed && (
         <a class="button" href={data.bookingUrl} target="_blank" rel="noopener sponsored">
           Book now
         </a>

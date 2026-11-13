@@ -16,11 +16,11 @@ description: A good ole jailbreak! Apparently disaster strikes twice. Not only i
 _**A good ole jailbreak!  
 **Apparently disaster strikes twice. Not only is Sherlock missing, but now another valuable member of the team is kidnapped. Well… no detective is left behind, so time for you to start a covert rescue mission._
 
-We haven't yet completed a review of The Doctor's Redemption at Sherlock' Escapes in Kingston but we hope to complete this room soon!
+We haven't yet completed a review of The Doctor's Redemption at Sherlock' Escapes in Kingston. The venue has since closed.
 
 ## What others are saying
 
-The Doctor's Redemption may have been retired. World of Escapes lists the room as closed and its TripAdvisor booking page says the experience is currently unavailable, although Sherlock's Escapes itself still seems to be operating in Kingston with other rooms.
+The Doctor's Redemption was retired before the rest of the venue. World of Escapes lists the room as closed and its TripAdvisor booking page says the experience is currently unavailable. Sherlock's Escapes in Kingston has since closed as well.
 
 We found only a couple of TripAdvisor reviews that clearly referred to this room. One family called it possibly the best room they'd played all year, describing hard puzzles in a very well laid-out space and a helpful room host.
 
