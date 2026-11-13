@@ -3,7 +3,7 @@ name: KW Escape
 locations:
   - name: KW Escape
     address: 505 Conestogo Rd Unit 12
-    city: Waterloo
+    city: kitchener
     region: ontario
     postalCode: N2L 4C9
     country: canada
