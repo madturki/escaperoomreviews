@@ -6,7 +6,7 @@ import ReviewScoreBox from '../components/ReviewScoreBox.astro';
 import ReviewList from '../components/ReviewList.astro';
 import VenueMap from '../components/VenueMap.astro';
 import VerifiedKey from '../components/VerifiedKey.astro';
-import { url, buildPins, sortByScore, type Review, type Taxonomies } from '../lib/data';
+import { url, buildPins, sortByScore, formatScore, type Review, type Taxonomies } from '../lib/data';
 
 interface Props {
   review: Review;
@@ -126,7 +126,7 @@ const jsonLd =
           {region && <span data-pagefind-filter={`Province:${region.data.name}`} />}
           {cities.map((c) => <span data-pagefind-filter={`City:${c.data.name}`} />)}
           <span data-pagefind-filter={`Rating:${rating}`} />
-          <span data-pagefind-meta={`score:${data.reviewed && data.score != null ? data.score.toFixed(1) : 'Not yet reviewed'}`} />
+          <span data-pagefind-meta={`score:${data.reviewed && data.score != null ? formatScore(data.score) : 'Not yet reviewed'}`} />
           {genres.map((g) => <span data-pagefind-filter={`Genre:${g.data.name}`} />)}
         </div>
         <div class="prose">
@@ -187,7 +187,7 @@ const jsonLd =
                 {moreAtVenue.map((r) => (
                   <li>
                     <a href={url.post(r.id)}>{r.data.room ?? r.data.title}</a>
-                    <span>{r.data.reviewed && r.data.score != null ? r.data.score.toFixed(1) : '–'}</span>
+                    <span>{r.data.reviewed && r.data.score != null ? formatScore(r.data.score) : '–'}</span>
                   </li>
                 ))}
               </ul>

@@ -10,6 +10,11 @@
     "region": "ontario"
   },
   {
+    "id": "brampton",
+    "name": "Brampton",
+    "region": "ontario"
+  },
+  {
     "id": "belleville",
     "name": "Belleville",
     "region": "ontario"

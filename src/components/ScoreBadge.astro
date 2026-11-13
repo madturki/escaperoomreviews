@@ -1,5 +1,5 @@
 ---
-import { scoreClass } from '../lib/data';
+import { formatScore, scoreClass } from '../lib/data';
 
 interface Props {
   score?: number | null;
@@ -12,5 +12,5 @@ const hasScore = reviewed && score != null;
 ---
 
 <span class:list={['score', scoreClass(hasScore ? score : null), className]} title={hasScore ? `Our score: ${score} out of 10` : 'Not yet reviewed'}>
-  {hasScore ? score!.toFixed(1) : 'Not yet reviewed'}
+  {hasScore ? formatScore(score!) : 'Not yet reviewed'}
 </span>

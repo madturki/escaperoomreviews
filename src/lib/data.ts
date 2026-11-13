@@ -133,6 +133,11 @@ export const url = {
   tag: (name: string) => `/tag/${slugify(name)}/`,
 };
 
+export function formatScore(score: number): string {
+  const text = score.toFixed(2);
+  return text.endsWith('0') ? score.toFixed(1) : text;
+}
+
 export function scoreClass(score?: number | null): string {
   if (score == null) return 'score--none';
   if (score >= 8.5) return 'score--top';
