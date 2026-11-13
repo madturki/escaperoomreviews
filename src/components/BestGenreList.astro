@@ -15,7 +15,7 @@ const rooms = bestInGenre(reviews, genreId);
 
 {
   rooms.length === 0 ? (
-    <p class="best-empty">None of the {genreName.toLowerCase()} rooms we've played have scored 8.5 or higher yet.</p>
+    <p class="best-empty">None of the {genreName.toLowerCase()} rooms we've played have scored 8 or higher yet.</p>
   ) : (
     <ol class="best-list">
       {rooms.map((review) => {

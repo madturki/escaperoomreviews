@@ -99,8 +99,9 @@ export function isClosed(review: Review, tax: Taxonomies): boolean {
 
 export function bestInGenre(reviews: Review[], genreId: string): Review[] {
   return reviews
-    .filter((review) => review.data.reviewed && review.data.score != null && review.data.score >= 8.5 && review.data.genres.includes(genreId))
-    .sort((a, b) => (b.data.score ?? 0) - (a.data.score ?? 0) || roomName(a).localeCompare(roomName(b)));
+    .filter((review) => review.data.reviewed && review.data.score != null && review.data.score >= 8 && review.data.genres.includes(genreId))
+    .sort((a, b) => (b.data.score ?? 0) - (a.data.score ?? 0) || roomName(a).localeCompare(roomName(b)))
+    .slice(0, 10);
 }
 
 export interface ReviewFilter {
