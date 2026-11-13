@@ -25,7 +25,7 @@ criteria:
     score: 8
   - name: Bonus Items
     score: 10
-summary: A real airplane cockpit, and a takeoff so convincing it can make you motion sick. This is a huge, highly immersive room.
+summary: "You and your team took a flight with McCarthy Airlines to Belize. Suddenly, the plane experiences turbulence and \"mayday\" calls are announced. You survive the crash, but now you must rebuild the GPS device before the 60-minute back up power runs out."
 bookingUrl: https://kwescape.ca/book-now/
 image: /images/2026/11/mayday-kw-escape.jpg
 imageAlt: Airplane cockpit instruments facing a foggy runway
