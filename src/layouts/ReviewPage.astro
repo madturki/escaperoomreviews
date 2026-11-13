@@ -6,7 +6,7 @@ import ReviewScoreBox from '../components/ReviewScoreBox.astro';
 import ReviewList from '../components/ReviewList.astro';
 import VenueMap from '../components/VenueMap.astro';
 import VerifiedKey from '../components/VerifiedKey.astro';
-import { url, buildPins, sortByScore, formatScore, type Review, type Taxonomies } from '../lib/data';
+import { url, buildPins, sortByScore, formatScore, isClosed, type Review, type Taxonomies } from '../lib/data';
 
 interface Props {
   review: Review;
@@ -20,6 +20,7 @@ const { Content } = await render(review);
 
 const venue = data.venue ? tax.venues.get(data.venue) : undefined;
 const venueClosed = !!venue?.data.closed;
+const roomClosed = isClosed(review, tax);
 const region = data.region ? tax.regions.get(data.region) : undefined;
 const cities = data.cities.map((id) => tax.cities.get(id)).filter((c) => c !== undefined);
 const genres = data.genres.map((id) => tax.genres.get(id)).filter((g) => g !== undefined);
@@ -117,11 +118,11 @@ const jsonLd =
           data.image && (
             <div class="article__hero-wrap">
               <img class="article__hero" src={data.image} alt={data.imageAlt ?? data.title} decoding="async" fetchpriority="high" />
-              {venueClosed && <img class="article__closed" src="/images/closed.png" alt="Closed" />}
+              {roomClosed && <img class="article__closed" src="/images/closed.png" alt="Closed" />}
             </div>
           )
         }
-        <ReviewScoreBox review={review} closed={venueClosed} />
+        <ReviewScoreBox review={review} closed={roomClosed} />
         <div hidden>
           {region && <span data-pagefind-filter={`Province:${region.data.name}`} />}
           {cities.map((c) => <span data-pagefind-filter={`City:${c.data.name}`} />)}
@@ -169,7 +170,7 @@ const jsonLd =
               ))}
               {venueClosed && <p class="venue-closed">This venue has closed. Reviews are kept for reference.</p>}
               {pins.length > 0 && <VenueMap pins={pins} height="220px" />}
-              {data.bookingUrl && !venueClosed && (
+              {data.bookingUrl && !roomClosed && (
                 <p>
                   <a class="button" href={data.bookingUrl} target="_blank" rel="noopener sponsored">
                     Book this room
