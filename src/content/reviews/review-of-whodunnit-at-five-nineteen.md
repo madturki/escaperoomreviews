@@ -27,6 +27,8 @@ criteria:
     score: 4.5
 summary: A nona murdered because of her family recipe? What is this world coming to? We just had to solve this riddle.
 bookingUrl: https://www.fivenineteenescapes.ca/escaperoomscambridge
+image: /images/2026/11/whodunnit-five-nineteen.jpg
+imageAlt: Vintage dining room set with floral china, a recipe card, and an old television
 description: A nona murdered because of her family recipe? What is this world coming to? We just had to solve this riddle.
 ---
 

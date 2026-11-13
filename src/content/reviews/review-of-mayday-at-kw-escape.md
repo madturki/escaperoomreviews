@@ -27,6 +27,8 @@ criteria:
     score: 10
 summary: A real airplane cockpit, and a takeoff so convincing it can make you motion sick. This is a huge, highly immersive room.
 bookingUrl: https://kwescape.ca/book-now/
+image: /images/2026/11/mayday-kw-escape.jpg
+imageAlt: Airplane cockpit instruments facing a foggy runway
 description: A real airplane cockpit, and a takeoff so convincing it can make you motion sick. This is a huge, highly immersive room.
 ---
 

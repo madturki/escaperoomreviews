@@ -27,6 +27,8 @@ criteria:
     score: 9
 summary: A real firetruck is parked inside and built into the game. Huge, packed with puzzles, and a strong value for a big group.
 bookingUrl: https://kwescape.ca/book-now/
+image: /images/2026/11/911-kw-escape.jpg
+imageAlt: Red fire engine parked inside a station bay with its emergency lights on
 description: A real firetruck is parked inside and built into the game. Huge, packed with puzzles, and a strong value for a big group.
 ---
 
