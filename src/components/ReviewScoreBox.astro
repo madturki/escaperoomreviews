@@ -89,6 +89,10 @@ const hasScore = data.reviewed && data.score != null;
     background: var(--muted);
   }
 
+  .scorebox__value.score--top {
+    background: var(--top);
+  }
+
   .scorebox__value.score--high {
     background: var(--high);
   }
@@ -145,6 +149,10 @@ const hasScore = data.reviewed && data.score != null;
     display: block;
     height: 100%;
     background: var(--muted);
+  }
+
+  .scorebox__fill.score--top {
+    background: var(--top);
   }
 
   .scorebox__fill.score--high {

@@ -9,7 +9,8 @@
   --brand-ink: #ffffff;
   --accent: #e0892a;
   --accent-dark: #b86a17;
-  --high: #2f9e5b;
+  --top: #1e441e;
+  --high: #2e9e5b;
   --mid: #d39b1f;
   --low: #d0473b;
   --radius: 10px;
@@ -340,6 +341,10 @@ h2 {
   color: #fff;
   background: var(--muted);
   font-variant-numeric: tabular-nums;
+}
+
+.score--top {
+  background: var(--top);
 }
 
 .score--high {
