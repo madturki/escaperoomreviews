@@ -80,7 +80,7 @@ const jsonLd =
     : undefined;
 ---
 
-<BaseLayout title={data.title} description={data.description} image={data.image} type="article" jsonLd={jsonLd} noindex={data.draft}>
+<BaseLayout title={data.title} description={data.description} image={data.image} type="article" jsonLd={jsonLd} noindex={data.draft || !data.reviewed}>
   <div class="container">
     <header class="page-head">
       <Breadcrumbs items={crumbs} />
