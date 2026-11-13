@@ -16,6 +16,7 @@ tags:
   - Verified
 format: room
 reviewed: true
+escaped: true
 score: 5.3
 criteria:
   - name: Theme Consistency

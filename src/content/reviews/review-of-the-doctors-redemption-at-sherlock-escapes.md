@@ -9,6 +9,7 @@ cities:
   - kingston
 format: room
 reviewed: false
+escaped: true
 image: /images/2022/10/doctors-redemption.jpg
 description: A good ole jailbreak! Apparently disaster strikes twice. Not only is Sherlock missing, but now another valuable member of the team is kidnapped. Well… no…
 ---

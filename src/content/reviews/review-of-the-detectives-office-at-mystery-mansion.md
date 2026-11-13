@@ -15,6 +15,7 @@ tags:
   - Verified
 format: room
 reviewed: true
+escaped: true
 score: 6.5
 criteria:
   - name: Immersion

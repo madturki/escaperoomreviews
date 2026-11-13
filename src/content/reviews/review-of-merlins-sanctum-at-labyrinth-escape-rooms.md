@@ -11,6 +11,7 @@ genres:
   - magic
 format: room
 reviewed: true
+escaped: true
 score: 7.3
 criteria:
   - name: Theme Consistency

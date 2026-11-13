@@ -10,6 +10,7 @@ genres:
   - mystery
 format: room
 reviewed: true
+escaped: false
 score: 5
 criteria:
   - name: Theme Consistency

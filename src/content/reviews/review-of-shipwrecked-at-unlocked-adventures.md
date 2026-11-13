@@ -11,6 +11,7 @@ genres:
   - pirates
 format: room
 reviewed: true
+escaped: true
 score: 7.5
 criteria:
   - name: Theme Consistency
