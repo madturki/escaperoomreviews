@@ -16,6 +16,8 @@ Every room on this list is at KW Escape, one of those rare gems in the escape ro
 
 This list is ranked by our own review scores, highest first, and only includes rooms that are still open.
 
+![Mayday at KW Escape](/images/2026/11/mayday-kw-escape.jpg)
+
 ## 1. [Mayday](/review-of-mayday-at-kw-escape/)
 
 **Our score: 8.8/10** · KW Escape
@@ -25,6 +27,8 @@ A real airplane cockpit is built into this room, and the takeoff is convincing e
 [Read our review of Mayday](/review-of-mayday-at-kw-escape/)
 
 [Book it Now](https://kwescape.ca/book-now/)
+
+![9-1-1 at KW Escape](/images/2026/11/911-kw-escape.jpg)
 
 ## 2. [9-1-1](/review-of-9-1-1-at-kw-escape/)
 
