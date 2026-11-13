@@ -25,7 +25,7 @@ criteria:
     score: 6
   - name: Bonus Items
     score: 6
-summary: A dentist who sedated you without permission and then locked you up? The intro and theme is actually a little creepier than maybe intended!
+summary: "You came for a cleaning. You stayed for the ChuckleCloud™. Now you’ve woken up alone… locked in a bizarre dental office full of puzzles."
 bookingUrl: https://www.fivenineteenescapes.ca/escaperoomscambridge
 image: /images/2026/11/flossed-in-five-nineteen.jpg
 imageAlt: Empty vintage dental chair under an exam light in a green-tiled room
