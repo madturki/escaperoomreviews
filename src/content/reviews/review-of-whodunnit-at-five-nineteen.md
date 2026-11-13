@@ -25,7 +25,7 @@ criteria:
     score: 5.5
   - name: Bonus Items
     score: 4.5
-summary: A nona murdered because of her family recipe? What is this world coming to? We just had to solve this riddle.
+summary: "Welcome to Main Street Manor, home of famed restaurateur Mama Rosa Napoli. After her retirement party last night, she was found murdered. You have one hour to uncover the killer and the weapon—before the authorities arrive."
 bookingUrl: https://www.fivenineteenescapes.ca/escaperoomscambridge
 image: /images/2026/11/whodunnit-five-nineteen.jpg
 imageAlt: Vintage dining room set with floral china, a recipe card, and an old television
