@@ -7,7 +7,7 @@ region: ontario
 cities:
   - hamilton
 genres:
-  - modern-day
+  - others
 tags:
   - bakery
   - Hamilton

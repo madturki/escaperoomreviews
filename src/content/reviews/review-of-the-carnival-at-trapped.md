@@ -7,7 +7,6 @@ region: ontario
 cities:
   - toronto
 genres:
-  - modern-day
   - creepy
 tags:
   - circus

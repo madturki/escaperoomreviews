@@ -7,7 +7,7 @@ region: ontario
 cities:
   - vaughan
 genres:
-  - modern-day
+  - others
 tags:
   - "The Escape Theory"
   - "Vaughan"

@@ -8,7 +8,6 @@ cities:
   - richmond-hill
 genres:
   - made-for-kids
-  - others
 tags:
   - "Escaptopia"
   - "Richmond Hill"

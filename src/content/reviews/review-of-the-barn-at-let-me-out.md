@@ -8,7 +8,6 @@ cities:
   - mono
 genres:
   - historic
-  - others
 tags:
   - "Let Me Out"
   - "Mono"

@@ -7,7 +7,7 @@ region: ontario
 cities:
   - timmins
 genres:
-  - modern-day
+  - others
 tags:
   - "Escape From Reality"
   - "Timmins"

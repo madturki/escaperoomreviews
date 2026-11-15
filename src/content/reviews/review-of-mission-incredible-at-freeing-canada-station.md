@@ -7,7 +7,7 @@ region: ontario
 cities:
   - richmond-hill
 genres:
-  - modern-day
+  - others
 tags:
   - "Freeing Canada Station"
   - "Richmond Hill"

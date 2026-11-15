@@ -8,7 +8,6 @@ cities:
   - toronto
 genres:
   - creepy
-  - modern-day
 tags:
   - "INBLACK Escape Room"
   - "Toronto"

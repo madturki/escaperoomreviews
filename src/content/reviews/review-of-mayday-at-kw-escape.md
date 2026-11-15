@@ -8,7 +8,7 @@ region: ontario
 cities:
   - kitchener
 genres:
-  - modern-day
+  - others
 tags:
   - KW Escape
   - Kitchener

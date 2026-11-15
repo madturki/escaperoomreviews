@@ -8,7 +8,6 @@ cities:
   - ottawa
 genres:
   - creepy
-  - modern-day
 tags:
   - "Room Escape Ottawa"
   - "Ottawa"

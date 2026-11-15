@@ -8,7 +8,7 @@ region: spain
 cities:
   - madrid
 genres:
-  - modern-day
+  - others
 tags:
   - city
   - Experiencity

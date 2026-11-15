@@ -9,7 +9,6 @@ cities:
   - burlington
 genres:
   - books-movies
-  - modern-day
 format: room
 reviewed: true
 escaped: true

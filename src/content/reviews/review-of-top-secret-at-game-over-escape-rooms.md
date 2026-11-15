@@ -7,7 +7,6 @@ region: ontario
 cities:
   - burlington
 genres:
-  - modern-day
   - prison
 tags:
   - "Game Over Escape Rooms"

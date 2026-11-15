@@ -7,7 +7,7 @@ region: ontario
 cities:
   - greater-sudbury
 genres:
-  - modern-day
+  - others
 tags:
   - "Puzzled Escape Rooms"
   - "Greater Sudbury"

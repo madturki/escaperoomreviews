@@ -8,7 +8,6 @@ cities:
   - ottawa
 genres:
   - made-for-kids
-  - others
 tags:
   - "Arcane Escape Rooms"
   - "Ottawa"

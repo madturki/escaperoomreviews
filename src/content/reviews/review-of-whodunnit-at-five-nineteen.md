@@ -8,7 +8,6 @@ region: ontario
 cities:
   - cambridge
 genres:
-  - modern-day
   - mystery
 tags:
   - Five Nineteen

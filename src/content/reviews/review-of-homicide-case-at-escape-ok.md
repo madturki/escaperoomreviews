@@ -8,7 +8,6 @@ cities:
   - vaughan
 genres:
   - mystery
-  - modern-day
 tags:
   - "Escape OK"
   - "Vaughan"

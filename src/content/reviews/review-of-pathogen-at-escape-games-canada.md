@@ -8,7 +8,6 @@ cities:
   - toronto
 genres:
   - infections
-  - others
 tags:
   - "Escape Games Canada"
   - "Toronto"

@@ -44,7 +44,7 @@ const LEGACY_GENRES = {
   western: 'historic',
   'sci-fi': 'space',
   'tv-shows': 'books-movies',
-  'real-world': 'modern-day',
+  'real-world': 'others',
 };
 const SKIP_PAGE_IDS = new Set(['24', '25']); // WordPress front page and posts page are rebuilt in Astro.
 const POST_STATUSES = { publish: false, draft: true, private: true };

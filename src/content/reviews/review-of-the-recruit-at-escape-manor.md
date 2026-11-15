@@ -8,7 +8,7 @@ region: ontario
 cities:
   - ottawa
 genres:
-  - modern-day
+  - others
 format: room
 reviewed: true
 escaped: false
