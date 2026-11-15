@@ -18,7 +18,7 @@ export function slugify(value: string): string {
 const isPublished = ({ data }: { data: { draft: boolean } }) => import.meta.env.DEV || !data.draft;
 
 export async function getReviews(): Promise<Review[]> {
-  const reviews = await getCollection('reviews', (entry) => isPublished(entry) && entry.data.reviewed);
+  const reviews = await getCollection('reviews', isPublished);
   return reviews.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 }
 

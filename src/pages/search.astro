@@ -28,7 +28,7 @@ import Breadcrumbs from '../components/Breadcrumbs.astro';
     </div>
   </div>
   <script is:inline type="module">
-    const RATING_ORDER = ['9 – 10', '8 – 8.9', '7 – 7.9', '6 – 6.9', 'Under 6'];
+    const RATING_ORDER = ['9 – 10', '8 – 8.9', '7 – 7.9', '6 – 6.9', 'Under 6', 'Not yet reviewed'];
     const PAGE = 10;
     const pagefind = await import('/pagefind/pagefind.js');
     await pagefind.options({ excerptLength: 30 });

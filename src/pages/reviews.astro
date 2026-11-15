@@ -29,7 +29,7 @@ const genres = [...tax.genres.values()]
   .filter((genre) => reviews.some((review) => review.data.genres.includes(genre.id)))
   .sort((a, b) => a.data.name.localeCompare(b.data.name));
 
-const reviewedCount = reviews.length;
+const reviewedCount = reviews.filter((review) => review.data.reviewed).length;
 ---
 
 <BaseLayout title="All escape room reviews" description="Every escape room we've played, with search, filters, and sorting by score, date, or name.">
@@ -38,7 +38,7 @@ const reviewedCount = reviews.length;
       <Breadcrumbs items={[{ label: 'Reviews' }]} />
       <h1>All reviews</h1>
       <p>
-        {reviewedCount} rooms reviewed. Search by room,
+        {reviewedCount} rooms reviewed{reviews.length === reviewedCount ? '' : `, plus ${reviews.length - reviewedCount} still on our list`}. Search by room,
         venue, or city, then filter and sort the list.
       </p>
     </header>
@@ -87,6 +87,7 @@ const reviewedCount = reviews.length;
             <option value="high">7.5 – 8.4</option>
             <option value="mid">6 – 7.4</option>
             <option value="low">Under 6</option>
+            <option value="none">Not yet reviewed</option>
           </select>
         </label>
       </div>

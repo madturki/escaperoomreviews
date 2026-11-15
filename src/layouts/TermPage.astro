@@ -20,6 +20,7 @@ interface Props {
 
 const { title, heading = title, eyebrow, description, intro, crumbs, reviews, articles = [], pins = [], tax } = Astro.props;
 const reviewed = sortByScore(reviews.filter((r) => r.data.reviewed));
+const pending = reviews.filter((r) => !r.data.reviewed);
 ---
 
 <BaseLayout title={title} description={description}>
@@ -58,6 +59,15 @@ const reviewed = sortByScore(reviews.filter((r) => r.data.reviewed));
         <section class="section">
           <h2>Articles</h2>
           <ReviewList entries={articles} tax={tax} />
+        </section>
+      )
+    }
+
+    {
+      pending.length > 0 && (
+        <section class="section">
+          <h2>On our list (not yet reviewed)</h2>
+          <ReviewList entries={pending} tax={tax} />
         </section>
       )
     }
