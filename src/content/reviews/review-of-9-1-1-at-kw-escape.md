@@ -17,7 +17,7 @@ tags:
 format: room
 reviewed: true
 escaped: false
-score: 8.75
+score: 8.8
 criteria:
   - name: Theme Consistency
     score: 9.5

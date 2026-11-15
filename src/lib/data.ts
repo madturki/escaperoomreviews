@@ -150,8 +150,7 @@ export const url = {
 };
 
 export function formatScore(score: number): string {
-  const text = score.toFixed(2);
-  return text.endsWith('0') ? score.toFixed(1) : text;
+  return score.toFixed(1);
 }
 
 export function scoreClass(score?: number | null): string {
