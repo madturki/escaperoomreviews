@@ -29,6 +29,8 @@ criteria:
   - name: Bonus Items
     score: 3
 summary: "A jealous clown has stolen the Circus Master's magical hat. Find it within an hour to save the circus before you and your friends turn into stuffed animals!"
+image: /images/2026/11/enchanted-circus-escape-ok.png
+imageAlt: Enchanted Circus poster with a cannon and a striped ball against a red and white tent
 bookingUrl: "https://escapeok.com/book-now/book-richmond-hill/"
 description: "A jealous clown has stolen the Circus Master's magical hat. Find it within an hour to save the circus before you and your friends turn into stuffed animals!"
 ---
