@@ -4,6 +4,7 @@ import BaseLayout from './BaseLayout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import ReviewList from '../components/ReviewList.astro';
 import BestGenreList from '../components/BestGenreList.astro';
+import TopVenueList from '../components/TopVenueList.astro';
 import { isClosed, url, type Article, type Review, type Taxonomies } from '../lib/data';
 
 interface Props {
@@ -25,11 +26,12 @@ const latest = reviews.filter((r) => r.data.reviewed && !isClosed(r, tax)).slice
       <h1>{data.title}</h1>
     </header>
     <article class="article" data-pagefind-body>
-      {data.image && !data.bestOfGenre && <img class="article__hero" src={data.image} alt={data.imageAlt ?? data.title} decoding="async" fetchpriority="high" />}
+      {data.image && !data.bestOfGenre && !data.topVenues && <img class="article__hero" src={data.image} alt={data.imageAlt ?? data.title} decoding="async" fetchpriority="high" />}
       <div class="prose">
         <Content />
       </div>
       {data.bestOfGenre && <BestGenreList genreId={data.bestOfGenre} reviews={reviews} tax={tax} />}
+      {data.topVenues && <TopVenueList regionId={data.topVenues} reviews={reviews} tax={tax} />}
       {
         data.tags.length > 0 && (
           <ul class="chips" data-pagefind-ignore>

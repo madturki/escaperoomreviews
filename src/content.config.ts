@@ -46,6 +46,7 @@ const articles = defineCollection({
     genres: z.array(z.string()).default([]),
     region: z.string().optional(),
     bestOfGenre: z.string().optional(),
+    topVenues: z.string().optional(),
     draft: z.boolean().default(false),
   }),
 });
