@@ -1,7 +1,7 @@
 ---
 title: Most Immersive Escape Rooms in Ontario
 date: '2021-11-28'
-updated: '2024-11-08'
+updated: '2026-11-15'
 description: Having completed over 100 escape rooms across the province, here's our list of the Most Immersive Escape Rooms in Ontario.
 image: /images/2021/11/IMG_5836.jpg
 tags:
@@ -151,3 +151,11 @@ The Crypt is an incredible room and one of the best builds in Mississauga. This 
 [Read the Review of Zen Room at Hint Hunt](/review-of-the-crypt-at-hint-hunt/)
 
 [Book It Now](https://hinthuntcanada.com/bookyourescaperoom/?utm_source=escaperoomreviews.ca)
+
+## [Vault 101](/review-of-vault-survival-at-fantasmia/) (Richmond Hill)
+
+You have one hour of oxygen left in a Fallout vault. The owner designed, built, and hosts the room, and it shows: the walls, ceiling, and floor all fit the theme, with near-perfect lighting and audio and practical physical puzzles. This is one of our personal favourites.
+
+[Read the Review of Vault 101 at Fantasmia](/review-of-vault-survival-at-fantasmia/)
+
+[Book It Now](https://fantasmia.ca/services/vault101/)
