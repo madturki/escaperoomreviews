@@ -2,6 +2,7 @@
 title: Review of "Whodunnit" at Five Nineteen
 room: Whodunnit (Cambridge)
 date: '2026-11-12'
+updated: '2026-11-15'
 venue: five-nineteen
 region: ontario
 cities:
@@ -23,9 +24,9 @@ criteria:
   - name: Story & Puzzle Quality
     score: 8
   - name: Environment & Ambience
-    score: 5.5
-  - name: Bonus Items
     score: 4.5
+  - name: Bonus Items
+    score: 5.5
 summary: "Welcome to Main Street Manor, home of famed restaurateur Mama Rosa Napoli. After her retirement party last night, she was found murdered. You have one hour to uncover the killer and the weapon—before the authorities arrive."
 bookingUrl: https://www.fivenineteenescapes.ca/escaperoomscambridge
 image: /images/2026/11/whodunnit-five-nineteen.jpg
