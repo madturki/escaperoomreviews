@@ -2,6 +2,7 @@
 title: Review of "The Professor’s Quarters" at Breakout
 room: The Professor’s Quarters
 date: '2021-10-23'
+venue: breakout
 region: ontario
 cities:
   - cambridge
@@ -22,10 +23,10 @@ summary: This week, Professor Pettywood is away at a conference, so you decide t
 bookingUrl: https://www-1558h.bookeo.com/bookeo/b_breakoutescapes_start.html?ctlsrc2=mVh0FUW%2BweH1326WwFaPbifnlF9kFjNHoL66rGIOz5k%3D&src=02m
 image: /images/2021/10/shutterstock_1801282.jpg
 description: This week, Professor Pettywood is away at a conference, so you decide to sneak into his Quarters and see what he’s hiding. His secretary will be returning from…
-draft: true
 genres:
   - others
 tags:
+  - closed
   - Verified
 ---
 
