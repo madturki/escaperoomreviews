@@ -10,5 +10,9 @@
   {
     "id": "spain",
     "name": "Spain"
+  },
+  {
+    "id": "virtual",
+    "name": "Virtual"
   }
 ]

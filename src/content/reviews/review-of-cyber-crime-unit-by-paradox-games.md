@@ -3,6 +3,9 @@ title: Review of "Cyber Crime Unit" by Paradox Games
 room: Cyber Crime Unit
 date: '2021-10-25'
 updated: '2022-10-22'
+region: virtual
+cities:
+  - virtual
 genres:
   - virtual
   - mystery

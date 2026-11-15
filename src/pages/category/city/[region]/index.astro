@@ -21,17 +21,17 @@ const country = tax.countries.get(region.data.country);
 const cities = [...tax.cities.values()]
   .filter((c) => c.data.region === region.id)
   .map((city) => ({ city, count: reviews.filter((r) => r.data.cities.includes(city.id)).length }))
-  .filter(({ count }) => count > 0);
+  .filter(({ city, count }) => count > 0 && city.data.name !== region.data.name);
 const name = region.data.name;
 ---
 
 <TermPage
   title={`Best Escape Rooms in ${name}`}
-  eyebrow={country?.data.name}
+  eyebrow={country && country.data.name !== name ? country.data.name : undefined}
   description={`Our reviews and ratings of escape rooms in ${name}, sorted by score, with a map of every venue.`}
   crumbs={[
     { label: 'Locations', href: '/category/city/' },
-    ...(country ? [{ label: country.data.name, href: url.country(country.id) }] : []),
+    ...(country && country.data.name !== name ? [{ label: country.data.name, href: url.country(country.id) }] : []),
     { label: name },
   ]}
   reviews={reviews}

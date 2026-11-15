@@ -19,15 +19,16 @@ const { city, reviews, pins, tax } = Astro.props;
 const region = tax.regions.get(city.data.region);
 const country = region ? tax.countries.get(region.data.country) : undefined;
 const name = city.data.name;
+const eyebrow = [region?.data.name, country?.data.name].filter((part, index, all) => part && part !== name && all.indexOf(part) === index).join(', ');
 ---
 
 <TermPage
   title={`Best Escape Rooms in ${name}`}
-  eyebrow={[region?.data.name, country?.data.name].filter(Boolean).join(', ')}
-  description={`Our room-by-room reviews of escape rooms in ${name}${region ? `, ${region.data.name}` : ''}, sorted by score.`}
+  eyebrow={eyebrow}
+  description={`Our room-by-room reviews of escape rooms in ${name}${region && region.data.name !== name ? `, ${region.data.name}` : ''}, sorted by score.`}
   crumbs={[
     { label: 'Locations', href: '/category/city/' },
-    ...(region ? [{ label: region.data.name, href: url.region(region.id) }] : []),
+    ...(region && region.data.name !== name ? [{ label: region.data.name, href: url.region(region.id) }] : []),
     { label: name },
   ]}
   reviews={reviews}
