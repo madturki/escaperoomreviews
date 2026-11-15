@@ -28,6 +28,8 @@ criteria:
   - name: Bonus Items
     score: 7.5
 summary: '"My Home" is not exactly an escape room but a creepy live actor experience. There are very few puzzles to solve and more so a lot of instructions to follow to solve the mystery.'
+image: /images/2026/11/my-home-inblack.png
+imageAlt: A pale child in a red sweater holds puppet strings above a warm glow
 bookingUrl: https://www.inblackescape.com/locations/toronto-north-york/my-home-14a
 description: A creepy live-actor experience at INBLACK in Toronto, with a strong host and a build that is excellent in most of the space.
 ---
