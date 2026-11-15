@@ -18,7 +18,7 @@ tags:
   - Verified
 format: room
 reviewed: true
-score: 9.125
+score: 9.1
 criteria:
   - name: Theme Consistency
     score: 10
