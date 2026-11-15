@@ -4,7 +4,7 @@ import BaseLayout from './BaseLayout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import ReviewList from '../components/ReviewList.astro';
 import BestGenreList from '../components/BestGenreList.astro';
-import { url, type Article, type Review, type Taxonomies } from '../lib/data';
+import { isClosed, url, type Article, type Review, type Taxonomies } from '../lib/data';
 
 interface Props {
   article: Article;
@@ -15,7 +15,7 @@ interface Props {
 const { article, reviews, tax } = Astro.props;
 const { data } = article;
 const { Content } = await render(article);
-const latest = reviews.filter((r) => r.data.reviewed).slice(0, 4);
+const latest = reviews.filter((r) => r.data.reviewed && !isClosed(r, tax)).slice(0, 4);
 ---
 
 <BaseLayout title={data.title} description={data.description} image={data.image} type="article" noindex={data.draft}>
