@@ -27,6 +27,8 @@ criteria:
   - name: Bonus Items
     score: 7
 summary: It was the worst storm to hit the region in months and the last thing he said to you on the phone was, "Don't worry. There's vacancy at some place called 'Kate's Motel'. I'll be fine." Then, the line goes dead. It's been a week and you haven't heard from him. You organize a small group of friends and decide to head out in search of him. Kate's Motel isn't too far away, but it's in a remote area to where not many will travel. And, rumour is that once you've checked in, you'll be dying to check out.
+image: /images/2026/11/kates-motel-perplexity.png
+imageAlt: Red motel door under a neon Last Resort sign and a No Vacancy sign
 description: It was the worst storm to hit the region in months, and the last thing he said was that there was a vacancy at Kate's Motel. Then the line went dead.
 ---
 
