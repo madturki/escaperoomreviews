@@ -8,7 +8,7 @@ region: ontario
 cities:
   - ottawa
 genres:
-  - pirates
+  - pirates-water
 format: room
 reviewed: true
 escaped: true

@@ -8,7 +8,7 @@ region: ontario
 cities:
   - hamilton
 genres:
-  - others
+  - books-movies
 format: room
 reviewed: true
 escaped: true

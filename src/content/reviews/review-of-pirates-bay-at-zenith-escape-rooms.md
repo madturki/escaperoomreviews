@@ -8,7 +8,7 @@ region: ontario
 cities:
   - barrie
 genres:
-  - pirates
+  - pirates-water
 tags:
   - Zenith
   - Barrie

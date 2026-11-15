@@ -56,9 +56,9 @@
     "name": "Others"
   },
   {
-    "id": "pirates",
-    "name": "Pirates",
-    "description": "A list of the best pirate escape rooms in Canada.  Our escape room reviews are an honest and complete examination of specific rooms, completed by people just like you!  These rooms contain themes like... pirates!  And that's about it.  A bridge between fantasy escape rooms and historic escape rooms."
+    "id": "pirates-water",
+    "name": "Pirates & Water",
+    "description": "A list of the best pirate, ship, submarine, and Atlantis escape rooms in Canada. Our escape room reviews are an honest and complete examination of specific rooms, completed by people just like you!"
   },
   {
     "id": "prison",
@@ -76,10 +76,5 @@
   {
     "id": "virtual",
     "name": "Virtual"
-  },
-  {
-    "id": "water",
-    "name": "Water",
-    "description": "Ahoy! A list of the best boating, submarine, and Atlantis themed escape rooms in Canada. Our escape room reviews are an honest and complete examination of specific rooms, completed by people just like you!"
   }
 ]

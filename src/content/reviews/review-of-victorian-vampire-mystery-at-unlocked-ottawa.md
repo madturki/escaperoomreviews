@@ -8,7 +8,8 @@ region: ontario
 cities:
   - ottawa
 genres:
-  - fantasy
+  - mystery
+  - creepy
 tags:
   - Vampires
   - Mystery

@@ -8,6 +8,7 @@ cities:
   - caledonia
 genres:
   - magic
+  - books-movies
 tags:
   - closed
   - Verified

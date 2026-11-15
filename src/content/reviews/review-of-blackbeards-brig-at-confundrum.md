@@ -8,7 +8,7 @@ region: ontario
 cities:
   - burlington
 genres:
-  - pirates
+  - pirates-water
 format: room
 reviewed: true
 escaped: true

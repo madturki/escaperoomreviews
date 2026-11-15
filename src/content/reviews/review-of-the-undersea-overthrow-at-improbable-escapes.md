@@ -8,7 +8,7 @@ region: ontario
 cities:
   - kingston
 genres:
-  - water
+  - pirates-water
 tags:
   - Submarine
   - Water

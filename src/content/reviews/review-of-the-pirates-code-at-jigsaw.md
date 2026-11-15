@@ -8,7 +8,7 @@ region: ontario
 cities:
   - ottawa
 genres:
-  - pirates
+  - pirates-water
 tags:
   - nyctophobia
   - Ontario

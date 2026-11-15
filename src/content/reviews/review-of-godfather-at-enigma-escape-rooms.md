@@ -8,7 +8,7 @@ region: ontario
 cities:
   - toronto
 genres:
-  - modern-day
+  - books-movies
 tags:
   - mafia
   - Godfather

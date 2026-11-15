@@ -7,7 +7,7 @@ region: ontario
 cities:
   - toronto
 genres:
-  - water
+  - pirates-water
 tags:
   - "Escape Games Canada"
   - "Toronto"

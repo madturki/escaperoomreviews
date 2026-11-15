@@ -7,7 +7,7 @@ region: ontario
 cities:
   - kitchener
 genres:
-  - water
+  - pirates-water
   - modern-day
 tags:
   - "EscapeworX"
