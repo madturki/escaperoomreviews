@@ -7,6 +7,8 @@ venue: escape-manor
 region: ontario
 cities:
   - ottawa
+genres:
+  - egypt
 tags:
   - tombs
   - egpyt

@@ -7,6 +7,8 @@ venue: adventure-rooms
 region: ontario
 cities:
   - niagara-falls
+genres:
+  - prohibition
 tags:
   - prohibition
   - Verified

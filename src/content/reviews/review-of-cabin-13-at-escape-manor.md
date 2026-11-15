@@ -7,6 +7,8 @@ venue: escape-manor
 region: ontario
 cities:
   - hamilton
+genres:
+  - creepy
 tags:
   - creepy
   - Escape Manor

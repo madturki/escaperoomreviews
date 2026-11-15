@@ -7,6 +7,8 @@ venue: kw-escape
 region: ontario
 cities:
   - kitchener
+genres:
+  - others
 tags:
   - Ontario
   - Verified
