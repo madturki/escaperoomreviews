@@ -23,8 +23,10 @@ export async function getReviews(): Promise<Review[]> {
 }
 
 export async function getArticles(): Promise<Article[]> {
-  const articles = await getCollection('articles', isPublished);
-  return articles.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+  const [articles, reviews] = await Promise.all([getCollection('articles', isPublished), getReviews()]);
+  return articles
+    .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+    .map((article) => withGenreCover(article, reviews));
 }
 
 export async function getTaxonomies() {
@@ -111,6 +113,24 @@ export function isClosed(review: Review, tax: Taxonomies): boolean {
     review.data.tags.some((tag) => tag.toLowerCase() === 'closed') ||
     !!(review.data.venue && tax.venues.get(review.data.venue)?.data.closed)
   );
+}
+
+export function genreCover(reviews: Review[], genreId: string): { image: string; imageAlt?: string } | undefined {
+  const best = sortByScore(
+    reviews.filter(
+      (review) => review.data.reviewed && review.data.score != null && review.data.image && review.data.genres.includes(genreId),
+    ),
+  )[0];
+  if (!best?.data.image) return undefined;
+  return { image: best.data.image, imageAlt: best.data.imageAlt };
+}
+
+function withGenreCover(article: Article, reviews: Review[]): Article {
+  const genreId = article.data.bestOfGenre;
+  if (!genreId) return article;
+  const cover = genreCover(reviews, genreId);
+  if (!cover) return article;
+  return { ...article, data: { ...article.data, image: cover.image, imageAlt: cover.imageAlt } };
 }
 
 export function bestInGenre(reviews: Review[], genreId: string): Review[] {
