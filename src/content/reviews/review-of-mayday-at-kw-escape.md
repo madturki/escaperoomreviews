@@ -2,6 +2,7 @@
 title: Review of "Mayday" at KW Escape
 room: Mayday (Kitchener)
 date: '2026-11-12'
+updated: '2026-11-15'
 venue: kw-escape
 region: ontario
 cities:
@@ -16,16 +17,16 @@ tags:
 format: room
 reviewed: true
 escaped: false
-score: 8.8
+score: 8.75
 criteria:
   - name: Theme Consistency
     score: 9.5
   - name: Story & Puzzle Quality
     score: 7.5
   - name: Environment & Ambience
-    score: 8
-  - name: Bonus Items
     score: 10
+  - name: Bonus Items
+    score: 8
 summary: "You and your team took a flight with McCarthy Airlines to Belize. Suddenly, the plane experiences turbulence and \"mayday\" calls are announced. You survive the crash, but now you must rebuild the GPS device before the 60-minute back up power runs out."
 bookingUrl: https://kwescape.ca/book-now/
 image: /images/2026/11/mayday-kw-escape.jpg
