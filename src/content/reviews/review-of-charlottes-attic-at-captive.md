@@ -8,6 +8,8 @@ region: ontario
 cities:
   - mississauga
   - toronto
+genres:
+  - creepy
 tags:
   - nyctophobia
   - dark
