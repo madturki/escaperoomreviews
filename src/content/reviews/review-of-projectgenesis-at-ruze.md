@@ -23,10 +23,11 @@ criteria:
   - name: Bonus Items
     score: 8
 summary: '"As top agents of T.Y.M.E. Corp, your mission is to go back in time to follow Mr. E''s tracks, successfully recover the items, and return them all where they belong to restore the timeline. Just remember we can only keep the time portal open for an hour, if you don''t make it back before that, you will become part of history itself..."'
-bookingUrl: https://www.ruzeescaperooms.com/bookings
+bookingUrl: https://ruzeescaperooms.com/book
 image: /images/2021/12/project-genesis-ruze-escape-room.png
 description: '"As top agents of T.Y.M.E. Corp, your mission is to go back in time to follow Mr. E''s tracks, successfully recover the items, and return them all where they…'
 tags:
+  - closed
   - Verified
 ---
 
