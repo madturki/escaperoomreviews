@@ -7,8 +7,6 @@ venue: crimson-codes
 region: ontario
 cities:
   - hamilton
-genres:
-  - mystery
 tags:
   - "Crimson Codes"
   - Verified

@@ -9,6 +9,7 @@ cities:
   - hamilton
 genres:
   - books-movies
+  - mystery
 format: room
 reviewed: true
 escaped: true

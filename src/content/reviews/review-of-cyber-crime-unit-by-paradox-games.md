@@ -5,6 +5,7 @@ date: '2021-10-25'
 updated: '2022-10-22'
 genres:
   - virtual
+  - mystery
 format: virtual
 reviewed: true
 score: 8.8

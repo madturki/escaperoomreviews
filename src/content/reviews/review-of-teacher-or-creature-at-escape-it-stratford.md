@@ -8,7 +8,6 @@ cities:
   - stratford
 genres:
   - made-for-kids
-  - mystery
 tags:
   - "Escape-It Stratford"
   - "Stratford"

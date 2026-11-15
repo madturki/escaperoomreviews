@@ -7,8 +7,6 @@ venue: mystery-mansion
 region: saskatchewan
 cities:
   - regina
-genres:
-  - mystery
 tags:
   - Mystery
   - Detective

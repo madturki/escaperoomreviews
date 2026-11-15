@@ -9,6 +9,7 @@ cities:
   - kitchener
 genres:
   - creepy
+  - mystery
 tags:
   - nyctophobia
   - live actor

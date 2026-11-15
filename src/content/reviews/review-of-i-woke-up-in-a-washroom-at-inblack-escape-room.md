@@ -7,7 +7,6 @@ region: ontario
 cities:
   - toronto
 genres:
-  - mystery
   - others
 tags:
   - "INBLACK Escape Room"

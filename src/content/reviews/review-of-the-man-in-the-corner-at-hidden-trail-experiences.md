@@ -8,6 +8,7 @@ cities:
   - windsor
 genres:
   - creepy
+  - mystery
 tags:
   - "Hidden Trail Experiences"
   - "Windsor"

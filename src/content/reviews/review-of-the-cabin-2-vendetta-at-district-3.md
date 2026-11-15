@@ -7,8 +7,6 @@ venue: district3
 region: saskatchewan
 cities:
   - regina
-genres:
-  - mystery
 tags:
   - Ontario
   - Verified

@@ -8,7 +8,6 @@ cities:
   - vaughan
 genres:
   - creepy
-  - mystery
 tags:
   - "The Escape Theory"
   - "Vaughan"

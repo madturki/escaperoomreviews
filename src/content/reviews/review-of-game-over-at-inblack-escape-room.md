@@ -8,7 +8,6 @@ cities:
   - markham
 genres:
   - creepy
-  - mystery
 tags:
   - "INBLACK Escape Room"
   - "Markham"

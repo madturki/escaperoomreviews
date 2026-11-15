@@ -9,7 +9,6 @@ cities:
 genres:
   - books-movies
   - made-for-kids
-  - mystery
 tags:
   - "Escapology"
   - "Kitchener"

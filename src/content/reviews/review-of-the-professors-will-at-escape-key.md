@@ -6,8 +6,6 @@ venue: escape-key
 region: ontario
 cities:
   - brantford
-genres:
-  - mystery
 tags:
   - "Escape Key"
   - "Brantford"

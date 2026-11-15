@@ -7,7 +7,6 @@ region: ontario
 cities:
   - belleville
 genres:
-  - mystery
   - modern-day
 tags:
   - "Breakout Belleville"

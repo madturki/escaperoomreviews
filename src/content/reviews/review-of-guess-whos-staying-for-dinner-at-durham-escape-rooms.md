@@ -7,7 +7,6 @@ region: ontario
 cities:
   - whitby
 genres:
-  - mystery
   - creepy
 tags:
   - "Durham Escape Rooms"

@@ -7,8 +7,6 @@ venue: khronos-gauntlet
 region: ontario
 cities:
   - guelph
-genres:
-  - mystery
 tags:
   - closed
   - Verified

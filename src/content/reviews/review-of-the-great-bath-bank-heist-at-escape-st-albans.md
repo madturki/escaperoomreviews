@@ -8,7 +8,6 @@ cities:
   - napanee
 genres:
   - historic
-  - mystery
 tags:
   - "Escape St. Alban's"
   - "Greater Napanee"

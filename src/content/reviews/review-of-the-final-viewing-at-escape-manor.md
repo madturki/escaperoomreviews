@@ -8,7 +8,6 @@ region: ontario
 cities:
   - hamilton
 genres:
-  - mystery
   - creepy
 format: room
 reviewed: true

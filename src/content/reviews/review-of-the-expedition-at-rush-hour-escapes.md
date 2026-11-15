@@ -8,7 +8,6 @@ cities:
   - cornwall
 genres:
   - others
-  - mystery
 tags:
   - "Rush Hour Escapes"
   - "Cornwall"

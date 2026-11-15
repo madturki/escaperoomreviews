@@ -8,7 +8,6 @@ cities:
   - mississauga
 genres:
   - creepy
-  - mystery
 tags:
   - "Gaslight Theatre"
   - "Mississauga"
