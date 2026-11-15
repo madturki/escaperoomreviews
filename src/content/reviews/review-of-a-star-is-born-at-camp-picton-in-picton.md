@@ -7,6 +7,8 @@ venue: escape-camp-picton
 region: ontario
 cities:
   - picton
+genres:
+  - others
 tags:
   - Ontario
   - Picton

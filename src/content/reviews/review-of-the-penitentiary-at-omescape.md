@@ -7,6 +7,8 @@ venue: omescape
 region: ontario
 cities:
   - markham
+genres:
+  - others
 format: room
 reviewed: false
 description: '"You suddenly wake up to find yourself locked in a cramped prison cell, cold, scared, the air-filled with silence. You soon realize that you are in the…'

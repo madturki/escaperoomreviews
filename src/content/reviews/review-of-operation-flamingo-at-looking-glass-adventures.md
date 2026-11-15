@@ -8,7 +8,7 @@ region: ontario
 cities:
   - toronto
 genres:
-  - modern-day
+  - others
 format: room
 reviewed: true
 escaped: true

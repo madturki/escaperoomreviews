@@ -7,6 +7,8 @@ venue: confundrum
 region: ontario
 cities:
   - burlington
+genres:
+  - others
 format: room
 reviewed: false
 image: /images/2022/10/Screen-Shot-2022-10-24-at-11.10.45-AM.png

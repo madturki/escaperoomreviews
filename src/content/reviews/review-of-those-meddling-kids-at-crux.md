@@ -24,6 +24,8 @@ summary: In Cruxton exists a house stuck in time. This house sits undisturbed as
 bookingUrl: https://www.thecrux.ca/#booknow
 image: /images/2021/09/those_meddling_kids-e1630891762916.png
 description: In Cruxton exists a house stuck in time. This house sits undisturbed as its last resident passed away some time ago. Being a new group of realtors, you’ve been…
+genres:
+  - others
 tags:
   - Verified
 ---

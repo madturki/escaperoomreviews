@@ -8,7 +8,6 @@ cities:
   - toronto
 genres:
   - made-for-kids
-  - others
 tags:
   - Made for Kids
   - Ontario

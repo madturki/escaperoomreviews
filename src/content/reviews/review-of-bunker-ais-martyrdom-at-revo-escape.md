@@ -7,7 +7,7 @@ region: ontario
 cities:
   - toronto
 genres:
-  - modern-day
+  - others
 tags:
   - "Revo Escape"
   - "Toronto"

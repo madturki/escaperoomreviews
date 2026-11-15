@@ -8,7 +8,6 @@ cities:
   - kitchener
 genres:
   - pirates-water
-  - modern-day
 tags:
   - "EscapeworX"
   - "Kitchener"

@@ -7,7 +7,7 @@ region: ontario
 cities:
   - mississauga
 genres:
-  - modern-day
+  - others
 tags:
   - "Saga Escapes"
   - "Mississauga"

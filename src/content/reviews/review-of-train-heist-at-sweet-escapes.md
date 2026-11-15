@@ -7,7 +7,7 @@ region: ontario
 cities:
   - belleville
 genres:
-  - modern-day
+  - others
 tags:
   - "Sweet Escapes"
   - "Belleville"

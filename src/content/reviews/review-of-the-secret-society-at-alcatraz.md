@@ -8,7 +8,7 @@ region: ontario
 cities:
   - hamilton
 genres:
-  - modern-day
+  - others
 format: room
 reviewed: true
 escaped: false

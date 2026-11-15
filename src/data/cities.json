@@ -215,6 +215,11 @@
     "region": "ontario"
   },
   {
+    "id": "virtual",
+    "name": "Virtual",
+    "region": "virtual"
+  },
+  {
     "id": "whitby",
     "name": "Whitby",
     "region": "ontario"

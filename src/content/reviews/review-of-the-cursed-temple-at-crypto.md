@@ -7,6 +7,8 @@ venue: crypto
 region: ontario
 cities:
   - toronto
+genres:
+  - others
 format: room
 reviewed: false
 description: '"After an incident at his newest expedition, a famed explorer has sent you and your crew to Amon Kha''s plagued temple. Your goal is simple - break into the…'

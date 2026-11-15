@@ -8,7 +8,7 @@ region: ontario
 cities:
   - mississauga
 genres:
-  - modern-day
+  - others
 format: room
 reviewed: true
 escaped: true

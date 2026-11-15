@@ -8,7 +8,6 @@ cities:
   - kitchener
 genres:
   - creepy
-  - modern-day
 tags:
   - "Escape Game Entertainment"
   - "Kitchener"

@@ -8,6 +8,8 @@ region: ontario
 cities:
   - toronto
   - mississauga
+genres:
+  - others
 format: room
 reviewed: false
 description: '"The story was unbelievable! You had heard the rumours since John Dillinger and his gang were killed, the money from their last bank robbery had never been…'

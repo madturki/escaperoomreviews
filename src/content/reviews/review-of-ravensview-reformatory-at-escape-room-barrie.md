@@ -8,7 +8,6 @@ region: ontario
 cities:
   - barrie
 genres:
-  - modern-day
   - prison
 format: room
 reviewed: true

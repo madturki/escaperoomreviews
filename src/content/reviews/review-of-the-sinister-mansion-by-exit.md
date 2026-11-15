@@ -3,6 +3,9 @@ title: Review of "The Sinister Mansion" by Exit
 room: The Sinister Mansion
 date: '2021-10-25'
 updated: '2022-10-22'
+region: virtual
+cities:
+  - virtual
 genres:
   - virtual
 format: boxed

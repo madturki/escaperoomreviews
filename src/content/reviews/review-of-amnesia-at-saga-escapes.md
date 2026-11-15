@@ -6,6 +6,8 @@ venue: saga-escapes
 region: ontario
 cities:
   - mississauga
+genres:
+  - others
 tags:
   - "Saga Escapes"
   - "Mississauga"

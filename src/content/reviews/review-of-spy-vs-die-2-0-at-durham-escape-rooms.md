@@ -7,7 +7,7 @@ region: ontario
 cities:
   - whitby
 genres:
-  - modern-day
+  - others
 tags:
   - "Durham Escape Rooms"
   - "Whitby"

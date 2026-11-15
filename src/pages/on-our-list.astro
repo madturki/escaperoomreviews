@@ -1,0 +1,78 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import { getUnreviewed, getTaxonomies, roomName, url } from '../lib/data';
+
+const [rooms, tax] = await Promise.all([getUnreviewed(), getTaxonomies()]);
+---
+
+<BaseLayout
+  title="On our list"
+  description="Escape rooms we have not reviewed yet. This list is not a set of reviews."
+>
+  <div class="container">
+    <header class="page-head">
+      <Breadcrumbs items={[{ label: 'On our list' }]} />
+      <h1>On our list</h1>
+      <p>
+        {rooms.length} rooms we have not played yet. These are not reviews. Finished reviews live on the <a href="/reviews/">reviews page</a>.
+      </p>
+    </header>
+    <ul class="waitlist" data-pagefind-ignore>
+      {
+        rooms.map((room) => {
+          const venue = room.data.venue ? tax.venues.get(room.data.venue) : undefined;
+          const cities = room.data.cities.map((id) => tax.cities.get(id)).filter((city) => city !== undefined);
+          return (
+            <li>
+              <span class="waitlist__name">{roomName(room)}</span>
+              <span class="waitlist__meta">
+                {venue && <a href={url.venue(venue.id)}>{venue.data.name}</a>}
+                {cities.map((city) => (
+                  <a href={room.data.region ? url.city(room.data.region, city.id) : url.region(city.data.region)}>{city.data.name}</a>
+                ))}
+              </span>
+            </li>
+          );
+        })
+      }
+    </ul>
+  </div>
+</BaseLayout>
+
+<style>
+  .waitlist {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 0.6rem;
+  }
+
+  .waitlist li {
+    background: var(--surface);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    padding: 0.75rem 0.9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  .waitlist__name {
+    font-weight: 700;
+  }
+
+  .waitlist__meta {
+    color: var(--ink-soft);
+    font-size: 0.92rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem 0.75rem;
+  }
+
+  .waitlist__meta a {
+    color: inherit;
+  }
+</style>

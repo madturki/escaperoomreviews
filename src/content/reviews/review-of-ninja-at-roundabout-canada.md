@@ -6,6 +6,8 @@ venue: roundabout
 region: ontario
 cities:
   - toronto
+genres:
+  - others
 tags:
   - Roundabout
   - Toronto

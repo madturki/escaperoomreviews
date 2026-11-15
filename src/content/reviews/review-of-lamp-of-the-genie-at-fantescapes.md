@@ -4,6 +4,8 @@ room: Lamp of the Genie
 date: '2023-08-05'
 updated: '2024-03-28'
 venue: fantescapes
+genres:
+  - others
 tags:
   - closed
 format: room

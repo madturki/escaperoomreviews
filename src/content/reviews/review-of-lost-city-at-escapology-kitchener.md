@@ -8,7 +8,6 @@ cities:
   - kitchener
 genres:
   - historic
-  - others
 tags:
   - "Escapology"
   - "Kitchener"

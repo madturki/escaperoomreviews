@@ -7,6 +7,8 @@ venue: escape-manor
 region: ontario
 cities:
   - toronto
+genres:
+  - others
 format: room
 reviewed: false
 description: “A rich deep and blo”—the winemaker paused—“a deep red wine. Full of bod”—a second pause—“full bodied with wonderful flavors. Now, shall we begin tasting?”…

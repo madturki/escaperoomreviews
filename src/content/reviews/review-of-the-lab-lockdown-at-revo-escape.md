@@ -8,7 +8,6 @@ cities:
   - toronto
 genres:
   - prison
-  - modern-day
 tags:
   - "Revo Escape"
   - "Toronto"

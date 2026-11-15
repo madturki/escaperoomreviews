@@ -18,15 +18,20 @@ export function slugify(value: string): string {
 const isPublished = ({ data }: { data: { draft: boolean } }) => import.meta.env.DEV || !data.draft;
 
 export async function getReviews(): Promise<Review[]> {
-  const reviews = await getCollection('reviews', isPublished);
+  const reviews = await getCollection('reviews', (entry) => isPublished(entry) && entry.data.reviewed);
   return reviews.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 }
 
+export async function getUnreviewed(): Promise<Review[]> {
+  const reviews = await getCollection('reviews', (entry) => isPublished(entry) && !entry.data.reviewed);
+  return reviews.sort((a, b) => roomName(a).localeCompare(roomName(b), 'en', { sensitivity: 'base' }));
+}
+
 export async function getArticles(): Promise<Article[]> {
-  const [articles, reviews] = await Promise.all([getCollection('articles', isPublished), getReviews()]);
+  const [articles, reviews, tax] = await Promise.all([getCollection('articles', isPublished), getReviews(), getTaxonomies()]);
   return articles
     .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
-    .map((article) => withGenreCover(article, reviews));
+    .map((article) => withCover(article, reviews, tax));
 }
 
 export async function getTaxonomies() {
@@ -131,6 +136,52 @@ function withGenreCover(article: Article, reviews: Review[]): Article {
   const cover = genreCover(reviews, genreId);
   if (!cover) return article;
   return { ...article, data: { ...article.data, image: cover.image, imageAlt: cover.imageAlt } };
+}
+
+export interface VenueRanking {
+  venueId: string;
+  average: number;
+  reviews: Review[];
+  top: Review;
+}
+
+export function topVenues(reviews: Review[], tax: Taxonomies, regionId: string, limit = 10): VenueRanking[] {
+  const groups = new Map<string, Review[]>();
+  for (const review of reviews) {
+    if (review.data.region !== regionId || review.data.score == null || !review.data.venue) continue;
+    if (isClosed(review, tax)) continue;
+    const list = groups.get(review.data.venue) ?? [];
+    list.push(review);
+    groups.set(review.data.venue, list);
+  }
+  return [...groups.entries()]
+    .map(([venueId, list]) => {
+      const ranked = sortByScore(list);
+      const average = ranked.reduce((sum, review) => sum + (review.data.score ?? 0), 0) / ranked.length;
+      return { venueId, average, reviews: ranked, top: ranked[0] };
+    })
+    .sort((a, b) => {
+      if (b.average !== a.average) return b.average - a.average;
+      if (b.reviews.length !== a.reviews.length) return b.reviews.length - a.reviews.length;
+      const topScore = (b.top.data.score ?? 0) - (a.top.data.score ?? 0);
+      if (topScore) return topScore;
+      const name = (id: string) => tax.venues.get(id)?.data.name ?? id;
+      return name(a.venueId).localeCompare(name(b.venueId));
+    })
+    .slice(0, limit);
+}
+
+function withCover(article: Article, reviews: Review[], tax: Taxonomies): Article {
+  if (article.data.bestOfGenre) return withGenreCover(article, reviews);
+  if (article.data.image || !article.data.topVenues) return article;
+  const ranking = topVenues(reviews, tax, article.data.topVenues, 1)[0];
+  const image = ranking?.top.data.image;
+  if (!ranking || !image) return article;
+  const venueName = tax.venues.get(ranking.venueId)?.data.name ?? 'the venue';
+  return {
+    ...article,
+    data: { ...article.data, image, imageAlt: article.data.imageAlt ?? `${roomName(ranking.top)} at ${venueName}` },
+  };
 }
 
 export function bestInGenre(reviews: Review[], genreId: string): Review[] {

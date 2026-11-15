@@ -6,6 +6,8 @@ venue: countdown-escape-rooms
 region: ontario
 cities:
   - thunder-bay
+genres:
+  - others
 tags:
   - "Countdown Escape Rooms"
   - "Thunder Bay"

@@ -14,7 +14,7 @@ const countries = [...tax.countries.values()].map((country) => ({
       cities: [...tax.cities.values()]
         .filter((c) => c.data.region === region.id)
         .map((city) => ({ city, count: reviews.filter((r) => r.data.cities.includes(city.id)).length }))
-        .filter(({ count }) => count > 0),
+        .filter(({ city, count }) => count > 0 && city.data.name !== region.data.name),
     })),
 }));
 ---

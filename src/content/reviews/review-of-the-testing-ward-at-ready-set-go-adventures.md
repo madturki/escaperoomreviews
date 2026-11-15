@@ -7,6 +7,8 @@ venue: ready-set-go-adventures
 region: ontario
 cities:
   - mississauga
+genres:
+  - others
 format: room
 reviewed: false
 description: '"Your group decides to sneak into Centre 101- An abandoned psych ward that was shut down years ago because of malpractice. While venturing through the dark…'

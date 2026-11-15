@@ -6,6 +6,8 @@ venue: game-over-escape-rooms
 region: ontario
 cities:
   - burlington
+genres:
+  - others
 tags:
   - "Game Over Escape Rooms"
   - "Burlington"

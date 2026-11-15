@@ -1,0 +1,248 @@
+---
+import ScoreBadge from './ScoreBadge.astro';
+import VenueMap from './VenueMap.astro';
+import { bookingHref, buildPins, formatScore, reviewBlurb, roomName, topVenues, url, type Review, type Taxonomies, type Venue } from '../lib/data';
+
+interface Props {
+  regionId: string;
+  reviews: Review[];
+  tax: Taxonomies;
+}
+
+const { regionId, reviews, tax } = Astro.props;
+const regionName = tax.regions.get(regionId)?.data.name ?? 'this region';
+const ranked = topVenues(reviews, tax, regionId);
+const pins = buildPins(tax, ranked.flatMap((ranking) => ranking.reviews), { region: regionId }).filter((pin) =>
+  ranked.some((ranking) => ranking.venueId === pin.venue),
+);
+
+const summaries: Record<string, string> = {
+  'secret-city':
+    "King of the Bootleggers is the only open room we've scored here, and that 9.5 is why a one-room venue leads the province. A live actor carries a group of twelve, split into teams so everyone stays in the story, inside a fully dressed Casa Loma set. The light stays ambient, and the room barely leans on audio cues.",
+  fantasmia:
+    "Vault 101 is the designer's fifth build of the same idea, and the finish is the reason it scores this high. Floors, walls, and ceiling all belong to the set, the light and sound stay consistent, and the puzzles are physical, including moments where you have to push.",
+  imaginarium:
+    'The Grand Wilshire Hotel is built by people who came out of film work, so the room is a set. You are standing in an early-1900s hotel as soon as the door closes, with floors, ceilings, light, and sound all in agreement. The haunting stays whimsical, without jump scares.',
+  jigsaw:
+    "The Pirate's Code and The Castle are built to the same standard: dense sets, props in excellent shape, and technology that stays hidden. The pirate room mixes physical work, riddles, and memory without the tech breaking the scene. The hosts are openly pleased when a team finishes, and that energy is part of the score.",
+  'improbable-escapes':
+    "Seven open rooms, and the write-ups keep landing on the same thing: the builds, the puzzles, and the staff are hard to fault. Coroner's Report is the best horror room we've played in Ontario, with every surface finished for the theme. Neverland is the room that made us want to rescore older immersive rooms.",
+  'hint-hunt':
+    'The Crypt and Zen Room are built so you can forget the unit is in a plaza. Walls, doors, floors, and ceilings are all part of the set, and even the vents and sprinklers are worked in. Some props are worn, and the owner has said those pieces are scheduled to be rebuilt.',
+  'looking-glass-adventures':
+    "The hosts know the puzzles and the stories, and Walden's Wizarding Shop is the room to book if the group has one slot. It has the most puzzles of their three, the most complete set, and technology that reads as magic. The ceiling is the one plane left unfinished.",
+  'escape-from-the-6':
+    'Volcano Views starts with the team strapped into aircraft seats, watching the clouds while the fuselage moves, then keeps opening new spaces. The puzzles are electronic or purely physical. Firefighter Rescue Mission is still one of the stranger rooms we have done, and hints arrive in the room at the right level of help.',
+  'daydream-adventures':
+    'Theming starts at the front door and continues down the hall, including the washrooms. Dream Portal plays like an art installation, with purpose-built props and a clear line through the puzzles. Botanica and Brimley Manor are beautiful sets; the custom plants in Botanica stand out, and that room asks you to search an open space.',
+  'escape-camp-picton':
+    'Both rooms sit in a real wartime barrack on the old Picton air base, so the spy setting is the building. Decor and puzzles stay in the period, and the surprises are mechanical. We slightly preferred The Secret Guild when both were available.',
+};
+
+function places(venue: Venue | undefined, review: Review): string {
+  const fromVenue = venue
+    ? [...new Set(venue.data.locations.map((loc) => (loc.city && tax.cities.get(loc.city)?.data.name) || '').filter(Boolean))]
+    : [];
+  const names = fromVenue.length ? fromVenue : review.data.cities.map((id) => tax.cities.get(id)?.data.name ?? id);
+  return names.filter(Boolean).join(' · ');
+}
+
+function why(venueId: string, review: Review): string {
+  return summaries[venueId] || reviewBlurb(review);
+}
+---
+
+{
+  ranked.length === 0 ? (
+    <p class="top-venues__empty">We haven't scored any open rooms in {regionName} yet.</p>
+  ) : (
+    <div class="top-venues">
+      <h2>Where they are</h2>
+      <VenueMap pins={pins} height="480px" />
+      <ol class="top-venues__list">
+        {ranked.map((ranking) => {
+          const venue = tax.venues.get(ranking.venueId);
+          const top = ranking.top;
+          const name = roomName(top);
+          const venueName = venue?.data.name ?? ranking.venueId;
+          const where = places(venue, top);
+          const count = ranking.reviews.length === 1 ? '1 open room' : `${ranking.reviews.length} open rooms`;
+          const summary = why(ranking.venueId, top);
+          return (
+            <li class="top-venue">
+              <div class="top-venue__media">
+                {top.data.image ? (
+                  <img src={top.data.image} alt={top.data.imageAlt ?? `${name} at ${venueName}`} loading="lazy" decoding="async" />
+                ) : (
+                  <div class="top-venue__placeholder" />
+                )}
+              </div>
+              <div class="top-venue__body">
+                <h2 class="top-venue__title">
+                  <a href={url.venue(ranking.venueId)}>{venueName}</a>
+                  <ScoreBadge score={ranking.average} />
+                </h2>
+                <p class="top-venue__meta">
+                  {formatScore(ranking.average)} average{where && ` · ${where}`} · {count}
+                </p>
+                {summary && <p class="top-venue__summary">{summary}</p>}
+                <p class="top-venue__pick">
+                  Top room: <a href={url.post(top.id)}>{name}</a>
+                  <ScoreBadge score={top.data.score} />
+                </p>
+                <div class="top-venue__actions">
+                  {top.data.bookingUrl && (
+                    <a class="button" href={bookingHref(top.data.bookingUrl, name)} target="_blank" rel="noopener sponsored">
+                      Book now
+                    </a>
+                  )}
+                  <a class="button button--ghost" href={url.post(top.id)}>
+                    Read the review
+                  </a>
+                </div>
+              </div>
+            </li>
+          );
+        })}
+      </ol>
+    </div>
+  )
+}
+
+<style>
+  .top-venues__empty {
+    color: var(--ink-soft);
+  }
+
+  .top-venues > h2 {
+    margin: 2rem 0 0.85rem;
+  }
+
+  .top-venues__list {
+    list-style: none;
+    margin: 1.75rem 0 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    counter-reset: venue;
+  }
+
+  .top-venue {
+    display: grid;
+    grid-template-columns: minmax(200px, 280px) minmax(0, 1fr);
+    gap: 1.15rem;
+    align-items: stretch;
+    background: var(--surface);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    counter-increment: venue;
+  }
+
+  .top-venue__media,
+  .top-venue__body {
+    min-width: 0;
+  }
+
+  .top-venue__media {
+    position: relative;
+    min-height: 180px;
+    background: #dfe3e8;
+    overflow: hidden;
+  }
+
+  .top-venue__media img,
+  .top-venue__placeholder {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .top-venue__placeholder {
+    background: linear-gradient(135deg, #2d4256, #3b4f45);
+  }
+
+  .top-venue__body {
+    padding: 1rem 1.15rem 1.15rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.45rem;
+  }
+
+  .top-venue__title {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.55rem;
+    margin: 0;
+    font-size: 1.3rem;
+  }
+
+  .top-venue__title::before {
+    content: counter(venue) '.';
+    color: var(--accent-dark);
+  }
+
+  .top-venue__title a {
+    color: var(--ink);
+    text-decoration: none;
+  }
+
+  .top-venue__title a:hover {
+    color: var(--accent-dark);
+  }
+
+  .top-venue__meta,
+  .top-venue__summary,
+  .top-venue__pick {
+    margin: 0;
+  }
+
+  .top-venue__meta {
+    color: var(--ink-soft);
+    font-size: 0.92rem;
+  }
+
+  .top-venue__summary {
+    margin-top: 0.2rem;
+  }
+
+  .top-venue__pick {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.45rem;
+    font-weight: 700;
+  }
+
+  .top-venue__pick a {
+    color: var(--ink);
+  }
+
+  .top-venue__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-top: auto;
+  }
+
+  @media (max-width: 700px) {
+    .top-venue {
+      grid-template-columns: 1fr;
+    }
+
+    .top-venue__media {
+      aspect-ratio: 16 / 10;
+      min-height: 0;
+    }
+
+    .top-venue__body {
+      padding: 0.2rem 1rem 1.1rem;
+    }
+  }
+</style>

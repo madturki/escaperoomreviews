@@ -7,7 +7,7 @@ region: ontario
 cities:
   - kitchener
 genres:
-  - modern-day
+  - others
 tags:
   - "Escapology"
   - "Kitchener"

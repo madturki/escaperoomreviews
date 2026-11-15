@@ -6,6 +6,8 @@ venue: escape-it-stratford
 region: ontario
 cities:
   - stratford
+genres:
+  - others
 tags:
   - "Escape-It Stratford"
   - "Stratford"

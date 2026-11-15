@@ -7,6 +7,8 @@ venue: omescape
 region: ontario
 cities:
   - markham
+genres:
+  - others
 format: room
 reviewed: false
 description: '"You open your mailbox to find tickets for the circus that just arrived in town…funny, you don’t remember ordering any. Arriving at the circus, you are greeted…'

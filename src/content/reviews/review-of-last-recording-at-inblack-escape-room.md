@@ -8,7 +8,6 @@ cities:
   - toronto
 genres:
   - mystery
-  - modern-day
 tags:
   - "INBLACK Escape Room"
   - "Toronto"

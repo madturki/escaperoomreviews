@@ -8,6 +8,7 @@ region: ontario
 cities:
   - toronto
 genres:
+  - books-movies
   - creepy
 format: room
 reviewed: true

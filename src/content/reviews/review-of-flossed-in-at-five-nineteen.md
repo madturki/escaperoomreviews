@@ -7,7 +7,7 @@ region: ontario
 cities:
   - cambridge
 genres:
-  - modern-day
+  - others
 tags:
   - Five Nineteen
   - Cambridge

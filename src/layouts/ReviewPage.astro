@@ -47,7 +47,9 @@ const rating =
 
 const crumbs = [
   ...(region ? [{ label: region.data.name, href: url.region(region.id) }] : []),
-  ...(cities[0] && region ? [{ label: cities[0].data.name, href: url.city(region.id, cities[0].id) }] : []),
+  ...(cities[0] && region && cities[0].data.name !== region.data.name
+    ? [{ label: cities[0].data.name, href: url.city(region.id, cities[0].id) }]
+    : []),
   ...(venue ? [{ label: venue.data.name, href: url.venue(venue.id) }] : []),
   { label: data.room ?? data.title },
 ];

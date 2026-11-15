@@ -23,6 +23,8 @@ bookingUrl: https://www-1558h.bookeo.com/bookeo/b_breakoutescapes_start.html?ctl
 image: /images/2021/10/shutterstock_1610169505-scaled.jpg
 description: DeAngelo DiFrancesco, a wealthy Italian heir and pro footballer, has just been signed to your team; Romano FC. It is well known that DiFrancesco has a penchant…
 draft: true
+genres:
+  - others
 tags:
   - Verified
 ---

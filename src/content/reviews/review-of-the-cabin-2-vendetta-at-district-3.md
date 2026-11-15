@@ -7,6 +7,8 @@ venue: district3
 region: saskatchewan
 cities:
   - regina
+genres:
+  - others
 tags:
   - Ontario
   - Verified

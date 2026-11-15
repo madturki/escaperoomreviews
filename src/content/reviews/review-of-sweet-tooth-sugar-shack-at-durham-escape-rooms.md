@@ -8,7 +8,6 @@ cities:
   - whitby
 genres:
   - made-for-kids
-  - others
 tags:
   - "Durham Escape Rooms"
   - "Whitby"

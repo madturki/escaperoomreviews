@@ -7,6 +7,8 @@ venue: imaginarium
 region: ontario
 cities:
   - toronto
+genres:
+  - others
 format: room
 reviewed: false
 description: '"The Ohm Dynasty Corporation holds the reins of power and is transporting a nuclear weapon called the Steamhammer. You are Team Bravo – an elite search and…'

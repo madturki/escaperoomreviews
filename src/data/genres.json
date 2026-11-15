@@ -42,18 +42,14 @@
     "name": "Medieval"
   },
   {
-    "id": "modern-day",
-    "name": "Modern Day",
-    "description": "A list of the best modern-day escape rooms in Canada.  Our escape room reviews are an honest and complete examination of specific rooms, completed by people just like you! These rooms contain themes that are plausible in the real modern-day world.  Themes like prisons, the outdoors, government conspiracies, and hotels!"
-  },
-  {
     "id": "mystery",
     "name": "Murder Mysteries",
     "description": "A list of the best murder mystery escape rooms in Canada. Our escape room reviews are an honest and complete examination of specific rooms, completed by people just like you! These rooms ask you to solve a killing."
   },
   {
     "id": "others",
-    "name": "Others"
+    "name": "Others",
+    "description": "A list of escape rooms that don't fit a more specific theme. Our escape room reviews are an honest and complete examination of specific rooms, completed by people just like you! These rooms cover present-day jobs, disasters, heists, and other one-off settings."
   },
   {
     "id": "pirates-water",

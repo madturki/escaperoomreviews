@@ -7,6 +7,8 @@ venue: captive
 region: ontario
 cities:
   - toronto
+genres:
+  - others
 tags:
   - closed
 format: room

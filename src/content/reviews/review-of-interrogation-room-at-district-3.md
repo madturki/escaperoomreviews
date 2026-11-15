@@ -8,7 +8,7 @@ region: saskatchewan
 cities:
   - regina
 genres:
-  - modern-day
+  - others
 tags:
   - Ontario
   - Verified

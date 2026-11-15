@@ -7,6 +7,8 @@ venue: mystery-room
 region: new-york
 cities:
   - buffalo
+genres:
+  - others
 tags:
   - closed
 format: room

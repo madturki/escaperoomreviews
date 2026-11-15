@@ -8,7 +8,6 @@ cities:
   - london
 genres:
   - historic
-  - others
 tags:
   - "Escapology"
   - "London"

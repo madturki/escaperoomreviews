@@ -8,7 +8,7 @@ region: ontario
 cities:
   - kingston
 genres:
-  - modern-day
+  - books-movies
 tags:
   - closed
   - kitchen

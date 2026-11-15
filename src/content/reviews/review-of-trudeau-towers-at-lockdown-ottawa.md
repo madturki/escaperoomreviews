@@ -7,7 +7,7 @@ region: ontario
 cities:
   - ottawa
 genres:
-  - modern-day
+  - others
 tags:
   - "Lockdown Ottawa"
   - "Ottawa"
