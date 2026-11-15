@@ -1,34 +1,43 @@
 ---
-title: "Review of \"My Home\" at INBLACK Escape Room"
-room: "My Home"
-date: '2026-10-03'
+title: Review of "My Home" at INBLACK Escape Room
+room: My Home
+date: '2026-11-15'
+updated: '2026-11-15'
 venue: inblack-escape-room
 region: ontario
 cities:
   - toronto
 genres:
   - creepy
-  - modern-day
 tags:
-  - "INBLACK Escape Room"
-  - "Toronto"
+  - INBLACK Escape Room
+  - Toronto
   - Ontario
+  - Live Actors
+  - Verified
 format: room
-reviewed: false
-bookingUrl: "https://www.inblackescape.com/locations/toronto-north-york/my-home-14a"
-description: "Mansion No. 17, past midnight. Old money on the outside, high-tech on the inside — and tonight it's too quiet. Your partner went in twenty minutes ago and…"
+reviewed: true
+score: 7.625
+criteria:
+  - name: Theme Consistency
+    score: 9
+  - name: Story & Puzzle Quality
+    score: 8
+  - name: Environment & Ambience
+    score: 6
+  - name: Bonus Items
+    score: 7.5
+summary: '"My Home" is not exactly an escape room but a creepy live actor experience. There are very few puzzles to solve and more so a lot of instructions to follow to solve the mystery.'
+bookingUrl: https://www.inblackescape.com/locations/toronto-north-york/my-home-14a
+description: A creepy live-actor experience at INBLACK in Toronto, with a strong host and a build that is excellent in most of the space.
 ---
 
-_Mansion No. 17, past midnight. Old money on the outside, high-tech on the inside — and tonight it's too quiet. Your partner went in twenty minutes ago and hasn't said a word since. You have until dawn to get in, get the truth, and get out — before the house decides you're the one being robbed._
+It should be noted right away that "My Home" is not exactly an escape room but a creepy live actor experience. There are very few puzzles to solve and more so a lot of instructions to follow to solve the mystery. Our host was excellent and did a great job of making it an creepy edge-of-your-seat experience. However, the location did not have a washroom available which we *(and Toronto bylaw)* think is important when a group is in your location for a one hour experience.
 
-We have not yet completed a review of My Home at INBLACK Escape Room in Toronto. We hope to experience this room soon.
+Our host gave hints while fully in character and swapped between the role of ally and enemy regularly throughout the entire experience. I don't want anyone to think that he gave less than a fantastic performance as our host.
 
-## What others are saying
+I was really torn when evaluating the physical space because 90% of the space is very well made and lined with high quality props. The lighting is excellent. The audio cues are excellent. The tech is excellent. But 10% of the build was completely forgotten about with patch paint, exposed wires, unfinished surfaces, and places that clearly hadn't been swept since opening.
 
-My Home is a live-actor horror game built around a mansion break-in at INBLACK's North York location. Reviewers treat it more as a scary, theatrical experience than a classic escape room.
+This experience was fun with two people but would probably be much more fun with a larger group of 4-6. Members of the group are periodically separated for individual experiences while the rest of their party can enjoy their screams while locked in a different space.
 
-Google reviewers call it super immersive and theatrical, with moments that made them scream, a long play time and lots of detail. One praised the actress playing the in-game character, who stayed in character even while fixing a malfunctioning radio. The reviewer on Morty enjoyed the live actors and lighting effects and recommended it to anyone wanting something scary, especially around Halloween.
-
-The main caveat comes from Morty, where the reviewer said there were only one or two puzzles at most and they wouldn't classify it as an escape room.
-
-_Sources: [Morty](https://morty.app/attraction/53655/my-home), [Google reviews (via Exa)](https://exa.ai/library/place/s3wlcxdqs8v)_
+If you're looking for a scare-experience, this one was pretty good. It's not an escape room but has a few puzzle-solving elements to it.
