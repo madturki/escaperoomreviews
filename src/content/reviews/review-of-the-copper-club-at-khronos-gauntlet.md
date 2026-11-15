@@ -8,7 +8,7 @@ region: ontario
 cities:
   - guelph
 genres:
-  - others
+  - prohibition
 tags:
   - closed
   - Verified
