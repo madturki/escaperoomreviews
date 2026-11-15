@@ -1,15 +1,16 @@
 ---
 name: Imaginarium
-website: https://www.fantescapes.com/bookings
+website: https://www.imaginarium.ca/
 locations:
   - name: Imaginarium
-    address: 121 Wyndham St N
-    city: guelph
+    address: "1510 Birchmount Rd #304"
+    city: toronto
     region: ontario
-    postalCode: N1H 4E9
+    postalCode: M1P 2G6
     country: canada
-    lat: 43.547272
-    lng: -80.249437
+    lat: 43.7581
+    lng: -79.29092
+    phone: 647-350-6359
 ---
 
-Review of Imaginarium escape rooms. Imaginarium is an escape room venue in Toronto and offers four physical experiences.
+Review of Imaginarium escape rooms. Imaginarium is an escape room venue in Scarborough, Toronto and offers four physical experiences.
