@@ -2,7 +2,6 @@
 title: Review of "The Studio" at Breakout Niagara
 room: The Studio
 date: '2024-10-25'
-venue: breakout
 region: ontario
 cities:
   - niagara-falls

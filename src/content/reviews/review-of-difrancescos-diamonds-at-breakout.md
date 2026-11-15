@@ -1,7 +1,6 @@
 ---
 title: Review of DiFrancesco’s Diamonds at Breakout
 date: '2021-10-23'
-venue: breakout
 region: ontario
 cities:
   - cambridge

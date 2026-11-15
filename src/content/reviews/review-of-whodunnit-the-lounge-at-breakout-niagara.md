@@ -2,7 +2,6 @@
 title: 'Review of "Whodunnit: The Lounge" at Breakout Niagara'
 room: 'Whodunnit: The Lounge'
 date: '2024-10-25'
-venue: breakout
 region: ontario
 cities:
   - niagara-falls

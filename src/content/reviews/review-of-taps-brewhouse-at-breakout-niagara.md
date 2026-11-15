@@ -2,7 +2,6 @@
 title: Review of "Taps Brewhouse" at Breakout Niagara
 room: Taps Brewhouse
 date: '2024-10-25'
-venue: breakout
 region: ontario
 cities:
   - niagara-falls
