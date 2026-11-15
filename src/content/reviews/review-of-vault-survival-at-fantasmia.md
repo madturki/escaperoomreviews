@@ -29,6 +29,8 @@ criteria:
   - name: Bonus Items
     score: 9.5
 summary: You thought you could live in this vault forever? Unfortunately, there's just one hour of oxygen left and you have to get out quickly. This room is a highly immersive experience for Fallout lovers. From the very time you step into the room you know you're not in a traditional escape room but a puzzle solving experience.
+image: /images/2026/11/vault-101-fantasmia.jpg
+imageAlt: A rusted vault door marked 101 set into a rock wall under a red light
 bookingUrl: https://fantasmia.ca/services/vault101/
 description: One hour of oxygen left in a Fallout vault. Fantasmia's owner designed, built, and hosts this highly immersive room in Richmond Hill.
 ---

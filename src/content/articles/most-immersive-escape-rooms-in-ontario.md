@@ -152,6 +152,8 @@ The Crypt is an incredible room and one of the best builds in Mississauga. This 
 
 [Book It Now](https://hinthuntcanada.com/bookyourescaperoom/?utm_source=escaperoomreviews.ca)
 
+![](/images/2026/11/vault-101-fantasmia.jpg)
+
 ## [Vault 101](/review-of-vault-survival-at-fantasmia/) (Richmond Hill)
 
 You have one hour of oxygen left in a Fallout vault. The owner designed, built, and hosts the room, and it shows: the walls, ceiling, and floor all fit the theme, with near-perfect lighting and audio and practical physical puzzles. This is one of our personal favourites.
