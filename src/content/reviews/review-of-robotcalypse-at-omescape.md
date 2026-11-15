@@ -7,6 +7,8 @@ venue: omescape
 region: ontario
 cities:
   - markham
+genres:
+  - others
 format: room
 reviewed: false
 description: '"Take a futuristic journey aboard a spaceship, unfortunately, it’s not all smooth sailing. Forced to make an emergency landing, you and your crew find…'

@@ -24,6 +24,8 @@ bookingUrl: https://www-1558h.bookeo.com/bookeo/b_breakoutescapes_start.html?ctl
 image: /images/2021/10/shutterstock_1801282.jpg
 description: This week, Professor Pettywood is away at a conference, so you decide to sneak into his Quarters and see what he’s hiding. His secretary will be returning from…
 draft: true
+genres:
+  - others
 tags:
   - Verified
 ---

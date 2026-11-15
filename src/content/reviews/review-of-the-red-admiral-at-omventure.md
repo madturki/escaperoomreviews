@@ -6,6 +6,8 @@ venue: omventure
 region: ontario
 cities:
   - toronto
+genres:
+  - others
 tags:
   - Scarborough
   - Toronto

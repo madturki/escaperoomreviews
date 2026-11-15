@@ -6,6 +6,8 @@ venue: gaslight-theatre
 region: ontario
 cities:
   - mississauga
+genres:
+  - others
 tags:
   - "Gaslight Theatre"
   - "Mississauga"

@@ -7,6 +7,8 @@ venue: secret-city
 region: ontario
 cities:
   - toronto
+genres:
+  - others
 tags:
   - Secret City
 format: room

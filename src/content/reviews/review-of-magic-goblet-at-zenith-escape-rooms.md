@@ -7,6 +7,8 @@ venue: zenith-escape-rooms
 region: ontario
 cities:
   - barrie
+genres:
+  - others
 tags:
   - Castle
   - King Arthur

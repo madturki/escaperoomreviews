@@ -7,6 +7,8 @@ venue: crypto
 region: ontario
 cities:
   - toronto
+genres:
+  - others
 format: room
 reviewed: false
 description: '"Welcome to the Kilgore Cabin. Relax, unwind, enjoy your stay. The wonderful and loving Mother Kilgore will be your host - and you may never want to leave." We…'

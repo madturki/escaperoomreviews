@@ -7,6 +7,8 @@ venue: adventure-rooms
 region: ontario
 cities:
   - niagara-falls
+genres:
+  - others
 format: room
 reviewed: false
 image: /images/2022/09/shutterstock_2011737413.jpg

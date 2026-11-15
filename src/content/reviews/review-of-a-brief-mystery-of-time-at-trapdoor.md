@@ -7,6 +7,8 @@ venue: trapdoor
 region: ontario
 cities:
   - london
+genres:
+  - others
 tags:
   - closed
   - Verified

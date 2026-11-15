@@ -7,6 +7,8 @@ venue: crypto
 region: ontario
 cities:
   - toronto
+genres:
+  - others
 format: room
 reviewed: false
 description: '"A secret intelligence agency has taken over your elevator and tasked your group of regular, plainclothes civilians with a mission. You''re being sent deep…'

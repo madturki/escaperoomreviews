@@ -7,6 +7,8 @@ venue: crypto
 region: ontario
 cities:
   - toronto
+genres:
+  - others
 format: room
 reviewed: false
 description: '"You are among the last survivors of humanity, frozen away by Ellipsis until the world outside is once again habitable. However, your group has been woken up…'

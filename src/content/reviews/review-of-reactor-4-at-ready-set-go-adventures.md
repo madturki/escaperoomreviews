@@ -7,6 +7,8 @@ venue: ready-set-go-adventures
 region: ontario
 cities:
   - mississauga
+genres:
+  - others
 tags:
   - Ready Set Go
   - mississauga

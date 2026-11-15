@@ -7,6 +7,8 @@ venue: mind-buster
 region: ontario
 cities:
   - barrie
+genres:
+  - others
 tags:
   - closed
 format: room

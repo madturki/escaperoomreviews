@@ -7,6 +7,8 @@ venue: escape-manor
 region: ontario
 cities:
   - toronto
+genres:
+  - others
 tags:
   - closed
 format: room

@@ -6,6 +6,8 @@ venue: trivia-escape-rooms
 region: ontario
 cities:
   - toronto
+genres:
+  - others
 tags:
   - Toronto
   - Trivia Escape Room

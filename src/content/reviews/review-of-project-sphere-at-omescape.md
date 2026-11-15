@@ -7,6 +7,8 @@ venue: omescape
 region: ontario
 cities:
   - markham
+genres:
+  - others
 format: room
 reviewed: false
 description: '"Dennis Christopher, an award winning Quantum Physicist, has vanished into thin air. He was last known to be working on a revolutionary project. Authorities…'

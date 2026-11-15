@@ -7,6 +7,8 @@ venue: omescape
 region: ontario
 cities:
   - markham
+genres:
+  - others
 format: room
 reviewed: false
 description: '"An archeology fanatic is the head of the mysterious and spooky Copenheimer Museum, where he hopes to use a dark ritual to give himself eternal, Godly power.…'

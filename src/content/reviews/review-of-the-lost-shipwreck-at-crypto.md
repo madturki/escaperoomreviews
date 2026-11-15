@@ -7,6 +7,8 @@ venue: crypto
 region: ontario
 cities:
   - toronto
+genres:
+  - others
 format: room
 reviewed: false
 description: '"Your crew of treasure hunters has stumbled across the entrance to the Mad Captain''s Cave. If you want to leave with the Captain''s treasures you must sneak…'

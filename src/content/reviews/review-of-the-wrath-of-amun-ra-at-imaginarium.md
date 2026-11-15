@@ -7,6 +7,8 @@ venue: imaginarium
 region: ontario
 cities:
   - toronto
+genres:
+  - others
 format: room
 reviewed: false
 description: '"The World is in Turmoil! The Egyptian God Amun Ra is angry and has placed a curse on modern day civilization. A catastrophic storm will soon wreak havoc on…'

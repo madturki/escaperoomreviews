@@ -7,6 +7,8 @@ venue: escape-room-barrie
 region: ontario
 cities:
   - barrie
+genres:
+  - others
 format: room
 reviewed: false
 image: /images/2022/02/thumb_1644357147.jpg

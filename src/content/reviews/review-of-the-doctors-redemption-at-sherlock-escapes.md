@@ -7,6 +7,8 @@ venue: sherlocks-escapes
 region: ontario
 cities:
   - kingston
+genres:
+  - others
 format: room
 reviewed: false
 escaped: true

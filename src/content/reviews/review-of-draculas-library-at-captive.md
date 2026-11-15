@@ -8,6 +8,8 @@ region: ontario
 cities:
   - mississauga
   - toronto
+genres:
+  - others
 format: room
 reviewed: false
 description: '" New Orleans 1862…. You and your team of investigative journalists have been following the trail of the world’s oldest vampire for quite some time. Your…'

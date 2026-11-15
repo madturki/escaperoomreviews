@@ -7,6 +7,8 @@ venue: omescape
 region: ontario
 cities:
   - markham
+genres:
+  - others
 format: room
 reviewed: false
 description: '"Once upon a time, the Forest Fairy summoned everyone for a grand celebration. Beast or beauty, wicked or charming, all your favourite fairy tale characters…'

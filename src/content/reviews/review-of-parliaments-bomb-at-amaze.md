@@ -6,6 +6,8 @@ venue: amaze
 region: ontario
 cities:
   - ottawa
+genres:
+  - others
 tags:
   - nyctophobia
   - closed

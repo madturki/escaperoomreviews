@@ -7,6 +7,8 @@ venue: omescape
 region: ontario
 cities:
   - markham
+genres:
+  - others
 format: room
 reviewed: false
 description: '"The Cat king has been Catnaped! He vanished from his room one day and been missing ever since! The whole royal family is scratching their ears while they…'
