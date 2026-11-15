@@ -27,6 +27,8 @@ criteria:
   - name: Bonus Items
     score: 1
 summary: Witness is an attempt at a Black Mirror style investigation of a crime by going into the memories of the deceased. You start off at the police station speaking to a police officer before returning to the victim's home to examine clues and figure out what really happened.
+image: /images/2026/11/witness-inblack.jpg
+imageAlt: A police officer reads a case file by flashlight while a red-eyed figure watches from a jail cell
 bookingUrl: https://www.inblackescape.com/locations/toronto-north-york/witness-pg
 description: A Black Mirror-style memory investigation at INBLACK in Toronto that spends too long listening to a TV, in spaces that feel unfinished.
 ---
