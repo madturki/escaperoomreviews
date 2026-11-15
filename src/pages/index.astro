@@ -13,7 +13,7 @@ const reviewed = reviews.filter((r) => r.data.reviewed);
 const verified = reviews.filter((r) => r.data.tags.some((t) => t.toLowerCase() === 'verified'));
 const verifiedVenues = new Set(verified.flatMap((r) => (r.data.venue ? [r.data.venue] : [])));
 const verifiedCities = new Set(verified.flatMap((r) => r.data.cities));
-const latest = reviewed.slice(0, 8);
+const latest = reviewed.filter((review) => !isClosed(review, tax)).slice(0, 8);
 const topRated = sortByScore(reviewed.filter((review) => !isClosed(review, tax))).slice(0, 8);
 const pins = buildPins(tax, reviews);
 const genres = [...tax.genres.values()].map((g) => ({ href: url.genre(g.id), image: genreCover(reviews, g.id)?.image, label: g.data.name }));
