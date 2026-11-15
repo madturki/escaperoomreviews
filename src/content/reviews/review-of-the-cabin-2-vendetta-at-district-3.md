@@ -8,7 +8,7 @@ region: saskatchewan
 cities:
   - regina
 genres:
-  - others
+  - creepy
 tags:
   - Ontario
   - Verified
