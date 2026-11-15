@@ -32,7 +32,7 @@ A real airplane cockpit is built into this room, and the takeoff is convincing e
 
 ## 2. [9-1-1](/review-of-9-1-1-at-kw-escape/)
 
-**Our score: 8.8/10** · KW Escape
+**Our score: 8.75/10** · KW Escape
 
 A real firetruck is parked inside and is part of the game, with at least 14 puzzle stations and two puzzles at each. A dozen people can each find something to do, which makes it a strong corporate room. It is almost a fully immersive space. The high ceiling is the one piece that is hard to disguise.
 

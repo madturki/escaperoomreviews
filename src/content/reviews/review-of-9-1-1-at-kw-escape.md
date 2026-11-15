@@ -2,6 +2,7 @@
 title: Review of "9-1-1" at KW Escape
 room: 9-1-1 (Kitchener)
 date: '2026-11-12'
+updated: '2026-11-15'
 venue: kw-escape
 region: ontario
 cities:
@@ -16,16 +17,16 @@ tags:
 format: room
 reviewed: true
 escaped: false
-score: 8.8
+score: 8.75
 criteria:
   - name: Theme Consistency
     score: 9.5
   - name: Story & Puzzle Quality
     score: 8.5
   - name: Environment & Ambience
-    score: 8
-  - name: Bonus Items
     score: 9
+  - name: Bonus Items
+    score: 8
 summary: You've just been called in because the KW Mall is on fire! Quickly, you must clear a section of the mall and rescue the pets from the Rainbow Rescue as it will be engulfed in flames in just 60 minutes!
 bookingUrl: https://kwescape.ca/book-now/
 image: /images/2026/11/911-kw-escape.jpg
