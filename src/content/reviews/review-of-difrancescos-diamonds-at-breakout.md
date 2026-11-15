@@ -5,8 +5,6 @@ venue: breakout
 region: ontario
 cities:
   - cambridge
-genres:
-  - mystery
 format: room
 reviewed: true
 escaped: true

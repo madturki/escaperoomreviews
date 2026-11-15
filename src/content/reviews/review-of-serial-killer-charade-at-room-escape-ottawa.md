@@ -8,6 +8,7 @@ cities:
   - ottawa
 genres:
   - creepy
+  - mystery
 tags:
   - "Room Escape Ottawa"
   - "Ottawa"

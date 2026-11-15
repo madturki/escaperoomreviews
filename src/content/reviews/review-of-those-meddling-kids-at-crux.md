@@ -7,8 +7,6 @@ venue: crux
 region: ontario
 cities:
   - hamilton
-genres:
-  - mystery
 format: room
 reviewed: true
 escaped: true

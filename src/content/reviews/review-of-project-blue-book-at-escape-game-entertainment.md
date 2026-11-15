@@ -8,7 +8,6 @@ cities:
   - hamilton
 genres:
   - space
-  - mystery
 tags:
   - "Escape Game Entertainment"
   - "Hamilton"

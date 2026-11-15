@@ -8,7 +8,6 @@ cities:
   - ottawa
 genres:
   - historic
-  - mystery
 tags:
   - "Room Escape Ottawa"
   - "Ottawa"

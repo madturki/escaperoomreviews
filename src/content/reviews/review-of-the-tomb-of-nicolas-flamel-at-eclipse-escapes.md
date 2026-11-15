@@ -8,7 +8,6 @@ cities:
   - orillia
 genres:
   - magic
-  - mystery
 tags:
   - "Eclipse Escapes"
   - "Orillia"

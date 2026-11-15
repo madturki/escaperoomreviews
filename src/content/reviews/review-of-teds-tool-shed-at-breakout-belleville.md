@@ -8,7 +8,6 @@ cities:
   - belleville
 genres:
   - modern-day
-  - mystery
 tags:
   - "Breakout Belleville"
   - "Belleville"

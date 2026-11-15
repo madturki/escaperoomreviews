@@ -8,7 +8,6 @@ cities:
   - kitchener
 genres:
   - creepy
-  - mystery
 tags:
   - "Escape Game Entertainment"
   - "Kitchener"

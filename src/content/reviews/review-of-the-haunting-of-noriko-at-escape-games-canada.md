@@ -8,6 +8,7 @@ cities:
   - toronto
 genres:
   - creepy
+  - mystery
 tags:
   - "Escape Games Canada"
   - "Toronto"

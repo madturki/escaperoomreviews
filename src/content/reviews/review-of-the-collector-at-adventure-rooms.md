@@ -7,8 +7,6 @@ venue: adventure-rooms
 region: ontario
 cities:
   - niagara-falls
-genres:
-  - mystery
 format: room
 reviewed: true
 escaped: false

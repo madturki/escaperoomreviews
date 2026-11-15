@@ -7,7 +7,6 @@ region: ontario
 cities:
   - richmond-hill
 genres:
-  - mystery
   - modern-day
 tags:
   - "Escaptopia"

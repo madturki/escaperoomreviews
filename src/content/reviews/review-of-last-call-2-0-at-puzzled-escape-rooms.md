@@ -8,7 +8,6 @@ cities:
   - greater-sudbury
 genres:
   - modern-day
-  - mystery
 tags:
   - "Puzzled Escape Rooms"
   - "Greater Sudbury"

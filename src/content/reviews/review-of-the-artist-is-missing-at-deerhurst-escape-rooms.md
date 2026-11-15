@@ -7,7 +7,6 @@ region: ontario
 cities:
   - huntsville
 genres:
-  - mystery
   - historic
 tags:
   - "Deerhurst Escape Rooms"

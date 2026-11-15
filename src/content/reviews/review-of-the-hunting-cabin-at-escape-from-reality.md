@@ -8,7 +8,6 @@ cities:
   - timmins
 genres:
   - creepy
-  - mystery
 tags:
   - "Escape From Reality"
   - "Timmins"

@@ -6,8 +6,6 @@ venue: rush-hour-escapes
 region: ontario
 cities:
   - cornwall
-genres:
-  - mystery
 tags:
   - "Rush Hour Escapes"
   - "Cornwall"

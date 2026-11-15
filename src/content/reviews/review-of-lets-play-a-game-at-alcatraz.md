@@ -9,6 +9,7 @@ cities:
   - hamilton
 genres:
   - creepy
+  - mystery
 tags:
   - nyctophobia
   - Ontario

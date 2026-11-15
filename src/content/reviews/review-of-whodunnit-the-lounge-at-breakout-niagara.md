@@ -6,6 +6,8 @@ venue: breakout
 region: ontario
 cities:
   - niagara-falls
+genres:
+  - mystery
 tags:
   - Breakout
   - Niagara Falls

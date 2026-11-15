@@ -8,7 +8,6 @@ cities:
   - hamilton
 genres:
   - creepy
-  - mystery
 tags:
   - "Escape Game Entertainment"
   - "Hamilton"

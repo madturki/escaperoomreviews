@@ -8,7 +8,6 @@ region: ontario
 cities:
   - toronto
 genres:
-  - mystery
   - creepy
 tags:
   - Daydream Adventures
