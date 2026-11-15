@@ -7,8 +7,7 @@ region: ontario
 cities:
   - ottawa
 genres:
-  - fantasy
-  - magic
+  - books-movies
 tags:
   - nyctophobia
   - closed

@@ -8,9 +8,8 @@ region: ontario
 cities:
   - kingston
 genres:
-  - pirates
+  - pirates-water
   - books-movies
-  - water
 tags:
   - Immersive
   - Peter Pan

@@ -5,7 +5,7 @@ description: Ship decks, buried treasure and ghostly crews. Our ranked list of t
 image: /images/2021/10/neverland-heist-on-the-high-seas-1.jpg
 imageAlt: 'Neverland: Heist on the High Seas'
 genres:
-  - pirates
+  - pirates-water
 tags:
   - Pirates
   - top10

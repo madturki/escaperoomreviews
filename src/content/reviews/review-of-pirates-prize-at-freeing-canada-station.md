@@ -7,7 +7,7 @@ region: ontario
 cities:
   - richmond-hill
 genres:
-  - pirates
+  - pirates-water
 tags:
   - "Freeing Canada Station"
   - "Richmond Hill"

@@ -7,7 +7,7 @@ region: ontario
 cities:
   - greater-sudbury
 genres:
-  - pirates
+  - pirates-water
 tags:
   - "Puzzled Escape Rooms"
   - "Greater Sudbury"

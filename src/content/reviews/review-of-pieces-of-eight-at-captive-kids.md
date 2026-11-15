@@ -8,7 +8,7 @@ region: ontario
 cities:
   - mississauga
 genres:
-  - pirates
+  - pirates-water
   - made-for-kids
 tags:
   - Made for Kids

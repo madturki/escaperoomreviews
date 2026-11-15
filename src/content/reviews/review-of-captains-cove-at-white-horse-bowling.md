@@ -7,7 +7,7 @@ region: ontario
 cities:
   - simcoe
 genres:
-  - pirates
+  - pirates-water
 tags:
   - "White Horse Bowling"
   - "Simcoe"

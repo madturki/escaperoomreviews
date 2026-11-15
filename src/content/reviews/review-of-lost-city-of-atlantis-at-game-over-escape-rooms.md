@@ -8,7 +8,7 @@ cities:
   - mississauga
 genres:
   - fantasy
-  - water
+  - pirates-water
 tags:
   - "Game Over Escape Rooms"
   - "Mississauga"

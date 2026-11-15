@@ -9,6 +9,7 @@ cities:
   - toronto
 genres:
   - mystery
+  - egypt
 format: room
 reviewed: true
 escaped: true

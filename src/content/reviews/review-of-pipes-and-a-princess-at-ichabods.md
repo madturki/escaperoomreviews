@@ -9,6 +9,7 @@ cities:
   - london
 genres:
   - books-movies
+  - made-for-kids
 tags:
   - london
   - Made for Kids

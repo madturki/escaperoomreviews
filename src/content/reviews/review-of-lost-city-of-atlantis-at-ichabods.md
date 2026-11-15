@@ -8,7 +8,7 @@ region: ontario
 cities:
   - london
 genres:
-  - water
+  - pirates-water
 tags:
   - Atlantis
   - Ichabods

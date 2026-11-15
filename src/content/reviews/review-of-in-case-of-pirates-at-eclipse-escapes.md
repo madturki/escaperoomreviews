@@ -7,7 +7,7 @@ region: ontario
 cities:
   - orillia
 genres:
-  - pirates
+  - pirates-water
 tags:
   - "Eclipse Escapes"
   - "Orillia"

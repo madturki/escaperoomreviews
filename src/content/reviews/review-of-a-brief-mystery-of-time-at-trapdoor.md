@@ -8,8 +8,7 @@ region: ontario
 cities:
   - london
 genres:
-  - modern-day
-  - historic
+  - mystery
 tags:
   - closed
   - Verified

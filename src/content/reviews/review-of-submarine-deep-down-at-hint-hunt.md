@@ -8,7 +8,7 @@ region: ontario
 cities:
   - mississauga
 genres:
-  - water
+  - pirates-water
 tags:
   - Submarine
   - Water

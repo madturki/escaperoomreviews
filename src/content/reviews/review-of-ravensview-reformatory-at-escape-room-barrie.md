@@ -9,6 +9,7 @@ cities:
   - barrie
 genres:
   - modern-day
+  - prison
 format: room
 reviewed: true
 escaped: true

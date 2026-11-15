@@ -7,7 +7,7 @@ region: ontario
 cities:
   - toronto
 genres:
-  - pirates
+  - pirates-water
   - prison
 tags:
   - "Time Zone Escapes"

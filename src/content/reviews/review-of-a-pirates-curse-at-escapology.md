@@ -7,7 +7,7 @@ region: ontario
 cities:
   - kitchener
 genres:
-  - pirates
+  - pirates-water
 tags:
   - "Escapology"
   - "Kitchener"
