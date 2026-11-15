@@ -18,8 +18,13 @@ export function slugify(value: string): string {
 const isPublished = ({ data }: { data: { draft: boolean } }) => import.meta.env.DEV || !data.draft;
 
 export async function getReviews(): Promise<Review[]> {
-  const reviews = await getCollection('reviews', isPublished);
+  const reviews = await getCollection('reviews', (entry) => isPublished(entry) && entry.data.reviewed);
   return reviews.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+}
+
+export async function getUnreviewed(): Promise<Review[]> {
+  const reviews = await getCollection('reviews', (entry) => isPublished(entry) && !entry.data.reviewed);
+  return reviews.sort((a, b) => roomName(a).localeCompare(roomName(b), 'en', { sensitivity: 'base' }));
 }
 
 export async function getArticles(): Promise<Article[]> {
