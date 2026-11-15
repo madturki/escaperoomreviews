@@ -2,7 +2,6 @@
 title: Review of "The Dollhouse" at Breakout Niagara
 room: The Dollhouse
 date: '2024-10-25'
-venue: breakout
 region: ontario
 cities:
   - niagara-falls

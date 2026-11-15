@@ -2,7 +2,6 @@
 title: Review of "The Professor’s Quarters" at Breakout
 room: The Professor’s Quarters
 date: '2021-10-23'
-venue: breakout
 region: ontario
 cities:
   - cambridge
