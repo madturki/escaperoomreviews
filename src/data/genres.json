@@ -57,6 +57,11 @@
     "description": "A list of the best pirate, ship, submarine, and Atlantis escape rooms in Canada. Our escape room reviews are an honest and complete examination of specific rooms, completed by people just like you!"
   },
   {
+    "id": "police-fire",
+    "name": "Police & Fire",
+    "description": "A list of the best police and firefighter escape rooms in Canada. Our escape room reviews are an honest and complete examination of specific rooms, completed by people just like you! These rooms put you on a call, in an interrogation, or on a rescue."
+  },
+  {
     "id": "prison",
     "name": "Prison"
   },

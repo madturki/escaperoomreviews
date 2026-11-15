@@ -8,7 +8,7 @@ region: ontario
 cities:
   - kitchener
 genres:
-  - others
+  - police-fire
 tags:
   - KW Escape
   - Kitchener

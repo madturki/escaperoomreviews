@@ -8,7 +8,7 @@ region: saskatchewan
 cities:
   - regina
 genres:
-  - others
+  - police-fire
 tags:
   - Ontario
   - Verified
