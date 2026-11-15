@@ -8,7 +8,7 @@ region: ontario
 cities:
   - burlington
 genres:
-  - others
+  - creepy
 format: room
 reviewed: true
 escaped: false
