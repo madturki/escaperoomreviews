@@ -8,6 +8,8 @@ const venues = [...tax.venues.values()]
   .map((v) => ({ venue: v, count: reviews.filter((r) => r.data.venue === v.id).length }))
   .filter(({ count, venue }) => count > 0 || venue.data.locations.length > 0)
   .sort((a, b) => a.venue.data.name.localeCompare(b.venue.data.name, 'en', { sensitivity: 'base' }));
+const openVenues = venues.filter(({ venue }) => !venue.data.closed);
+const closedVenues = venues.filter(({ venue }) => venue.data.closed);
 ---
 
 <BaseLayout title="Escape room venues" description="Browse escape room reviews by venue and owner, from Trapped and Escape Manor to independent rooms across Canada and beyond.">
@@ -19,18 +21,32 @@ const venues = [...tax.venues.values()]
     </header>
     <ul class="term-grid">
       {
-        venues.map(({ venue, count }) => (
+        openVenues.map(({ venue, count }) => (
           <li>
             <a href={url.venue(venue.id)}>
-              <span>
-                {venue.data.name}
-                {venue.data.closed && <small> (closed)</small>}
-              </span>
+              <span>{venue.data.name}</span>
               <span class="count">{count}</span>
             </a>
           </li>
         ))
       }
     </ul>
+    {
+      closedVenues.length > 0 && (
+        <section class="section">
+          <h2>Closed venues</h2>
+          <ul class="term-grid">
+            {closedVenues.map(({ venue, count }) => (
+              <li>
+                <a href={url.venue(venue.id)}>
+                  <span>{venue.data.name}</span>
+                  <span class="count">{count}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )
+    }
   </div>
 </BaseLayout>
