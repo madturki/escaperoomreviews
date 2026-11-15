@@ -8,7 +8,7 @@ cities:
   - virtual
 genres:
   - virtual
-  - mystery
+  - police-fire
 format: virtual
 reviewed: true
 score: 8.8
