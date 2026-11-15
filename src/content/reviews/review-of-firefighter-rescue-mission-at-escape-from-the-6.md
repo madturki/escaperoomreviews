@@ -8,7 +8,7 @@ region: ontario
 cities:
   - mississauga
 genres:
-  - others
+  - police-fire
 tags:
   - Ontario
   - Verified

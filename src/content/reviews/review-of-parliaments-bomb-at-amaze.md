@@ -7,7 +7,7 @@ region: ontario
 cities:
   - ottawa
 genres:
-  - others
+  - police-fire
 tags:
   - nyctophobia
   - closed

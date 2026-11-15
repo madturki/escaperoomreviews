@@ -8,7 +8,7 @@ region: ontario
 cities:
   - ottawa
 genres:
-  - others
+  - police-fire
 format: room
 reviewed: true
 escaped: false
