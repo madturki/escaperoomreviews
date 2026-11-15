@@ -22,7 +22,7 @@ criteria:
     score: 5
   - name: Bonus Items
     score: 6
-bookingUrl: https://www.ruzeescaperooms.com/bookings
+bookingUrl: https://ruzeescaperooms.com/book
 image: /images/2021/12/project-bloom-ruze-escape-room.png.png
 description: '"As top agents of T.Y.M.E. Corp, your mission is to go back in time to follow Mr. E''s tracks, successfully recover the items, and return them all where they…'
 tags:

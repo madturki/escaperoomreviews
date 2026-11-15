@@ -49,4 +49,4 @@ Three cases of timeline tampering have triggered a Category Five alert, and the 
 
 [Read our review of Project:Home](/review-of-projecthome-at-ruze/)
 
-[Book it Now](https://www.ruzeescaperooms.com/bookings)
+[Book it Now](https://ruzeescaperooms.com/book)

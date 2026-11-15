@@ -23,7 +23,7 @@ criteria:
   - name: Bonus Items
     score: 8
 summary: "We have received some detrimental timeline-altering information. Recently, we detected not just one, but three occurrences of \"timeline-tampering\" making this case a Category Five alert. There is clear evidence that these items have been carefully selected to maximize timeline destruction.\r\n\r\nThe only good news is that the last detected signal was located in his home, which we already have a portal to after escaping his Bloom Laboratory. Knowing this, HQ has decided to change your ongoing mission of pursuing Mr. E to acquiring intel on the whereabouts of this high-tech container.\""
-bookingUrl: https://www.ruzeescaperooms.com/bookings
+bookingUrl: https://ruzeescaperooms.com/book
 image: /images/2021/12/project-home-ruze-escape-room.png-e1726512256726.png
 description: We have received some detrimental timeline-altering information. Recently, we detected not just one, but three occurrences of "timeline-tampering" making this…
 tags:
