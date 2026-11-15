@@ -47,7 +47,7 @@ Trapped features nice big foyers and private meetings rooms at most locations. T
 
 KW Escapes is family-run and feels intimate despite its enormous size. Having opened just before the start of the 2020 pandemic, they are en route to being the largest escape room venue in Canada! Their staff is among the best and most enthusiastic. They have a wide variety of great rooms that each accommodate 6 to 8 players comfortably. Their meeting rooms and seating spaces are enough for any sized business.
 
-Their [9-1-1](/review-of-9-1-1-at-kw-escape/) room is the one we'd book for a corporate group. A real firetruck is parked inside and built into the game, and there are at least 14 puzzle stations so a dozen people can each find something to do. The puzzles cover a wide range of difficulties, and we scored the room 8.8/10.
+Their [9-1-1](/review-of-9-1-1-at-kw-escape/) room is the one we'd book for a corporate group. A real firetruck is parked inside and built into the game, and there are at least 14 puzzle stations so a dozen people can each find something to do. The puzzles cover a wide range of difficulties, and we scored the room 8.75/10.
 
 ![9-1-1 at KW Escape](/images/2026/11/911-kw-escape.jpg)
 
