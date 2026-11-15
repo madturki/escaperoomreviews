@@ -6,7 +6,7 @@ import VenueMap from '../components/VenueMap.astro';
 import MailingList from '../components/MailingList.astro';
 import AdSlot from '../components/AdSlot.astro';
 import { SITE } from '../site.config';
-import { getReviews, getArticles, getTaxonomies, buildPins, sortByScore, isClosed, url } from '../lib/data';
+import { getReviews, getArticles, getTaxonomies, buildPins, sortByScore, genreCover, isClosed, url } from '../lib/data';
 
 const [reviews, articles, tax] = await Promise.all([getReviews(), getArticles(), getTaxonomies()]);
 const reviewed = reviews.filter((r) => r.data.reviewed);
@@ -16,7 +16,7 @@ const verifiedCities = new Set(verified.flatMap((r) => r.data.cities));
 const latest = reviewed.slice(0, 8);
 const topRated = sortByScore(reviewed.filter((review) => !isClosed(review, tax))).slice(0, 8);
 const pins = buildPins(tax, reviews);
-const genres = [...tax.genres.values()].map((g) => ({ href: url.genre(g.id), image: g.data.image, label: g.data.name }));
+const genres = [...tax.genres.values()].map((g) => ({ href: url.genre(g.id), image: genreCover(reviews, g.id)?.image, label: g.data.name }));
 const regions = [...tax.regions.values()].map((region) => ({
   region,
   count: reviews.filter((r) => r.data.region === region.id && r.data.reviewed).length,

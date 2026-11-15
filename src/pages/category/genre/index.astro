@@ -2,12 +2,12 @@
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../../components/Breadcrumbs.astro';
 import Gallery from '../../../components/Gallery.astro';
-import { getReviews, getTaxonomies, url } from '../../../lib/data';
+import { getReviews, getTaxonomies, genreCover, url } from '../../../lib/data';
 
 const [reviews, tax] = await Promise.all([getReviews(), getTaxonomies()]);
 const items = [...tax.genres.values()].map((g) => ({
   href: url.genre(g.id),
-  image: g.data.image,
+  image: genreCover(reviews, g.id)?.image,
   label: g.data.name,
   count: reviews.filter((r) => r.data.genres.includes(g.id)).length,
 }));
