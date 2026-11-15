@@ -50,15 +50,3 @@ Three cases of timeline tampering have triggered a Category Five alert, and the 
 [Read our review of Project:Home](/review-of-projecthome-at-ruze/)
 
 [Book it Now](https://www.ruzeescaperooms.com/bookings)
-
-![Project:Genesis at Ruze](/images/2021/12/project-genesis-ruze-escape-room.png)
-
-## 4. [Project:Genesis](/review-of-projectgenesis-at-ruze/)
-
-**Our score: 7.3/10** · Ruze
-
-As top agents of T.Y.M.E. Corp, you're going back in time to follow Mr. E's tracks and put stolen items back where they belong. It's a journey through time, with great decor, lighting and audio and smart, logical puzzles that match each stage. We loved the locked briefcase of tools you'll need on the job. The walls don't reach the ceiling, so noise from other groups could be a problem when it's busy.
-
-[Read our review of Project:Genesis](/review-of-projectgenesis-at-ruze/)
-
-[Book it Now](https://www.ruzeescaperooms.com/bookings)
