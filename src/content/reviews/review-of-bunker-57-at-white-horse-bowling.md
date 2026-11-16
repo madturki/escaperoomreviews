@@ -2,7 +2,6 @@
 title: "Review of \"Bunker 57\" at White Horse Bowling"
 room: "Bunker 57"
 date: '2026-10-03'
-venue: white-horse-bowling
 region: ontario
 cities:
   - simcoe

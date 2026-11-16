@@ -2,7 +2,6 @@
 title: "Review of \"Captain's Cove\" at White Horse Bowling"
 room: "Captain's Cove"
 date: '2026-10-03'
-venue: white-horse-bowling
 region: ontario
 cities:
   - simcoe
