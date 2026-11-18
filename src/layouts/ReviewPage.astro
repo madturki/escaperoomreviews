@@ -29,7 +29,11 @@ const pins = venue ? buildPins({ ...tax, venues: new Map([[venue.id, { ...venue,
 
 const moreAtVenue = venue ? sortByScore(reviews.filter((r) => r.data.venue === venue.id && r.id !== review.id)).slice(0, 6) : [];
 const moreInCity = cities[0]
-  ? sortByScore(reviews.filter((r) => r.data.cities.includes(cities[0]!.id) && r.data.venue !== data.venue && r.data.reviewed)).slice(0, 4)
+  ? sortByScore(
+      reviews.filter(
+        (r) => r.id !== review.id && r.data.reviewed && !isClosed(r, tax) && r.data.cities.includes(cities[0]!.id),
+      ),
+    ).slice(0, 4)
   : [];
 
 const rating =
