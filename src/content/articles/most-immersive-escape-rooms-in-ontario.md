@@ -32,7 +32,10 @@ You are standing in an abandoned early-1900s hotel the moment the door closes. I
 
 [Read the Review of The Grand Wilshire Hotel at Imaginarium](/review-of-the-grand-wilshire-hotel-at-imaginarium/)
 
-[Book It Now](https://bookeo.com/imaginarium?type=415696TRKPN165A672F00C&utm_source=escaperoomreviews.ca&utm_medium=referral&utm_content=The+Grand+Wilshire+Hotel)
+<p class="article-actions">
+  <a class="button" href="https://bookeo.com/imaginarium?type=415696TRKPN165A672F00C&amp;utm_source=escaperoomreviews.ca&amp;utm_medium=referral&amp;utm_content=The+Grand+Wilshire+Hotel" target="_blank" rel="noopener sponsored">Book It Now</a>
+  <a class="button button--ghost" href="/map/?venue=imaginarium">Find it on the map</a>
+</p>
 
 ![](/images/2026/11/vault-101-fantasmia.jpg)
 
@@ -42,7 +45,10 @@ You have one hour of oxygen left in a Fallout vault. The owner designed, built, 
 
 [Read the Review of Vault 101 at Fantasmia](/review-of-vault-survival-at-fantasmia/)
 
-[Book It Now](https://fantasmia.ca/services/vault101/)
+<p class="article-actions">
+  <a class="button" href="https://fantasmia.ca/services/vault101/?utm_source=escaperoomreviews.ca&amp;utm_medium=referral&amp;utm_content=Vault+101" target="_blank" rel="noopener sponsored">Book It Now</a>
+  <a class="button button--ghost" href="/map/?venue=fantasmia">Find it on the map</a>
+</p>
 
 ![](/images/2022/10/Looking-Glass-Adventures-Waldens-Wizarding-Shop.jpg)
 
@@ -50,7 +56,10 @@ You have one hour of oxygen left in a Fallout vault. The owner designed, built, 
 
 There are very few rooms that seamlessly integrate technology into magical spaces. There's often a sense of interacting with an Arduino controller hidden behind a panel - but Looking Glass does an excellent job in this space. From audio, lighting, and visual effects, to the quality of props and the overall room build - this is a great space to explore.
 
-[Book it Now](https://bookeo.com/lookingglass?type=41551XKXRP4166F9DF2681)
+<p class="article-actions">
+  <a class="button" href="https://bookeo.com/lookingglass?type=41551XKXRP4166F9DF2681&amp;utm_source=escaperoomreviews.ca&amp;utm_medium=referral&amp;utm_content=Walden%27s+Wizarding+Shop" target="_blank" rel="noopener sponsored">Book It Now</a>
+  <a class="button button--ghost" href="/map/?venue=looking-glass-adventures">Find it on the map</a>
+</p>
 
 ![](/images/2021/12/Screen-Shot-2021-12-09-at-1.28.07-AM.png)
 
@@ -60,7 +69,10 @@ The evil witch is ruining everyone's fun! This magical room is as much an art in
 
 [Read the Review of Dream Portal at Daydream Adventures](/review-of-dream-portal-at-daydream-adventures/)
 
-[Book it Now](https://daydreamtoronto.com/book-now/)
+<p class="article-actions">
+  <a class="button" href="https://daydreamtoronto.com/book-now/?utm_source=escaperoomreviews.ca&amp;utm_medium=referral&amp;utm_content=Dream+Portal" target="_blank" rel="noopener sponsored">Book It Now</a>
+  <a class="button button--ghost" href="/map/?venue=daydream-adventures">Find it on the map</a>
+</p>
 
 ![](/images/2021/11/confundrum-escape-rooms-new-haven-orphanage.png)
 
@@ -70,7 +82,10 @@ Where have the kids gone that used to call this place home and who is responsibl
 
 [Read the Review of New Haven Orphanage at Confundrum](/review-of-new-haven-orphanage-at-confundrum/)
 
-[Book It Now](https://confundrumescaperooms.com/new-haven/)
+<p class="article-actions">
+  <a class="button" href="https://confundrumescaperooms.com/new-haven/?utm_source=escaperoomreviews.ca&amp;utm_medium=referral&amp;utm_content=New+Haven+Orphanage" target="_blank" rel="noopener sponsored">Book It Now</a>
+  <a class="button button--ghost" href="/map/?venue=confundrum">Find it on the map</a>
+</p>
 
 ![](/images/2021/11/IMG_5836.jpg)
 
@@ -80,7 +95,10 @@ The notorious Captain Hook has captured your group and locked you in the brig, d
 
 [Read the Review of Neverland: Heist on the High Seas at Improbable Escapes](/review-of-neverland-heist-on-the-high-seas/)
 
-[Book It Now](https://improbableescapes.com/escape-rooms/neverland-heist-on-the-high-seas-irl/)
+<p class="article-actions">
+  <a class="button" href="https://improbableescapes.com/escape-rooms/neverland-heist-on-the-high-seas-irl/?utm_source=escaperoomreviews.ca&amp;utm_medium=referral&amp;utm_content=Neverland%3A+Heist+on+the+High+Seas" target="_blank" rel="noopener sponsored">Book It Now</a>
+  <a class="button button--ghost" href="/map/?venue=improbable-escapes">Find it on the map</a>
+</p>
 
 ![](/images/2021/11/the-graveyard-at-next-level.jpeg)
 
@@ -90,7 +108,10 @@ Help remove the curse that has been plaguing the nearby town before the curse ta
 
 [Read the Review of The Graveyard at Next Level](/review-of-the-graveyard-at-next-level/)
 
-[Book It Now](https://nextlevelescaperooms.ca/bookings/)
+<p class="article-actions">
+  <a class="button" href="https://nextlevelescaperooms.ca/bookings/?utm_source=escaperoomreviews.ca&amp;utm_medium=referral&amp;utm_content=The+Graveyard" target="_blank" rel="noopener sponsored">Book It Now</a>
+  <a class="button button--ghost" href="/map/?venue=next-level">Find it on the map</a>
+</p>
 
 ![A masked man in a leather jacket holding a cleaver](/images/2026/11/taken-kw-escape.jpg)
 
@@ -100,7 +121,10 @@ The KW Psycho is abducting groups of people from local entertainment facilities 
 
 [Read the Review of Taken at KW Escape](/review-of-taken-at-kw-escape/)
 
-[Book It Now](https://kwescape.ca/book-now/)
+<p class="article-actions">
+  <a class="button" href="https://kwescape.ca/book-now/?utm_source=escaperoomreviews.ca&amp;utm_medium=referral&amp;utm_content=Taken" target="_blank" rel="noopener sponsored">Book It Now</a>
+  <a class="button button--ghost" href="/map/?venue=kw-escape">Find it on the map</a>
+</p>
 
 ![The Pirate’s Code](/images/2021/08/4C6163A3-57AF-41B0-B5F1-FE7F0FA2EBFA-e1638128655966.jpeg)
 
@@ -110,7 +134,10 @@ The Ghost Ship has arrived under the light of the full moon. As it moors you kno
 
 [Read the Review of The Pirates' Code at Jigsaw](/review-of-the-pirates-code-at-jigsaw/)
 
-[Book It Now](https://bookeo.com/jigsawescape?type=41550MPUUWJ1734EFF0833)
+<p class="article-actions">
+  <a class="button" href="https://bookeo.com/jigsawescape?type=41550MPUUWJ1734EFF0833&amp;utm_source=escaperoomreviews.ca&amp;utm_medium=referral&amp;utm_content=The+Pirates%27+Code" target="_blank" rel="noopener sponsored">Book It Now</a>
+  <a class="button button--ghost" href="/map/?venue=jigsaw">Find it on the map</a>
+</p>
 
 ![](/images/2021/11/Improbable-Escape-Seven-Dwarves-3.jpg)
 
@@ -120,7 +147,10 @@ Destroy that poisonous apple once and for all! This mission begins in the dwarve
 
 [Read the Review of Seven Dwarves Mining Mission at Improbable Escapes](/review-of-seven-dwarfs-mining-mission-at-improbable-escapes/)
 
-[Book It Now](https://improbableescapes.com/seven-dwarfs-irl/)
+<p class="article-actions">
+  <a class="button" href="https://improbableescapes.com/seven-dwarfs-irl/?utm_source=escaperoomreviews.ca&amp;utm_medium=referral&amp;utm_content=Seven+Dwarves%3A+Mining+Mission" target="_blank" rel="noopener sponsored">Book It Now</a>
+  <a class="button button--ghost" href="/map/?venue=improbable-escapes">Find it on the map</a>
+</p>
 
 ![](/images/2021/08/Screen-Shot-2021-08-12-at-1.09.25-PM.jpg)
 
@@ -130,7 +160,10 @@ Just another day in the life of a firefighter, rescuing pets from a house fire. 
 
 [Read the Review of Firefighter Rescue Mission at Escape From the 6](/review-of-firefighter-rescue-mission-at-escape-from-the-6/)
 
-[Book It Now](https://escapefromthe6.com/reservations/)
+<p class="article-actions">
+  <a class="button" href="https://escapefromthe6.com/reservations/?utm_source=escaperoomreviews.ca&amp;utm_medium=referral&amp;utm_content=Firefighter+Rescue+Mission" target="_blank" rel="noopener sponsored">Book It Now</a>
+  <a class="button button--ghost" href="/map/?venue=escape-from-the-6">Find it on the map</a>
+</p>
 
 ![A cartoon dining table covered with a saxophone, skateboard, bowling ball, and other objects](/images/2026/11/the-thompsons-next-level.jpg)
 
@@ -140,7 +173,10 @@ Your neighbours have gone into witness protection as The Thompsons and as their 
 
 [Read the Review of The Thompson's at Next Level](/review-of-the-thompsons-at-next-level/)
 
-[Book It Now](https://nextlevelescaperooms.ca/bookings/)
+<p class="article-actions">
+  <a class="button" href="https://nextlevelescaperooms.ca/bookings/?utm_source=escaperoomreviews.ca&amp;utm_medium=referral&amp;utm_content=The+Thompsons" target="_blank" rel="noopener sponsored">Book It Now</a>
+  <a class="button button--ghost" href="/map/?venue=next-level">Find it on the map</a>
+</p>
 
 ![](/images/2022/03/Screen-Shot-2022-03-08-at-7.44.14-PM-1.png)
 
@@ -150,7 +186,10 @@ Hint Hunt does a great job with immersion. It begins in the staging area outside
 
 [Read the Review of Zen Room at Hint Hunt](/review-of-zen-room-at-hint-hunt/)
 
-[Book It Now](https://hinthuntcanada.com/bookyourescaperoom/?utm_source=escaperoomreviews.ca)
+<p class="article-actions">
+  <a class="button" href="https://hinthuntcanada.com/bookyourescaperoom/?utm_source=escaperoomreviews.ca&amp;utm_medium=referral&amp;utm_content=Zen+Room" target="_blank" rel="noopener sponsored">Book It Now</a>
+  <a class="button button--ghost" href="/map/?venue=hint-hunt">Find it on the map</a>
+</p>
 
 ![](/images/2024/10/Review-of-The-Crypt-at-Hint-Hunt-e1731076211257.png)
 
@@ -160,4 +199,7 @@ The Crypt is an incredible room and one of the best builds in Mississauga. This 
 
 [Read the Review of Zen Room at Hint Hunt](/review-of-the-crypt-at-hint-hunt/)
 
-[Book It Now](https://hinthuntcanada.com/bookyourescaperoom/?utm_source=escaperoomreviews.ca)
+<p class="article-actions">
+  <a class="button" href="https://hinthuntcanada.com/bookyourescaperoom/?utm_source=escaperoomreviews.ca&amp;utm_medium=referral&amp;utm_content=The+Crypt" target="_blank" rel="noopener sponsored">Book It Now</a>
+  <a class="button button--ghost" href="/map/?venue=hint-hunt">Find it on the map</a>
+</p>
