@@ -122,7 +122,7 @@ Just another day in the life of a firefighter, rescuing pets from a house fire. 
 
 [Book It Now](https://escapefromthe6.com/reservations/)
 
-![](/images/2021/11/The-Thompsons-e1638130235466.jpg)
+![A cartoon dining table covered with a saxophone, skateboard, bowling ball, and other objects](/images/2026/11/the-thompsons-next-level.jpg)
 
 ## [The Thompsons](/review-of-the-thompsons-at-next-level/) (Hamilton)
 

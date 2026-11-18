@@ -100,7 +100,7 @@ Snow White needs you to destroy the poison apple by casting it into the centre o
 
 [Book it Now](https://www.improbableescapes.com/book-now)
 
-![The Thompsons at Next Level](/images/2020/11/Screen-Shot-2020-11-05-at-11.41.37-PM-e1630979333581.jpg)
+![The Thompsons at Next Level](/images/2026/11/the-thompsons-next-level.jpg)
 
 ## 8. [The Thompsons](/review-of-the-thompsons-at-next-level/) (Hamilton)
 

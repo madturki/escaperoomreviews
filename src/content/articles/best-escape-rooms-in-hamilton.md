@@ -109,7 +109,7 @@ Legend has it that simply entering the graveyard curses you until you can solve 
 
 [Read our review of The Graveyard](/review-of-the-graveyard-at-next-level/)
 
-![The Thompsons at Next Level](/images/2020/11/Screen-Shot-2020-11-05-at-11.41.37-PM-e1630979333581.jpg)
+![The Thompsons at Next Level](/images/2026/11/the-thompsons-next-level.jpg)
 
 ## 9. [The Thompsons](/review-of-the-thompsons-at-next-level/)
 

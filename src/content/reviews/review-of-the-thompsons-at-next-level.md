@@ -30,7 +30,8 @@ criteria:
     score: 7
 summary: “Nothing is okily dokily about the house next door. After receiving numerous threats, your neighbours decide to go into witness protection as, The Thompsons. The FBI has been watching their home closely, but they are still unable to uncover the culprit.”
 bookingUrl: https://nextlevelescaperooms.ca/bookings/
-image: /images/2020/11/Screen-Shot-2020-11-05-at-11.41.37-PM-e1630979333581.jpg
+image: /images/2026/11/the-thompsons-next-level.jpg
+imageAlt: A cartoon dining table covered with a saxophone, skateboard, bowling ball, and other objects
 description: “Nothing is okily dokily about the house next door. After receiving numerous threats, your neighbours decide to go into witness protection as, The Thompsons.…
 ---
 
