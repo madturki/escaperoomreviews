@@ -225,6 +225,11 @@
     "region": "ontario"
   },
   {
+    "id": "woodstock",
+    "name": "Woodstock",
+    "region": "ontario"
+  },
+  {
     "id": "windsor",
     "name": "Windsor",
     "region": "ontario"

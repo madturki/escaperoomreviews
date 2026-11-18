@@ -521,6 +521,13 @@ a.chip:hover {
   margin: 1.25rem 0;
 }
 
+.prose .article-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 0 0 1.75rem;
+}
+
 .prose table {
   border-collapse: collapse;
   width: 100%;
