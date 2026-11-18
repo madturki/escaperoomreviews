@@ -50,6 +50,19 @@ You have one hour of oxygen left in a Fallout vault. The owner designed, built, 
   <a class="button button--ghost" href="/map/?venue=fantasmia">Find it on the map</a>
 </p>
 
+![A red cocktail on a dark bar](/images/2022/10/shutterstock_794455711.jpg)
+
+## [Prohibited](/review-of-prohibited-at-escape-manor/) (Hamilton)
+
+It's 1925, and the only way into Nucky Johnson's newest speakeasy is to be smart enough to find the entrance. The build starts before you reach the door, and Escape Manor fits an incredible amount into a small space, including a video display hidden behind a window. The room is dark, you get flashlights, and the puzzles are logical with a bit of simple math.
+
+[Read the Review of Prohibited at Escape Manor](/review-of-prohibited-at-escape-manor/)
+
+<p class="article-actions">
+  <a class="button" href="https://www.escapemanor.com/hamilton/booking?utm_source=escaperoomreviews.ca&amp;utm_medium=referral&amp;utm_content=Prohibited" target="_blank" rel="noopener sponsored">Book It Now</a>
+  <a class="button button--ghost" href="/map/?venue=escape-manor&amp;city=hamilton">Find it on the map</a>
+</p>
+
 ![](/images/2022/10/Looking-Glass-Adventures-Waldens-Wizarding-Shop.jpg)
 
 ## [Walden’s Wizarding Shop](/review-of-waldens-wizarding-shop-at-looking-glass-adventures/) **(Toronto)**

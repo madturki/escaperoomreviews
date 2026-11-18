@@ -54,6 +54,7 @@ const sorted = [...pins].sort((a, b) => a.name.localeCompare(b.name));
     url: string;
     reviewCount: number;
     topScore: number | null;
+    city?: string;
   }
 
   const escapeHtml = (s: string) =>
@@ -85,7 +86,9 @@ const sorted = [...pins].sort((a, b) => a.name.localeCompare(b.name));
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
     }).addTo(map);
 
-    const focusId = new URLSearchParams(window.location.search).get('venue');
+    const params = new URLSearchParams(window.location.search);
+    const focusId = params.get('venue');
+    const focusCity = params.get('city');
     let focus: { pin: Pin; marker: L.Marker } | undefined;
     for (const p of pins) {
       const reviews = p.reviewCount ? `${p.reviewCount} review${p.reviewCount === 1 ? '' : 's'}` : 'No reviews yet';
@@ -97,7 +100,7 @@ const sorted = [...pins].sort((a, b) => a.name.localeCompare(b.name));
           `<strong><a href="${p.url}">${escapeHtml(p.name)}</a></strong><br>${escapeHtml(p.address)}` +
             `${p.phone ? `<br>${escapeHtml(p.phone)}` : ''}<br><small>${reviews}${best}</small>`,
         );
-      if (focusId && p.venue === focusId) focus = { pin: p, marker };
+      if (focusId && p.venue === focusId && (!focusCity || p.city === focusCity)) focus = { pin: p, marker };
     }
 
     if (focus) {
