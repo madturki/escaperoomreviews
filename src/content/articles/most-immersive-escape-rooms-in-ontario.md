@@ -1,7 +1,7 @@
 ---
 title: Most Immersive Escape Rooms in Ontario
 date: '2021-11-28'
-updated: '2026-11-15'
+updated: '2026-11-17'
 description: Having completed over 100 escape rooms across the province, here's our list of the Most Immersive Escape Rooms in Ontario.
 image: /images/2021/11/IMG_5836.jpg
 tags:
@@ -22,7 +22,27 @@ Two decades ago, a room full of locks and riddles, with no real explanation of w
 -   Additional atmospheric effects are considered such as smoke, smells, animatronics, or haptic feedback
 -   Live actors involved at any level. Minimally, hints should be provided "in character" or fitting with the setting
 
-With these things in mind, here's a list (in no particular order) of our **Top Immersive Escape Rooms in Ontario**:
+With these things in mind, here's our **Top Immersive Escape Rooms in Ontario**:
+
+![The Grand Wilshire Hotel sign above a family silhouette and a green house](/images/2026/11/grand-wilshire-hotel-imaginarium.jpg)
+
+## [The Grand Wilshire Hotel](/review-of-the-grand-wilshire-hotel-at-imaginarium/) (Scarborough)
+
+You are standing in an abandoned early-1900s hotel the moment the door closes. Imaginarium is built by people who came out of film work, so the floors, ceilings, light, and sound all belong to the set. The haunting stays whimsical, with no jump scares, and the puzzles mix physical locks, electronic triggers, and searching.
+
+[Read the Review of The Grand Wilshire Hotel at Imaginarium](/review-of-the-grand-wilshire-hotel-at-imaginarium/)
+
+[Book It Now](https://bookeo.com/imaginarium?type=415696TRKPN165A672F00C&utm_source=escaperoomreviews.ca&utm_medium=referral&utm_content=The+Grand+Wilshire+Hotel)
+
+![](/images/2026/11/vault-101-fantasmia.jpg)
+
+## [Vault 101](/review-of-vault-survival-at-fantasmia/) (Richmond Hill)
+
+You have one hour of oxygen left in a Fallout vault. The owner designed, built, and hosts the room, and it shows: the walls, ceiling, and floor all fit the theme, with near-perfect lighting and audio and practical physical puzzles. This is one of our personal favourites.
+
+[Read the Review of Vault 101 at Fantasmia](/review-of-vault-survival-at-fantasmia/)
+
+[Book It Now](https://fantasmia.ca/services/vault101/)
 
 ![](/images/2022/10/Looking-Glass-Adventures-Waldens-Wizarding-Shop.jpg)
 
@@ -41,16 +61,6 @@ The evil witch is ruining everyone's fun! This magical room is as much an art in
 [Read the Review of Dream Portal at Daydream Adventures](/review-of-dream-portal-at-daydream-adventures/)
 
 [Book it Now](https://daydreamtoronto.com/book-now/)
-
-![](/images/2021/11/kw-escape-twister.jpg)
-
-## **[Twister](/review-of-twister-at-kw-escape/)** (Kitchener)
-
-You were out camping with some friends when the tornado warning went off. Now, you need to find where you stuck those car keys! This "outdoor" experience places you on your campsite complete with full-sized trailer, campfire with chairs, waterfall, trees, and animals. This room does not have live actors and there is noise from other rooms but it is a really well made and large space.
-
-[Read the Review of Twister at KW Escape](/review-of-twister-at-kw-escape/)
-
-[Book it Now](https://kwescape.ca/book-now/)
 
 ![](/images/2021/11/confundrum-escape-rooms-new-haven-orphanage.png)
 
@@ -82,7 +92,7 @@ Help remove the curse that has been plaguing the nearby town before the curse ta
 
 [Book It Now](https://nextlevelescaperooms.ca/bookings/)
 
-![](/images/2021/11/Taken-1.jpeg)
+![A masked man in a leather jacket holding a cleaver](/images/2026/11/taken-kw-escape.jpg)
 
 ## [Taken](/review-of-taken-at-kw-escape/) (Mississauga)
 
@@ -151,13 +161,3 @@ The Crypt is an incredible room and one of the best builds in Mississauga. This 
 [Read the Review of Zen Room at Hint Hunt](/review-of-the-crypt-at-hint-hunt/)
 
 [Book It Now](https://hinthuntcanada.com/bookyourescaperoom/?utm_source=escaperoomreviews.ca)
-
-![](/images/2026/11/vault-101-fantasmia.jpg)
-
-## [Vault 101](/review-of-vault-survival-at-fantasmia/) (Richmond Hill)
-
-You have one hour of oxygen left in a Fallout vault. The owner designed, built, and hosts the room, and it shows: the walls, ceiling, and floor all fit the theme, with near-perfect lighting and audio and practical physical puzzles. This is one of our personal favourites.
-
-[Read the Review of Vault 101 at Fantasmia](/review-of-vault-survival-at-fantasmia/)
-
-[Book It Now](https://fantasmia.ca/services/vault101/)
