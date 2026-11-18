@@ -2,13 +2,13 @@
 name: KW Escape
 locations:
   - name: KW Escape
-    address: 505 Conestogo Rd Unit 12
+    address: 259 Gage Avenue, Unit 1
     city: kitchener
     region: ontario
-    postalCode: N2L 4C9
+    postalCode: N2M 2C9
     country: canada
-    lat: 43.494833
-    lng: -80.53334
+    lat: 43.44702
+    lng: -80.51717
 ---
 
 
