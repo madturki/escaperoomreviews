@@ -82,7 +82,7 @@ Help remove the curse that has been plaguing the nearby town before the curse ta
 
 [Book It Now](https://nextlevelescaperooms.ca/bookings/)
 
-![](/images/2021/11/Taken-1.jpeg)
+![A masked man in a leather jacket holding a cleaver](/images/2026/11/taken-kw-escape.jpg)
 
 ## [Taken](/review-of-taken-at-kw-escape/) (Mississauga)
 

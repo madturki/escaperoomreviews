@@ -29,7 +29,8 @@ criteria:
   - name: Bonus Items
     score: 10
 bookingUrl: https://kwescape.ca/book-now/
-image: /images/2021/11/Taken-e1638209046633.jpeg
+image: /images/2026/11/taken-kw-escape.jpg
+imageAlt: A masked man in a leather jacket holding a cleaver
 description: '"There is a serial killer on the loose. The KW Psycho is abducting groups of people from local entertainment facilities and they are never seen again. Hundreds…'
 ---
 
