@@ -36,26 +36,127 @@ const jsonLd = {
 ---
 
 <BaseLayout title="The Best Escape Rooms in Ontario" description={SITE.description} ads jsonLd={jsonLd}>
-  <section class="hero">
+  <section class="hero" data-hero-slider aria-roledescription="carousel" aria-label="Featured">
     <div class="container">
-      <p class="eyebrow">Escape Room Reviews</p>
-      <h1>Honest, room-by-room reviews of the best escape rooms</h1>
-      <p>
-        We're David and Danielle, a husband and wife team who have played nearly 150 escape rooms as a duo across Ontario, Quebec, Saskatchewan, New
-        York, and Spain. We score every room on theme, puzzles, environment, and the little extras.
-      </p>
-      <div class="hero__actions">
-        <a class="button" href="/top-50-escape-rooms-in-ontario/">Top 50 in Ontario</a>
-        <a class="button button--ghost" href="/map/">Find rooms near me</a>
+      <div class="hero__slides">
+        <article class="hero__slide is-active" data-slide aria-roledescription="slide" aria-label="1 of 3">
+          <div class="hero__layout">
+            <div>
+              <p class="eyebrow">Christmas road trip</p>
+              <h2>Five holiday rooms across Ontario</h2>
+              <p>
+                Niagara Falls, Woodstock, Kitchener, Barrie, and Sudbury. Each stop has a booking link and a pin on the map. These rooms are not scored
+                reviews.
+              </p>
+              <div class="hero__actions">
+                <a class="button" href="/christmas-escape-rooms-in-ontario/">See the road trip</a>
+              </div>
+            </div>
+            <img
+              class="hero__art hero__art--poster"
+              src="/images/2026/11/the-last-christmas-niagara-escapement.jpg"
+              alt="The Last Christmas poster for Niagara Escapement in Niagara Falls"
+              width="640"
+              height="640"
+            />
+          </div>
+        </article>
+
+        <article class="hero__slide" data-slide aria-roledescription="slide" aria-label="2 of 3" aria-hidden="true" inert>
+          <p class="eyebrow">Escape Room Reviews</p>
+          <h1>Honest, room-by-room reviews of the best escape rooms</h1>
+          <p>
+            We're David and Danielle, a husband and wife team who have played nearly 150 escape rooms as a duo across Ontario, Quebec, Saskatchewan, New
+            York, and Spain. We score every room on theme, puzzles, environment, and the little extras.
+          </p>
+          <div class="hero__actions">
+            <a class="button" href="/top-50-escape-rooms-in-ontario/">Top 50 in Ontario</a>
+            <a class="button button--ghost" href="/map/">Find rooms near me</a>
+          </div>
+          <ul class="stats">
+            <li><strong>{reviewed.length}</strong><span>rooms reviewed</span></li>
+            <li><strong>{verifiedVenues.size}</strong><span>venues visited</span></li>
+            <li><strong>{verifiedCities.size}</strong><span>cities</span></li>
+            <li><strong>74.1%</strong><span>escape rate as a duo</span></li>
+          </ul>
+        </article>
+
+        <article class="hero__slide" data-slide aria-roledescription="slide" aria-label="3 of 3" aria-hidden="true" inert>
+          <div class="hero__layout">
+            <div>
+              <p class="eyebrow">From the reviews</p>
+              <h2>The most immersive rooms</h2>
+              <p>
+                Sets, sound, and story that hold together. The Ontario rooms where the walls, the lighting, and the puzzles all belong to the same
+                place.
+              </p>
+              <div class="hero__actions">
+                <a class="button" href="/most-immersive-escape-rooms-in-ontario/">Read the list</a>
+              </div>
+            </div>
+            <img
+              class="hero__art"
+              src="/images/2021/11/IMG_5836.jpg"
+              alt="A wooden ship interior with a staircase, ship's wheel, and ocean visible through the windows"
+              width="1200"
+              height="800"
+            />
+          </div>
+        </article>
       </div>
-      <ul class="stats">
-        <li><strong>{reviewed.length}</strong><span>rooms reviewed</span></li>
-        <li><strong>{verifiedVenues.size}</strong><span>venues visited</span></li>
-        <li><strong>{verifiedCities.size}</strong><span>cities</span></li>
-        <li><strong>74.1%</strong><span>escape rate as a duo</span></li>
-      </ul>
+
+      <div class="hero__controls">
+        <button type="button" class="hero__nav" data-prev aria-label="Previous slide">
+          <span aria-hidden="true">‹</span>
+        </button>
+        <div class="hero__dots">
+          <button type="button" class="hero__dot" data-dot aria-label="Christmas road trip" aria-current="true"></button>
+          <button type="button" class="hero__dot" data-dot aria-label="About these reviews"></button>
+          <button type="button" class="hero__dot" data-dot aria-label="The most immersive rooms"></button>
+        </div>
+        <button type="button" class="hero__nav" data-next aria-label="Next slide">
+          <span aria-hidden="true">›</span>
+        </button>
+      </div>
     </div>
   </section>
+  <script>
+    const root = document.querySelector<HTMLElement>('[data-hero-slider]');
+    if (root) {
+      const slides = [...root.querySelectorAll<HTMLElement>('[data-slide]')];
+      const dots = [...root.querySelectorAll<HTMLButtonElement>('[data-dot]')];
+      let index = 0;
+
+      const show = (next: number) => {
+        index = (next + slides.length) % slides.length;
+        slides.forEach((slide, i) => {
+          const active = i === index;
+          slide.classList.toggle('is-active', active);
+          slide.toggleAttribute('inert', !active);
+          if (active) slide.removeAttribute('aria-hidden');
+          else slide.setAttribute('aria-hidden', 'true');
+        });
+        dots.forEach((dot, i) => {
+          if (i === index) dot.setAttribute('aria-current', 'true');
+          else dot.removeAttribute('aria-current');
+        });
+      };
+
+      root.querySelector('[data-prev]')?.addEventListener('click', () => show(index - 1));
+      root.querySelector('[data-next]')?.addEventListener('click', () => show(index + 1));
+      dots.forEach((dot, i) => dot.addEventListener('click', () => show(i)));
+      root.addEventListener('keydown', (event) => {
+        if (event.key === 'ArrowLeft') {
+          show(index - 1);
+          event.preventDefault();
+        }
+        if (event.key === 'ArrowRight') {
+          show(index + 1);
+          event.preventDefault();
+        }
+      });
+    }
+  </script>
 
   <div class="container">
     <section class="section">
