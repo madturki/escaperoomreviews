@@ -3,8 +3,8 @@ title: Best Escape Rooms in Kitchener-Waterloo
 date: '2026-10-03'
 updated: '2026-11-12'
 description: Our ranked list of the best escape rooms in Kitchener-Waterloo, featuring KW Escape's Mayday, 9-1-1, Taken, and more, based on our review scores.
-image: /images/2021/11/Taken-e1638209046633.jpeg
-imageAlt: Taken at KW Escape
+image: /images/2026/11/taken-kw-escape.jpg
+imageAlt: A masked man in a leather jacket holding a cleaver
 tags:
   - Kitchener
   - Ontario
@@ -40,7 +40,7 @@ A real firetruck is parked inside and is part of the game, with at least 14 puzz
 
 [Book it Now](https://kwescape.ca/book-now/)
 
-![Taken at KW Escape](/images/2021/11/Taken-e1638209046633.jpeg)
+![A masked man in a leather jacket holding a cleaver](/images/2026/11/taken-kw-escape.jpg)
 
 ## 3. [Taken](/review-of-taken-at-kw-escape/)
 
