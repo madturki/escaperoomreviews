@@ -26,8 +26,8 @@ criteria:
   - name: Bonus Items
     score: 8
 summary: “Legend has it, by simply entering the graveyard you become cursed and unable to leave unless you can solve the graveyards mysteries. You must end the curse on MaComb and find the key to escape the graveyard. You have 60 minutes, or your soul will be swallowed by the graveyard forever.”
-image: /images/2020/11/Screen-Shot-2020-11-05-at-11.35.41-PM-e1630894606812.jpg
-imageAlt: The Graveyard
+image: /images/2021/11/the-graveyard-at-next-level.jpeg
+imageAlt: The Macomb Graveyard gate at night
 description: “Legend has it, by simply entering the graveyard you become cursed and unable to leave unless you can solve the graveyards mysteries. You must end the curse on…
 ---
 
