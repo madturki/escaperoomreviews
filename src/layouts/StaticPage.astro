@@ -1,10 +1,11 @@
 ---
-import { render, type CollectionEntry } from 'astro:content';
+import { getCollection, render, type CollectionEntry } from 'astro:content';
 import BaseLayout from './BaseLayout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import ReviewList from '../components/ReviewList.astro';
 import VenueMap from '../components/VenueMap.astro';
 import AdSlot from '../components/AdSlot.astro';
+import GuideNav from '../components/GuideNav.astro';
 import { SITE } from '../site.config';
 import { filterReviews, sortByScore, buildPins, type Review, type Taxonomies } from '../lib/data';
 
@@ -17,6 +18,11 @@ interface Props {
 const { page, reviews, tax } = Astro.props;
 const { data } = page;
 const { Content } = await render(page);
+const seriesPages = data.series
+  ? (await getCollection('pages', (entry) => entry.data.series === data.series && (import.meta.env.DEV || !entry.data.draft))).sort(
+      (a, b) => (a.data.seriesOrder ?? 0) - (b.data.seriesOrder ?? 0),
+    )
+  : [];
 
 let listed: Review[] = [];
 if (data.reviewList) {
@@ -36,9 +42,11 @@ const pins = data.map ? buildPins(tax, reviews, data.map) : [];
       <h1>{data.title}</h1>
     </header>
     <article class="article" data-pagefind-body>
+      {seriesPages.length > 0 && <GuideNav pages={seriesPages} current={page.id} />}
       <div class="prose">
         <Content />
       </div>
+      {seriesPages.length > 0 && <GuideNav pages={seriesPages} current={page.id} credit={data.series === 'escape-room-design'} />}
       {
         data.contact && (
           <>

@@ -79,6 +79,9 @@ const pages = defineCollection({
     ads: z.boolean().default(false),
     contact: z.boolean().default(false),
     draft: z.boolean().default(false),
+    series: z.string().optional(),
+    seriesOrder: z.number().optional(),
+    seriesLabel: z.string().optional(),
   }),
 });
 

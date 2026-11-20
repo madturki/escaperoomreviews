@@ -1,0 +1,33 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  pages: CollectionEntry<'pages'>[];
+  current: string;
+  credit?: boolean;
+}
+
+const { pages, current, credit = false } = Astro.props;
+---
+
+<nav class="guide-nav" aria-label="Escape room design guides" data-pagefind-ignore>
+  <p class="guide-nav__label">In this guide</p>
+  <ul class="chips">
+    {
+      pages.map((entry) => (
+        <li>
+          <a class:list={['chip', { 'chip--current': entry.id === current }]} href={`/${entry.id}/`} aria-current={entry.id === current ? 'page' : undefined}>
+            {entry.data.seriesLabel ?? entry.data.title}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+  {
+    credit && (
+      <p class="guide-note">
+        Collected by Brett Kuehner (<a href="mailto:brett@thatguywiththepuzzles.com">brett@thatguywiththepuzzles.com</a>). Unless a piece says otherwise, these are links to work written by other people. His collection was last updated on 14 November 2026. The original list is at <a href="https://thatguywiththepuzzles.com/escaperoomdesign.htm">thatguywiththepuzzles.com/escaperoomdesign.htm</a>.
+      </p>
+    )
+  }
+</nav>
