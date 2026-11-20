@@ -8,7 +8,7 @@ region: spain
 cities:
   - madrid
 genres:
-  - prison
+  - police-fire
 tags:
   - lupin
   - madrid
