@@ -1,6 +1,7 @@
 ---
 title: Review of DiFrancesco’s Diamonds at Breakout
 date: '2021-10-23'
+venue: breakout
 region: ontario
 cities:
   - cambridge
@@ -21,10 +22,10 @@ summary: DeAngelo DiFrancesco, a wealthy Italian heir and pro footballer, has ju
 bookingUrl: https://www-1558h.bookeo.com/bookeo/b_breakoutescapes_start.html?ctlsrc2=mVh0FUW%2BweH1326WwFaPbifnlF9kFjNHoL66rGIOz5k%3D&src=02m
 image: /images/2021/10/shutterstock_1610169505-scaled.jpg
 description: DeAngelo DiFrancesco, a wealthy Italian heir and pro footballer, has just been signed to your team; Romano FC. It is well known that DiFrancesco has a penchant…
-draft: true
 genres:
   - others
 tags:
+  - closed
   - Verified
 ---
 
